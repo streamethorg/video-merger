@@ -1,4 +1,4 @@
-name: Import Org logos
+name: Render assets
 
 on:
   workflow_dispatch:
