@@ -1,34 +1,42 @@
-import { Composition, Folder } from 'remotion'
-import { Break } from './break'
-import { Intro } from './intro'
-import { Outro } from './outro'
-import { Session } from './session'
-import { Three } from './three'
+import { Composition, Still } from 'remotion'
+import { Session, SessionSocial } from './session'
+
+const TEST_SESSION = {
+  id: 'session-1',
+  name: 'Privacy Infrastructure & Tooling',
+  speakers: [
+    {
+      name: 'Alex Kampa',
+      avatar: 'https://prague.web3privacy.info/people/alex-kampa.jpg',
+      twitter: 'nicksvyaznoy',
+    },
+    {
+      name: 'Tibor Csóka',
+      avatar: 'https://prague.web3privacy.info/people/tibor-csoka.jpg',
+    },
+    {
+      name: 'Costanza Gallo',
+      avatar: 'https://prague.web3privacy.info/people/costanza-gallo.jpeg',
+      twitter: 'costgallo',
+    },
+  ],
+}
 
 export function Compositions() {
   return (
     <>
-      <Folder name="General">
-        <Composition id="intro" component={Intro} width={1920} height={1080} durationInFrames={240} fps={30} />
-        <Composition id="outro" component={Outro} width={1920} height={1080} durationInFrames={120} fps={30} />
-        <Composition id="break" component={Break} width={1920} height={1080} durationInFrames={120} fps={30} />
-      </Folder>
-      <Folder name="Examples">
-        <Composition id="three" component={Three} width={1920} height={1080} durationInFrames={90} fps={30} />
-      </Folder>
-      <Folder name="Sessions">
-        <Composition
-          id="session"
-          component={Session}
-          width={1920}
-          height={1080}
-          durationInFrames={240}
-          fps={30}
-          defaultProps={{
-            id: 'opening-ceremonies-vitalik',
-          }}
-        />
-      </Folder>
+      <Composition
+        id="session"
+        component={Session}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        fps={30}
+        defaultProps={{ session: TEST_SESSION, small: false }}
+      />
+
+      <Still id="still-hd" component={Session} width={1920} height={1080} defaultProps={{ session: TEST_SESSION, smal: false }} />
+      <Still id="still-social" component={Session} width={1200} height={630} defaultProps={{ session: TEST_SESSION, small: true }} />
     </>
   )
 }

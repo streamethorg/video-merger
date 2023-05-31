@@ -1,0 +1,28 @@
+name: Import Org logos
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Render
+        run: yarn render
+
+      - name: Commit updates
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'generated assets'

@@ -1,5 +1,5 @@
 {
-  "name": "video-generator",
+  "name": "w3ps-assets",
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
@@ -8,29 +8,24 @@
     "render": "ts-node src/scripts/render",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
-    "prettier": "prettier './src' --write",
-    "scripts:concat": "ts-node ./src/scripts/concat"
+    "prettier": "prettier './src' --write"
   },
   "sideEffects": [
     "*.css"
   ],
   "dependencies": {
-    "@react-three/drei": "^9.57.3",
-    "@react-three/fiber": "^8.12.0",
-    "@remotion/cli": "3.3.78",
-    "@remotion/google-fonts": "^3.3.78",
-    "@remotion/three": "^3.3.78",
-    "@types/three": "^0.149.0",
+    "@remotion/cli": "3.3.97",
+    "@remotion/google-fonts": "^3.3.97",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "3.3.78",
-    "three": "^0.150.1"
+    "remotion": "3.3.97"
   },
   "devDependencies": {
-    "@remotion/eslint-config": "3.3.78",
+    "@remotion/eslint-config": "3.3.97",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
     "autoprefixer": "10.4.4",
+    "cross-fetch": "^3.1.6",
     "css-loader": "^6.7.1",
     "eslint": "^8.30.0",
     "postcss": "8.4.12",

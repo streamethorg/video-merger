@@ -1,9 +1,8 @@
 import { join } from 'path'
 import { bundle } from '@remotion/bundler'
-import { getCompositions, renderMedia } from '@remotion/renderer'
+import { getCompositions, renderMedia, renderStill } from '@remotion/renderer'
 import { webpackOverride } from '../webpack-override'
-
-const sessions = ['devcon-6-opening-video', 'FRJHPL', '9MVQCE']
+import fetch from 'cross-fetch'
 
 const start = async () => {
   console.log('Find compositions...')
@@ -13,33 +12,39 @@ const start = async () => {
   })
 
   const compositions = await getCompositions(bundled)
-  const sessionComposition = compositions.find((c) => c.id === 'session')
+  const sessionComp = compositions.find((c) => c.id === 'session')
+  const stillhd = compositions.find((c) => c.id === 'still-hd')
+  const stillSocial = compositions.find((c) => c.id === 'still-social')
 
-  console.log('General compositions...')
-  for (const composition of compositions) {
-    console.log(`- ${composition.id}`)
+  if (sessionComp && stillhd && stillSocial) {
+    console.log('Fetch sessions...')
+    const res = await fetch('https://web3privacy-summit.vercel.app/api/sessions')
+    const sessions = await res.json()
 
-    if (composition.id !== sessionComposition?.id) {
-      await renderMedia({
-        codec: 'h264',
-        composition,
-        serveUrl: bundled,
-        outputLocation: `out/${composition.id}.mp4`,
-      })
-    }
-  }
-
-  if (sessionComposition) {
-    console.log('Session compositions...')
-
-    for (const id of sessions) {
+    for (const session of sessions.data) {
+      const { id } = session
       console.log(`- ${id}`)
+
       await renderMedia({
         codec: 'h264',
-        composition: sessionComposition,
+        composition: sessionComp,
         serveUrl: bundled,
         outputLocation: `out/sessions/${id}.mp4`,
-        inputProps: { id },
+        inputProps: { session },
+      })
+
+      await renderStill({
+        composition: stillhd,
+        serveUrl: bundled,
+        output: `out/hd/${id}.png`,
+        inputProps: { session },
+      })
+
+      await renderStill({
+        composition: stillSocial,
+        serveUrl: bundled,
+        output: `out/social/${id}.png`,
+        inputProps: { session },
       })
     }
   }
