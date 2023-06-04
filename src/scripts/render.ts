@@ -12,9 +12,18 @@ const start = async () => {
   })
 
   const compositions = await getCompositions(bundled)
+  const breakComp = compositions.find((c) => c.id === 'still-break')
   const sessionComp = compositions.find((c) => c.id === 'session')
   const stillhd = compositions.find((c) => c.id === 'still-hd')
   const stillSocial = compositions.find((c) => c.id === 'still-social')
+
+  if (breakComp) {
+    await renderStill({
+      composition: breakComp,
+      serveUrl: bundled,
+      output: 'out/break.png',
+    })
+  }
 
   if (sessionComp && stillhd && stillSocial) {
     console.log('Fetch sessions...')
