@@ -16,9 +16,11 @@ const start = async () => {
   const breakComp = compositions.find((c) => c.id === 'still-break')
   const stillhd = compositions.find((c) => c.id === 'still-hd')
   const stillSocial = compositions.find((c) => c.id === 'still-social')
-  const sponsorComp = compositions.find((c) => c.id === 'still-sponsors')
+  const stillSponsor = compositions.find((c) => c.id === 'still-sponsors')
+  const sponsorComp = compositions.find((c) => c.id === 'sponsors')
 
   if (breakComp) {
+    console.log('Render break..')
     await renderStill({
       composition: breakComp,
       serveUrl: bundled,
@@ -26,11 +28,19 @@ const start = async () => {
     })
   }
 
-  if (sponsorComp) {
+  if (sponsorComp && stillSponsor) {
+    console.log('Render sponsor assets..')
     await renderStill({
-      composition: sponsorComp,
+      composition: stillSponsor,
       serveUrl: bundled,
       output: 'out/sponsors.png',
+    })
+
+    await renderMedia({
+      codec: 'h264',
+      composition: sponsorComp,
+      serveUrl: bundled,
+      outputLocation: `out/sponsors.mp4`,
     })
   }
 

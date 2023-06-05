@@ -39,10 +39,6 @@ export function Sponsors() {
         <div>
           <Prague />
         </div>
-
-        {/* <div className="flex flex-col items-center justify-center align-center h-full">
-          <Prague />
-        </div> */}
       </AbsoluteFill>
     </AbsoluteFill>
   )

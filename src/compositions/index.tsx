@@ -36,6 +36,7 @@ export function Compositions() {
         fps={30}
         defaultProps={{ session: TEST_SESSION, small: false }}
       />
+      <Composition id="sponsors" component={Sponsors} width={1920} height={1080} durationInFrames={120} fps={30} />
 
       <Still id="still-sponsors" component={Sponsors} width={1920} height={1080} />
       <Still id="still-break" component={Break} width={1920} height={1080} />
