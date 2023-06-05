@@ -12,16 +12,25 @@ const start = async () => {
   })
 
   const compositions = await getCompositions(bundled)
-  const breakComp = compositions.find((c) => c.id === 'still-break')
   const sessionComp = compositions.find((c) => c.id === 'session')
+  const breakComp = compositions.find((c) => c.id === 'still-break')
   const stillhd = compositions.find((c) => c.id === 'still-hd')
   const stillSocial = compositions.find((c) => c.id === 'still-social')
+  const sponsorComp = compositions.find((c) => c.id === 'still-sponsors')
 
   if (breakComp) {
     await renderStill({
       composition: breakComp,
       serveUrl: bundled,
       output: 'out/break.png',
+    })
+  }
+
+  if (sponsorComp) {
+    await renderStill({
+      composition: sponsorComp,
+      serveUrl: bundled,
+      output: 'out/sponsors.png',
     })
   }
 

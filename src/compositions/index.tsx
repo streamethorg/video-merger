@@ -1,6 +1,7 @@
 import { Composition, Still } from 'remotion'
 import { Break } from './break'
 import { Session } from './session'
+import { Sponsors } from './sponsors'
 
 const TEST_SESSION = {
   id: 'session-1',
@@ -36,6 +37,7 @@ export function Compositions() {
         defaultProps={{ session: TEST_SESSION, small: false }}
       />
 
+      <Still id="still-sponsors" component={Sponsors} width={1920} height={1080} />
       <Still id="still-break" component={Break} width={1920} height={1080} />
       <Still id="still-hd" component={Session} width={1920} height={1080} defaultProps={{ session: TEST_SESSION, smal: false }} />
       <Still id="still-social" component={Session} width={1200} height={630} defaultProps={{ session: TEST_SESSION, small: true }} />
