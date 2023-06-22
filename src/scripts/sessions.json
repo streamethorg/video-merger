@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "ZAHYZV",
-      "name": "The Hivemaker's Code: A toolkit for building value-driven, decentralized digital ecosystems.",
+      "name": "The Hivemaker's Code",
       "abstract": "When you can’t control what your system is used for, your options for maximizing its positive impact are limited. You have to start by creating the right set of values and working to align the ecosystem’s participants around them. You must enable its positive uses and engage people to develop an intrinsic motivation to do good. By releasing this document, we want to start a movement. One that will attract those of you who want to build decentralized ecosystems consciously and gradually change how the scene looks. So that purposeful technology will soon help people regain sovereignty over their data, identities, and lives.",
       "description": "",
       "track": "",
@@ -294,7 +294,7 @@
     },
     {
       "id": "XBN9PW",
-      "name": "How to get value from an on-going AI madness ( or Can I ask ChatGPT to write my smart contract?)",
+      "name": "How to get value from an on-going AI madness",
       "abstract": "Nowadays all companies big and small are excited about an opportunity to ask AI about doing one's job and saving efforts and money let's look closely at what exactly can be done by AI today and how it can help a real blockchain delivery team. No magic, no false promises, real facts and examples.",
       "description": "I'm going to talk about a variety of either freely or cheap available AI models to do the following:\r\n1. Create a code\r\n    a) Front End\r\n    b) Back End including Smart contracts in Solidity\r\n2. Test the code\r\n    a) Validating Smart contracts against the best practices\r\n    b) Creating the test cases\r\n    c) creating the code for functional tests\r\n3. Marketing & Communications (briefly as I expect we won't have time)\r\n    a) Creating documentation\r\n    b) Ctearing texts for community management\r\n    c) Event management support: ads, avatars, logos",
       "track": "",
@@ -599,7 +599,7 @@
     },
     {
       "id": "LQAGTE",
-      "name": "Panel discussion | The importance of resisting censorship: how activists can use blockchain as a tool",
+      "name": "Panel discussion | The importance of resisting censorship",
       "abstract": "panel discussion with Nadya Tolokonnikova (PussyRiot), Mike Bonnano (The Yes Man) and Scott Beibin (Mordechai Tuchasman) moderated by Lou de Kerhuelvez",
       "description": "",
       "track": "",
@@ -613,9 +613,9 @@
       "speakers": [
         {
           "id": "JSCPNS",
-          "name": "Scott Beibin",
+          "name": "Panel Discussion",
           "description": "inventor, artist, agent, researcher, self-taught engineer, maker and do-er of things",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/scott-beibin-480x481_I3GTAXc.jpg"
+          "avatarUrl": null
         },
         {
           "id": "3RCB99",

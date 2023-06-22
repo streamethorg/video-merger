@@ -1,19 +1,25 @@
-import { Composition, Still } from 'remotion';
+import { Composition, staticFile } from 'remotion';
 import { IntroSwarm } from './introSwarm';
 import SESSIONS from '../scripts/sessions.json';
+import { Session } from '../types';
+
+const sessions: Session[] = SESSIONS.data;
 
 export function Compositions() {
-  const defaultAvatarUrl = '/images/ETHLogo.jpg';
-  const processedSessions = SESSIONS.data.map(session => {
-    if (session.speakers) {
-      session.speakers.forEach(speaker => {
-        if (speaker.avatarUrl === null) {
-          speaker.avatarUrl = defaultAvatarUrl;
-        }
-      });
-    }
-    return session;
-  });
+  const defaultAvatarUrl = staticFile('/images/ETHLogo.jpg');
+  const processedSessions = sessions
+    .filter((session) => session.speakers && session.speakers.length > 0)
+    .map((session) => {
+      if (session.speakers) {
+        session.speakers.forEach((speaker) => {
+          if (speaker.avatarUrl === null) {
+            speaker.avatarUrl = defaultAvatarUrl;
+            console.warn(`${session.id} has no avatar, changing it to default`);
+          }
+        });
+      }
+      return session;
+    });
 
   return (
     <>

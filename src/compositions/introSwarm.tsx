@@ -21,6 +21,23 @@ interface Props {
   session: SessionType;
 }
 
+function splitTextIntoLines(text: string, maxLen: number) {
+  const words = text.split(' ');
+  let lines: string[] = [''];
+  let lineIndex = 0;
+
+  words.forEach((word) => {
+    if ((lines[lineIndex] + word).length > maxLen) {
+      lines.push(word);
+      lineIndex++;
+    } else {
+      lines[lineIndex] += ` ${word}`;
+    }
+  });
+
+  return lines;
+}
+
 export function IntroSwarm(props: Props) {
   const { durationInFrames } = useVideoConfig();
   const frame = useCurrentFrame();
@@ -32,10 +49,6 @@ export function IntroSwarm(props: Props) {
       extrapolateRight: 'clamp',
     },
   );
-
-  if (!props.session.speakers[0]) {
-    return;
-  }
 
   return (
     <AbsoluteFill style={{ opacity }}>
@@ -103,9 +116,14 @@ export function IntroSwarm(props: Props) {
                     transform: 'translateY(400px)',
                     fontFamily,
                     fontWeight: '200',
+                    fontSize: 60,
                   }}
                 >
-                  {props.session.name}
+                  {splitTextIntoLines(props.session.name, 30).map(
+                    (line, index) => (
+                      <div key={index}>{line}</div>
+                    ),
+                  )}
                 </div>
               </MoveObject>
             </Sequence>
