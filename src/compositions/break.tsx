@@ -1,9 +1,9 @@
-import { AbsoluteFill, Img, staticFile } from 'remotion'
-import { Logo } from '../components/Logo'
-import { Prague } from '../components/Prague'
+import { AbsoluteFill, Img, staticFile } from 'remotion';
+import { Logo } from '../components/Logo';
+import { swarmLogo } from '../components/SwarmLogo';
 
 export function Break() {
-  const bgImage = staticFile('images/background.png')
+  const bgImage = staticFile('images/background.png');
 
   return (
     <AbsoluteFill>
@@ -17,9 +17,9 @@ export function Break() {
         </div>
 
         <div className="flex flex-col items-center justify-center align-center h-full">
-          <Prague />
+          <swarmLogo />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import { AbsoluteFill, Img, staticFile } from 'remotion'
-import { Logo } from '../components/Logo'
-import { Prague } from '../components/Prague'
+import { AbsoluteFill, Img, staticFile } from 'remotion';
+import { Logo } from '../components/Logo';
+import { swarmLogo } from '../components/SwarmLogo';
 
 export function Sponsors() {
-  const bgImage = staticFile('images/background.png')
+  const bgImage = staticFile('images/background.png');
 
   return (
     <AbsoluteFill>
@@ -37,9 +37,9 @@ export function Sponsors() {
         </div>
 
         <div>
-          <Prague />
+          <swarmLogo />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
-  )
+  );
 }
