@@ -340,129 +340,129 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@remotion/bundler@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/bundler/-/bundler-3.3.97.tgz#1f91583138dc326d124aaef6b9351c0392edd6e9"
-  integrity sha512-selJN/J55yw+VLmxDZclPJ8KT3QYDwPPLLDPjRTn8LQdySocWdAacbQjazdFr3Y0JmORdDaNOc55Iip7o80yxw==
+"@remotion/bundler@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/bundler/-/bundler-3.3.101.tgz#a616f6660e353e1d9319eee6517470973a9a43c7"
+  integrity sha512-/SoCpxL5tRD+Nn8vi4qFUoUe14cOzBIZL/etesLMPuQl1KEnoI61GZp/rWAirHrcVGyx5T+UZ+zd59MQbxXQsA==
   dependencies:
     css-loader "5.2.7"
     esbuild "0.16.12"
     react-refresh "0.9.0"
-    remotion "3.3.97"
+    remotion "3.3.101"
     style-loader "2.0.0"
     webpack "5.76.1"
 
-"@remotion/cli@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/cli/-/cli-3.3.97.tgz#eb2dc6b48d594124bf1804e7b37c7a5c1084d616"
-  integrity sha512-ckPAkofruW+t89OFTZ/Jhvg5rSVsbAO/maqYtnEM3OWXggxdawNUYQYeIPVk/iZXVjmVPCDsYXXOCeBKD9FiNA==
+"@remotion/cli@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/cli/-/cli-3.3.101.tgz#e375a79bd9e1984076b7a06f1f29ce3caf34a4f0"
+  integrity sha512-mq9R08qzviCWXGRJxMYf0y4eszUSHBxSJZ07sDXVCBTZvADE3HLRgjeiHcMqUbiWC3OYa0vXDKAE18wKRleXJg==
   dependencies:
-    "@remotion/bundler" "3.3.97"
-    "@remotion/media-utils" "3.3.97"
-    "@remotion/player" "3.3.97"
-    "@remotion/renderer" "3.3.97"
+    "@remotion/bundler" "3.3.101"
+    "@remotion/media-utils" "3.3.101"
+    "@remotion/player" "3.3.101"
+    "@remotion/renderer" "3.3.101"
     dotenv "9.0.2"
     memfs "3.4.3"
     minimist "1.2.6"
     open "^8.4.2"
     prompts "2.4.1"
-    remotion "3.3.97"
+    remotion "3.3.101"
     semver "7.3.5"
     source-map "0.6.1"
 
-"@remotion/compositor-darwin-arm64@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-darwin-arm64/-/compositor-darwin-arm64-3.3.97.tgz#9c86686ffa25db9bd2feb3738cbe9c8534e8f772"
-  integrity sha512-/3cHEFFD+0vjU/gmz+qToDTFCNRO/wnS68vC7qBfSQ5O0EjQaZ6y6lbRXMWev40/zKKwN3rOQ6A5iWTkXfjeXg==
+"@remotion/compositor-darwin-arm64@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-darwin-arm64/-/compositor-darwin-arm64-3.3.101.tgz#50f07b672fdc560e18f78c886e2b2001a8b801ee"
+  integrity sha512-uUd/Pmrip7Pnk8F0skKaIeAjOcJaYJa+SZ4P+KDoDwMejecz/M80wGNNCu3I78jYL0H6NaCypKSyj0i9mJFvTg==
 
-"@remotion/compositor-darwin-x64@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-darwin-x64/-/compositor-darwin-x64-3.3.97.tgz#7511c204a94aa69dfefb0d5965388429ac0357d6"
-  integrity sha512-4UmZu2Ed45egN+mUNw2udR7bP0smKT8une+KX9sIP6Lv2lWl65meCEvNSFDF3P/3ueAAuk8Ve1WTBNyyEot1Mw==
+"@remotion/compositor-darwin-x64@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-darwin-x64/-/compositor-darwin-x64-3.3.101.tgz#6534b83a9cbcad6386192f5b926a9ac2a1689691"
+  integrity sha512-sRA3EuBWo60TzJRGlUXxntpeHXBU/2f/Ur7MJ5wSJcZqWdjD1+KBBnbFxWR0JC9dVgV1HbQz53zpldyFUzsCSw==
 
-"@remotion/compositor-linux-arm64-gnu@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-arm64-gnu/-/compositor-linux-arm64-gnu-3.3.97.tgz#76337ac56490faa91f5ea7d1deef50c71659ec58"
-  integrity sha512-TqIbhTZ+LV1UmtjYXsrAlicAf6rXp71229C4ydjsJTtXrUn+UEZ5NtHXtsUR8/JDn3sIcYkqz1q2QURBkI7vdQ==
+"@remotion/compositor-linux-arm64-gnu@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-arm64-gnu/-/compositor-linux-arm64-gnu-3.3.101.tgz#e8eda39a3503911cbd1a27a17b11e65c6dee9860"
+  integrity sha512-+xv+9yqT1342sRgWC+hANNZCwvZe9WW4XWX70NHqwaY2d4WZmfmHpjbd3XLZv9sZVEP+tLObDVwj64nUiQQ5Qg==
 
-"@remotion/compositor-linux-arm64-musl@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-arm64-musl/-/compositor-linux-arm64-musl-3.3.97.tgz#09d776673896c1b6f7a03c25fcfbf8a1990ed71b"
-  integrity sha512-ITyCfclMR2uA70ZzvcN4JpW5ra/mbklG3M4bIyNP/vP3k36O1H+T7WVZuNgcd+uO2GGZpzzxBMQKJisYC4P8tg==
+"@remotion/compositor-linux-arm64-musl@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-arm64-musl/-/compositor-linux-arm64-musl-3.3.101.tgz#1f8b81942105e18e172736a21c05035517cb6ba1"
+  integrity sha512-c6JD4fhrvsKmiQX79ILz0rH+S5rtMn65R3SNV5Oxgl+ug0FMSVqS8LNmxIiauQIAlLq/ddcg44rAGLC1V31+bw==
 
-"@remotion/compositor-linux-x64-gnu@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-x64-gnu/-/compositor-linux-x64-gnu-3.3.97.tgz#c67cc0304ee32d41f93b6bc9200d6e51e4604cd0"
-  integrity sha512-N+PTtmc6uYQBUsrq4GMN5VdIsSNpuauAE98hZZ1zZfV5tG1KzNVZGX9mLPzGQs3KXK60aqcDw4wxl3enFNe8fw==
+"@remotion/compositor-linux-x64-gnu@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-x64-gnu/-/compositor-linux-x64-gnu-3.3.101.tgz#e39ade59144a2b67dfe249a666bd9fefaac5da4b"
+  integrity sha512-SONGHDskgXk+zT/4Y9fcEACKlJq7KqQFlqydAT0LhuFK6CvRbhUT5y4AafEdHQjTOlTsSiBqOpRZP2fl9xeV3Q==
 
-"@remotion/compositor-linux-x64-musl@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-x64-musl/-/compositor-linux-x64-musl-3.3.97.tgz#bbfcc173c8f2b56ea5dd292c5c311deebea2ab62"
-  integrity sha512-DhBnnnCPGN91hbyiCtp2ClpMyDVYK5T4ozMseru6Y+/p/wmBV1UMzsGLHHCniLBgTxDf5M1TkJvZI/8MK9ep8w==
+"@remotion/compositor-linux-x64-musl@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-linux-x64-musl/-/compositor-linux-x64-musl-3.3.101.tgz#d269910d761cb3b504afe437c70915382f9f34ff"
+  integrity sha512-4VonjocqKz9RwxWmppIvMBxSgyc0MrVx40UrJFjX8JWUy5ExOCY9nBRClcQOOEQWy9C/oKZP7QWYScLF0DwiLg==
 
-"@remotion/compositor-win32-x64-msvc@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/compositor-win32-x64-msvc/-/compositor-win32-x64-msvc-3.3.97.tgz#7feea501641e963eb163c8413181ba5dbe765e8c"
-  integrity sha512-u0vevP4nf+b2+MqneTgj25b0kowvEY6m5E+m6x8qT6rQUkRAS9iU1nVr41ngUQ0AlWskAmYKM8R4kfXfG+fqxQ==
+"@remotion/compositor-win32-x64-msvc@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/compositor-win32-x64-msvc/-/compositor-win32-x64-msvc-3.3.101.tgz#72485894a7baeac5b0b761529d130a56e657943e"
+  integrity sha512-ZKEgdKqsupSiXbn3+rWox32v4b/vBPz/gUTa/cdu/ik72yFs2/wlCrZrlc+AidYVjU4WgbB43uo6Aub3T97/Sw==
 
-"@remotion/eslint-config@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/eslint-config/-/eslint-config-3.3.97.tgz#a2327e80f4e235e7dc6b3f473ef26022d7e5118d"
-  integrity sha512-F8qpZyeGdqhLA3qARrP+46mC8+6wEEZq/jQVNkytpJO7ODl8ggfbRNkhUvXFSYFd9lpjZ80CaTDlDhsbKZGatQ==
+"@remotion/eslint-config@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/eslint-config/-/eslint-config-3.3.101.tgz#535aa2c43f46897b50518c88b407fce61c9a475b"
+  integrity sha512-0IlflzEuFh6YRncaxJoWNr6tE8ylFDZ3XyRayv8lyvpCXlutlAxPk6Pp0Pf9FVapAkW5G66HHlwnqc63qCYhew==
   dependencies:
-    "@remotion/eslint-plugin" "3.3.97"
+    "@remotion/eslint-plugin" "3.3.101"
     "@typescript-eslint/eslint-plugin" "5.19.0"
     "@typescript-eslint/parser" "5.19.0"
     eslint-plugin-10x "1.5.2"
     eslint-plugin-react "7.29.4"
     eslint-plugin-react-hooks "4.4.0"
 
-"@remotion/eslint-plugin@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/eslint-plugin/-/eslint-plugin-3.3.97.tgz#be05ad7c0dd19206eed6f7936d15295cb4ce6541"
-  integrity sha512-0alTlfoy9h7OMeeglLxBmR4MD2NKDw2IGP9cY0RMjaiP/4dYRWad7lcGOMtIL7D+LF2FlaY0DNZzYbKRyLYl2w==
+"@remotion/eslint-plugin@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/eslint-plugin/-/eslint-plugin-3.3.101.tgz#5ad141bf132b313fb916721b068fb8c5a6e7ac18"
+  integrity sha512-o2jwtTUb2hPoHNCqVYfveOBIdnK8MliDmi6xJY9tN4bC6UNiHyV/hrQrq0oc+JHWiYtMvFVTzrjdY+I2Iduomw==
   dependencies:
     "@typescript-eslint/utils" "5.19.0"
 
-"@remotion/google-fonts@^3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/google-fonts/-/google-fonts-3.3.97.tgz#f1453d8e911b9c7c6364ae93327dafea8fe90bcd"
-  integrity sha512-gqH28yO3fxNFEHpyabBdCpm4sNGQUR0VmYaj7WuRivW3hpVRCYksWmaHxhwbPN7PQwwAmYGzXaeInfgOrruKRg==
+"@remotion/google-fonts@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/google-fonts/-/google-fonts-3.3.101.tgz#7a860c3761be13b85005debb78ca43927fb17708"
+  integrity sha512-wvMXLh9UCg0wUrR3bKJdSODbfV43AiL3qtb2wSBqKQH7XRabeJ5GIj6HdDFwdR8TJ5oEl9ZDf+u+52mTzCsJVg==
   dependencies:
-    remotion "3.3.97"
+    remotion "3.3.101"
 
-"@remotion/media-utils@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/media-utils/-/media-utils-3.3.97.tgz#3b829a16e72b8299392971752be46478480197ef"
-  integrity sha512-vMt2tbgYdA+FnXi/15H+bRixWv3MkO4VTCuUc84/TDAocJts/bqPrlGc2CseH6xAJfbTfLdFhIob2e0P5cT1uA==
+"@remotion/media-utils@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/media-utils/-/media-utils-3.3.101.tgz#3f063cc3cbd1b01637fa773b5cbfb92b98bbaedc"
+  integrity sha512-zYmzwvL0t4eMpPAbj/Q+0jZKC5R/c3du3hoC7MzJfKuxR0W4Xqo/BwsdX4bkBBiNbbLgcjlkNkyWCnPhleWoTQ==
   dependencies:
-    remotion "3.3.97"
+    remotion "3.3.101"
 
-"@remotion/player@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/player/-/player-3.3.97.tgz#6483b8fafb04d10500d31f9ea5adcb6558f1ada4"
-  integrity sha512-RYOpqi9yBzxF+diXFCsT0hrTvr69f2FBpJOvDuLf3+s7vgTfG3cv5CWhGxWF+JH7Y0e1er0HJAHdQvca9MsIuQ==
+"@remotion/player@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/player/-/player-3.3.101.tgz#cfb54cffb40c49a0dfdc4bcd45be3912b2ee4715"
+  integrity sha512-Bt+dsjhZzTypEhpivGbYO74EJfVz8Y1aJFlKTrEUdl/e2VdBfw9gqKMacKdREtKyXm5SKABENeKv4qpb55N84w==
   dependencies:
-    remotion "3.3.97"
+    remotion "3.3.101"
 
-"@remotion/renderer@3.3.97":
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/@remotion/renderer/-/renderer-3.3.97.tgz#6901117d337587d6317ac0382ba7dd07bc121929"
-  integrity sha512-lkR6+1Ka+h4LPDQWr0TKWK7bMxuHKOe9gV6I4Mbkv3tiihWFkIHTed/hOtFLJ4QgDpRTyHq4eXS5q4zNC8zXUw==
+"@remotion/renderer@3.3.101":
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/@remotion/renderer/-/renderer-3.3.101.tgz#be7f017ab703effd99bdfa69954487b6dfefad5e"
+  integrity sha512-NxBAv2XmenkT/8uBpaudjTBj4KgwvwinMjbMidD+8O6fvt51JlkrinDWaviGVAQEhQ3nOdVqI+fJ0GucTgznHg==
   dependencies:
     execa "5.1.1"
     extract-zip "2.0.1"
-    remotion "3.3.97"
+    remotion "3.3.101"
     source-map "^0.8.0-beta.0"
     ws "8.7.0"
   optionalDependencies:
-    "@remotion/compositor-darwin-arm64" "3.3.97"
-    "@remotion/compositor-darwin-x64" "3.3.97"
-    "@remotion/compositor-linux-arm64-gnu" "3.3.97"
-    "@remotion/compositor-linux-arm64-musl" "3.3.97"
-    "@remotion/compositor-linux-x64-gnu" "3.3.97"
-    "@remotion/compositor-linux-x64-musl" "3.3.97"
-    "@remotion/compositor-win32-x64-msvc" "3.3.97"
+    "@remotion/compositor-darwin-arm64" "3.3.101"
+    "@remotion/compositor-darwin-x64" "3.3.101"
+    "@remotion/compositor-linux-arm64-gnu" "3.3.101"
+    "@remotion/compositor-linux-arm64-musl" "3.3.101"
+    "@remotion/compositor-linux-x64-gnu" "3.3.101"
+    "@remotion/compositor-linux-x64-musl" "3.3.101"
+    "@remotion/compositor-win32-x64-msvc" "3.3.101"
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
@@ -2913,10 +2913,10 @@ regexpp@^3.2.0:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.2.0.tgz#0425a2768d8f23bad70ca4b90461fa2f1213e1b2"
   integrity sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==
 
-remotion@3.3.97:
-  version "3.3.97"
-  resolved "https://registry.yarnpkg.com/remotion/-/remotion-3.3.97.tgz#36ceb755844b38c14a09d159776c5baad3368edc"
-  integrity sha512-V4BDI3oHd3Nk3Q1lNXRcF9CURYE0luHBMKGeL84oSBoBmwtGjYeFhgCXrTbJb8yLVDI1yTdqZTwEoiBgXsK/YA==
+remotion@3.3.101:
+  version "3.3.101"
+  resolved "https://registry.yarnpkg.com/remotion/-/remotion-3.3.101.tgz#a020f354ffa49a6b1a64b14e707ab72623ce0801"
+  integrity sha512-3lMuNJy9tjEL6qQvWUAanLVhoh1YDYC3GiVe57nZ401oMx0mjwABTkA5L7kcUD28bdZnndpAuZk3ULduavinIA==
 
 resolve-from@^4.0.0:
   version "4.0.0"

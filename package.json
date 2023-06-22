@@ -14,14 +14,14 @@
     "*.css"
   ],
   "dependencies": {
-    "@remotion/cli": "3.3.97",
-    "@remotion/google-fonts": "^3.3.97",
+    "@remotion/cli": "3.3.101",
+    "@remotion/google-fonts": "3.3.101",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "3.3.97"
+    "remotion": "3.3.101"
   },
   "devDependencies": {
-    "@remotion/eslint-config": "3.3.97",
+    "@remotion/eslint-config": "3.3.101",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
     "autoprefixer": "10.4.4",

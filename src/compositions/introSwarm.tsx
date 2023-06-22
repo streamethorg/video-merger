@@ -19,10 +19,9 @@ const { fontFamily } = loadFont('normal', {
 
 interface Props {
   session: SessionType;
-  small?: boolean;
 }
 
-export function Session(props: Props) {
+export function IntroSwarm(props: Props) {
   const { durationInFrames } = useVideoConfig();
   const frame = useCurrentFrame();
   const opacity = interpolate(
@@ -33,6 +32,10 @@ export function Session(props: Props) {
       extrapolateRight: 'clamp',
     },
   );
+
+  if (!props.session.speakers[0]) {
+    return;
+  }
 
   return (
     <AbsoluteFill style={{ opacity }}>
@@ -79,7 +82,7 @@ export function Session(props: Props) {
                   }}
                 >
                   <Img
-                    src={props.session.speakers[0].avatar}
+                    src={props.session.speakers[0].avatarUrl}
                     alt="description"
                     style={{ width: '100%', height: 'auto' }}
                   />
