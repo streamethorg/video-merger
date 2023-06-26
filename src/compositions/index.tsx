@@ -1,9 +1,13 @@
 import { Composition, staticFile } from 'remotion';
 import { IntroSwarm } from './introSwarm';
 import SESSIONS from '../scripts/sessions.json';
-import { Session } from '../types';
+import { Session as SessionType } from '../types';
 
-const sessions: Session[] = SESSIONS.data;
+const sessions: SessionType[] = SESSIONS.data;
+
+interface Props {
+  session: SessionType;
+}
 
 export function Compositions() {
   const defaultAvatarUrl = staticFile('/images/ETHLogo.jpg');
@@ -30,7 +34,7 @@ export function Compositions() {
           component={IntroSwarm}
           width={1920}
           height={1080}
-          durationInFrames={175}
+          durationInFrames={500}
           fps={25}
           defaultProps={{ session }}
         />

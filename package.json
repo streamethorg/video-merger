@@ -8,12 +8,14 @@
     "render": "ts-node src/scripts/render",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
-    "prettier": "prettier './src' --write"
+    "prettier": "prettier './src' --write",
+    "getVideo": "ts-node './src/scripts/videoFetcher.ts'"
   },
   "sideEffects": [
     "*.css"
   ],
   "dependencies": {
+    "@livepeer/react": "^2.5.8",
     "@remotion/cli": "3.3.101",
     "@remotion/google-fonts": "3.3.101",
     "react": "^18.0.0",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "@remotion/eslint-config": "3.3.101",
+    "@types/node-fetch": "^2.6.4",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
     "autoprefixer": "10.4.4",

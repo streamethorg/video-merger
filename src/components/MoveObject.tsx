@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, Easing } from 'remotion';
-import { SwarmLogo } from './SwarmLogo';
 
 interface Props {
   x: number;
