@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="551645ec-f263-4b0c-b708-6802a80379e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scripts/cutAndRender.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compositions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/cutAndRender.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/cutAndRender.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/sessions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/xander/Documents/ideaProjects/w3ps-assets",
+    "last_opened_file_path": "/Users/xander/Documents/ideaProjects/swarm-edit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,7 +43,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "/Users/xander/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.9161.38/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/xander/Documents/ideaProjects/swarm-edit/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -58,6 +61,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +91,7 @@
       <workItem from="1688038402959" duration="114000" />
       <workItem from="1688038705908" duration="15000" />
       <workItem from="1688038736097" duration="975000" />
+      <workItem from="1688053825967" duration="184000" />
     </task>
     <servers />
   </component>

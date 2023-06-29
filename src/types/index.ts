@@ -25,4 +25,7 @@ export interface Session {
   end: number;
   stage: Stage;
   speakers?: Speaker[];
+  startCut?: number;
+  endCut?: number;
+  videoPath?: string;
 }
