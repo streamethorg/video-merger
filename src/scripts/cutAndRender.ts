@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 });
 
 const dataFile = './public/json/sessions.json';
-const outputFile = './public/json/updatedData.json';
+const outputFile = './public/json/sessions.json';
 
 const data = JSON.parse(fs.readFileSync(dataFile, 'utf-8'));
 

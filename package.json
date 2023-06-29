@@ -9,7 +9,8 @@
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
     "prettier": "prettier './src' --write",
-    "getVideo": "ts-node './src/scripts/videoFetcher.ts'"
+    "getVideo": "ts-node './src/scripts/videoFetcher.ts'",
+    "cutAndRender": "ts-node './src/scripts/cutAndRender.ts'"
   },
   "sideEffects": [
     "*.css"
