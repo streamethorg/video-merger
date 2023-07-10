@@ -9,7 +9,7 @@ if (!process.env.LIVEPEER_API_KEY) {
 export async function uploadAsset() {
   const { provider } = createClient({
     provider: studioProvider({
-      apiKey: process.env.NEXT_PUBLIC_LIVEPEER_API_KEY ?? '',
+      apiKey: process.env.LIVEPEER_API_KEY ?? '',
     }),
   });
 
