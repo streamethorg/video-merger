@@ -13,8 +13,8 @@
       },
       "speakers": [],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "0:10:00",
+      "endCut": "0:10:00"
     },
     {
       "id": "funding-the-commons-an-incubation-ecosystem-for-public-goods-funding-infrastructure",
@@ -33,8 +33,8 @@
         { "id": "Matt Frehlich", "name": "Matt Frehlich" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "0:10:00",
+      "endCut": "0:10:15"
     },
     {
       "id": "supporting-network-goods-at-protocol-labs",

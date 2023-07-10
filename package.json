@@ -10,7 +10,8 @@
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
     "prettier": "prettier './src' --write",
     "getVideo": "ts-node './src/scripts/videoFetcher.ts'",
-    "cutAndRender": "ts-node './src/scripts/cutAndRender.ts'"
+    "cutAndRender": "ts-node './src/scripts/cutAndRender.ts'",
+    "uploadVideo": "ts-node './src/scripts/upload.ts'"
   },
   "sideEffects": [
     "*.css"
@@ -21,7 +22,8 @@
     "@remotion/google-fonts": "3.3.101",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "3.3.101"
+    "remotion": "3.3.101",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
     "@remotion/eslint-config": "3.3.101",
