@@ -1,7 +1,6 @@
 import { useCurrentFrame } from 'remotion';
 import {
   AbsoluteFill,
-  Img,
   Sequence,
   useVideoConfig,
   interpolate,
