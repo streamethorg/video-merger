@@ -37,6 +37,9 @@ jobs:
       - name: Install Livepeer React
         run: yarn add @livepeer/react
 
+  - name: Ensure output directory exists
+    run: mkdir -p ./public/videos/
+
       - name: Get Video
         run: ffmpeg -i https://lp-playback.com/hls/1ceb373b5h4y4l01/index.m3u8 -c:v libx264 ./public/videos/stream.mp4
 
