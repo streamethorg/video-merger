@@ -20,33 +20,33 @@ jobs:
         with:
           node-version: 16
 
-    - name: Setup Chrome
-      uses: browser-actions/setup-chrome@latest
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
 
-    - name: Setup ffmpeg
-      run: |
-        sudo apt-get install ffmpeg
+      - name: Setup ffmpeg
+        run: |
+          sudo apt-get install ffmpeg
 
-    - name: Install ts-node
-      run: yarn global add ts-node
+      - name: Install ts-node
+        run: yarn global add ts-node
 
-    - name: Install dependencies
-      run: yarn install
+      - name: Install dependencies
+        run: yarn install
 
-    - name: Install Livepeer React
-      run: yarn add @livepeer/react
+      - name: Install Livepeer React
+        run: yarn add @livepeer/react
 
-    - name: Get Video
-      run: yarn getVideo
-      env:
-        LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
+      - name: Get Video
+        run: yarn getVideo
+        env:
+          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
 
-    - name: Render video
-      run: yarn render
-      env:
-        LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
+      - name: Render video
+        run: yarn render
+        env:
+          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
 
-    - name: Upload video
-      run: yarn uploadVideo
-      env:
-        LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
+      - name: Upload video
+        run: yarn uploadVideo
+        env:
+          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
