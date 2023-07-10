@@ -40,9 +40,7 @@ jobs:
         run: yarn add @livepeer/react
 
       - name: Get Video
-        run: yarn getVideo
-        env:
-          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
+        run: ffmpeg -i https://lp-playback.com/hls/1ceb373b5h4y4l01/index.m3u8 -c:v libx264 ./public/videos/stream.mp4
 
       - name: Render video
         run: yarn render
