@@ -49,4 +49,4 @@ jobs:
       - name: Upload video
         run: yarn uploadVideo
         env:
-          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
+          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_APIKEY }}

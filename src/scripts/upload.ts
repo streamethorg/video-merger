@@ -2,14 +2,14 @@ import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream, readdirSync } from 'fs';
 import path from 'path';
 
-if (!process.env.LIVEPEER_API_KEY) {
-  console.error('process.env.LIVEPEER_API_KEY is not defined');
+if (!process.env.LIVEPEER_APIKEY) {
+  console.error('process.env.LIVEPEER_APIKEY is not defined');
 }
 
 export async function uploadAsset() {
   const { provider } = createClient({
     provider: studioProvider({
-      apiKey: process.env.LIVEPEER_API_KEY ?? '',
+      apiKey: process.env.LIVEPEER_APIKEY ?? '',
     }),
   });
 
@@ -36,6 +36,4 @@ export async function uploadAsset() {
 
     console.log(`Uploaded asset ${videoName}`);
   }
-
-  
 }
