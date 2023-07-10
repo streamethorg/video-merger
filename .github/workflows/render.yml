@@ -25,8 +25,8 @@ jobs:
 
       - name: Setup ffmpeg
          run: |
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg libx264-dev
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libx264-dev
 
       - name: Install ts-node
         run: yarn global add ts-node
