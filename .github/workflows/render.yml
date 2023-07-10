@@ -45,8 +45,6 @@ jobs:
 
       - name: Render video
         run: yarn render
-        env:
-          LIVEPEER_API_KEY: ${{ secrets.LIVEPEER_API_KEY }}
 
       - name: Upload video
         run: yarn uploadVideo
