@@ -22,11 +22,8 @@ interface Props {
 const IntroSwarmWithVideo: React.FC<Props> = ({ session }) => {
   const { durationInFrames } = useVideoConfig();
   const frame = useCurrentFrame();
-
-  // Start fading to black and audio 50 frames before the end of the video
   const startFadeFrame = durationInFrames - 50;
 
-  // Calculate opacity and volume for the current frame
   const opacity = interpolate(
     frame,
     [startFadeFrame, durationInFrames],
@@ -49,14 +46,6 @@ const IntroSwarmWithVideo: React.FC<Props> = ({ session }) => {
 
   return (
     <div>
-      <Sequence name="Video" from={150}>
-        <Video
-          src={staticFile(session.videoPath)}
-          startFrom={session.startCut * FPS}
-          endAt={session.endCut * FPS}
-          volume={() => volume}
-        />
-      </Sequence>
       <Sequence durationInFrames={175}>
         <IntroSwarm session={session} />
       </Sequence>
@@ -72,7 +61,6 @@ export function Compositions() {
       (session) =>
         session.speakers &&
         session.speakers.length > 0 &&
-        session.videoPath &&
         session.startCut &&
         session.endCut,
     )
@@ -94,12 +82,12 @@ export function Compositions() {
         <Composition
           key={index}
           id={`session-${session.id}`}
-          component={IntroSwarmWithVideo}
+          component={IntroSwarm}
           width={1920}
           height={1080}
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
-          durationInFrames={session.endCut * FPS - session.startCut * FPS}
+          durationInFrames={175}
           fps={FPS}
           defaultProps={{ session }}
         />

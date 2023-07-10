@@ -1,766 +1,830 @@
 {
   "data": [
     {
-      "id": "ZAHYZV",
-      "name": "The Hivemaker's Code",
-      "abstract": "When you can’t control what your system is used for, your options for maximizing its positive impact are limited. You have to start by creating the right set of values and working to align the ecosystem’s participants around them. You must enable its positive uses and engage people to develop an intrinsic motivation to do good. By releasing this document, we want to start a movement. One that will attract those of you who want to build decentralized ecosystems consciously and gradually change how the scene looks. So that purposeful technology will soon help people regain sovereignty over their data, identities, and lives.",
+      "id": "doors-open-coffee-served",
+      "name": "Doors open, Coffee served",
       "description": "",
-      "track": "",
-      "start": 1687365600000,
-      "end": 1687367400000,
+      "start": 1689404400000,
+      "end": 1689407400000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "3LQBXJ",
-          "name": "Michal Matlon",
-          "description": "Michal is an architecture and organizational psychologist with more than 10 years of multidisciplinary experience in technology, media, and marketing. He helps to create both physical and virtual places of flourishing and meaningful work, from offices to urban quarters. In the past, Michal worked at one of the largest and most innovative office real-estate developers in Europe, where he developed the user experience strategy for the company´s buildings and established an internal education program. He is also the co-founder of Venetian Letter, a newsletter about human-oriented, science-based architecture and urbanism.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/1604574411697_PyBljLR.jpeg"
-        }
-      ]
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "7FUGE3",
-      "name": "The right to Digital integrity",
-      "abstract": "If each human person already has a right to physical and mental integrity (Swiss Constitution article 10 al.2), shouldn't it have a right to digital integrity?\r\n\r\nGeneva canton is voting on the 18th of June to add the right to digital integrity in its constitution. Canton of VS, JU, NE, VD have similar initiatives. The question is also debated in the federal chambers.\r\n\r\nThis talk will introduce this legal concept, its possible implications for data protection and how this concept could be introduced in the current legal framework, but also the subrights that are derived such as the right to an off-line life or the right not to be surveilled.",
+      "id": "funding-the-commons-an-incubation-ecosystem-for-public-goods-funding-infrastructure",
+      "name": "Funding the Commons, an Incubation Ecosystem for Public Goods Funding Infrastructure",
       "description": "",
-      "track": "",
-      "start": 1687449000000,
-      "end": 1687450200000,
+      "start": 1689407100000,
+      "end": 1689408000000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "SWAFET",
-          "name": "Alexis Roussel",
-          "description": "Alexis Roussel is Chief Operating Officer of Nym Technologies, the start-up solving the internet's privacy crisis. Alexis is also the Co-Founder of Bity.com , a crypto-finance service provider in Switzerland. He holds a Masters in Technology Public Law and has served as an E-Governance Specialist for the United Nations, and was the President of the Pirate Party of Switzerland - aimed at promoting a human-centric and distributed approach of a technological society. He is frequently in the Swiss media discussing privacy and digital rights issues. He is the co-author of the book \"Our precious digital integrity\" promoting a novel fundamental right to the digital integrity of the human being.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/alexis_PMHXwB2.jpeg"
-        }
-      ]
+        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
+        { "id": "David Casey", "name": "David Casey" },
+        { "id": "Matt Frehlich", "name": "Matt Frehlich" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "8BSCUA",
-      "name": "Building Decentralized AI Apps using Swarm",
-      "abstract": "Building Decentralized AI Apps using Swarm",
+      "id": "supporting-network-goods-at-protocol-labs",
+      "name": "Supporting Network Goods at Protocol Labs",
       "description": "",
-      "track": "",
-      "start": 1687452900000,
-      "end": 1687454100000,
+      "start": 1689408000000,
+      "end": 1689408900000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "ARTTQ7",
-          "name": "Elad Verbin",
-          "description": "Dr. Elad Verbin is a Data Scientist and Computer Scientist, specializing in predictive modeling and algorithm engineering. He is a partner in Berlin Innovation Ventures, an early stage deep tech VC. He believes in decentralization as a means for social change. In blockchain space, he works on governance and is currently thinking about blockchain macroeconomics.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/Elad_Verbin_q2vdItm.jpeg"
-        }
-      ]
+        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
+        { "id": "Matt Frehlich", "name": "Matt Frehlich" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "TA8W8N",
-      "name": "Edible NFTs on Swarm",
-      "abstract": "Edible NFTs on Swarm",
+      "id": "a-fireside-chat-with-guy-wuollet",
+      "name": "A Fireside Chat with Guy Wuollet",
       "description": "",
-      "track": "",
-      "start": 1687455600000,
-      "end": 1687456500000,
+      "start": 1689408900000,
+      "end": 1689410100000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "9ACLHE",
-          "name": "Marcio Barradas",
-          "description": "Marcio Barradas, CEO and founder of 3D Essence Food and Moodbytes, a company dedicated to bringing cutting edge food technologies to the market. As founder of FoodInk, the company behind the worldʼs first 3D printed food events and restaurants, he has demonstrated a novel approach to food design, where innovative technologies enable cheap provision of top quality nutrition, while reducing the carbon and water footprint and keeping trace of the whole food supply chain.",
-          "avatarUrl": null
-        }
-      ]
+        { "id": "Guy Wuollet", "name": "Guy Wuollet" },
+        { "id": "Addie Wagenknecht", "name": "Addie Wagenknecht" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "WTGEAY",
-      "name": "data layer for the world computer",
-      "abstract": "This talk will explore some requirements for a comprehensive data layer for the world computer focusing on data structures, persistance guarantees and privacy.\r\nThe takeaway message is that despite major similarities to sister projects in the web3 space, Swarm is different. You will learn that low-level architectural choices matter. They determine the ease with\r\nwhich the network can be engineered or incentivised to behave in alignment with user needs.",
+      "id": "how-refi-will-change-the-world",
+      "name": "How ReFi Will Change the World",
       "description": "",
-      "track": "",
-      "start": 1687446000000,
-      "end": 1687447800000,
+      "start": 1689410100000,
+      "end": 1689411300000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "3YJHZJ",
-          "name": "Viktor Tron",
-          "description": "Founder and team lead of the Ethereum Swarm project. Author of the Book of Swarm. President of the Swarm Foundation. \r\n\r\nI believe in technology and innovation as the conduit for peaceful social change and I am committed to the ideals of voluntarism, self-sovereign digital society and permissionless open markets. \r\n\r\nI am currently working on the web 3.0 vision, in particular futue-proof serverless base-layer infrastructure for the redecentralised web and to provide the technological underpinning to my ideals. This is Swarm.\r\n\r\nA long-time open-source contributor I advocate free software, open source, open resource, open collaboration models and am against copyright and patent laws. \r\n\r\nI have a keen interest in privacy, decentralisation, cryptography, emergent intelligence and distributed systems.\r\n\r\nI have designed and implemented complex systems in the fields of blockchain and peer to peer, language and speech technology, machine learning and AI.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/viktor_tron_xxHvYuA.jpg"
-        }
-      ]
+      "speakers": [{ "id": "Xochitl Cazador", "name": "Xochitl Cazador" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "QBQCU9",
-      "name": "The Great Data Upload",
-      "abstract": "Having meaningful data on Swarm is a prerequisite for users interacting with and using Swarm storage from the demand side. This talk will present the efforts behind data uploads to Swarm, the tools used, problems encountered, and what was learned about the performance of the network.",
-      "description": "To generate demand for data, data has to first exist on the network. The grander effort behind the Great Data Upload is to put all of humanity's data onto Swarm decentralized storage.\r\n\r\nThe first milestones of this grand plan are more of an experimentation on network performance and which data is interesting to a larger audience.\r\n\r\nThe talk will be about practical experience with uploading some larger public datasets to Swarm. The tools used will be presented, along with the features they allow for checking the persistence of data on Swarm, and the options they provide for refreshing the data.\r\n\r\nNetwork performance will be discussed in light of the hardware and bandwidth used for the upload efforts.\r\n\r\nAppropriate datasets for the public data uploads will be covered, along with potential options for sponsoring such uploads.",
-      "track": "",
-      "start": 1687368300000,
-      "end": 1687370100000,
+      "id": "special-announcement-octant-gamifying-perpetual-funding-of-public-goods",
+      "name": "Special announcement: Octant: gamifying perpetual funding of public goods",
+      "description": "",
+      "start": 1689411300000,
+      "end": 1689413100000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "L897FT",
-          "name": "Črt Ahlin",
-          "description": "Data should be freed from silos. Personal data should be under the control of the individual. Working with people & technologies enabling data storage, exchange and analysis. Using web3, decentralized cloud storage technologies. Consent receipt as the record to unlock the fair data exchange. User of Fairdrive and Swarm decentralized storage. Supporter of MyData & QuantifiedSelf.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/crt_photo_ZBKm3JG.jpeg"
-        }
-      ]
+        { "id": "Julian Zawistowski", "name": "Julian Zawistowski" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "3GBECZ",
-      "name": "Swarm Ecosystem Update",
-      "abstract": "Swarm Foundation are thrilled to announce our new partnerships",
+      "id": "coffee-break",
+      "name": "coffee break",
       "description": "",
-      "track": "",
-      "start": 1687361400000,
-      "end": 1687362300000,
+      "start": 1689413100000,
+      "end": 1689413700000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "an-attractor-for-public-goods-funding",
+      "name": "\"An Attractor For Public Goods Funding\"",
+      "description": "",
+      "start": 1689413700000,
+      "end": 1689414900000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Kevin Owocki", "name": "Kevin Owocki" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "keynote-priorities-for-public-goods-builders-in-2023",
+      "name": "Keynote: Priorities for Public Goods Builders in 2023",
+      "description": "",
+      "start": 1689414900000,
+      "end": 1689416700000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Juan Benet", "name": "Juan Benet" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "the-open-web-is-near-how-the-bos-ndc-and-daos-are-creating-a-decentralized-web",
+      "name": "\"The Open Web is NEAR: How the BOS, NDC, and DAOs are creating a Decentralized Web\"",
+      "description": "",
+      "start": 1689416700000,
+      "end": 1689417900000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Marieke Flament", "name": "Marieke Flament" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "copylefting-the-patent-system-with-desci",
+      "name": "\"Copylefting the patent system with DeSci\"",
+      "description": "",
+      "start": 1689417900000,
+      "end": 1689419100000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Primavera De Filippi", "name": "Primavera De Filippi" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "lunch-break",
+      "name": "Lunch Break",
+      "description": "",
+      "start": 1689419100000,
+      "end": 1689422400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "the-case-for-the-network-state-for-the-african-diaspora",
+      "name": "\"The case for the network state for the African diaspora\"",
+      "description": "",
+      "start": 1689422400000,
+      "end": 1689423600000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Chika Uwazie", "name": "Chika Uwazie" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "soulbound-reputation-tokens-to-the-rescue",
+      "name": "\"Soulbound Reputation Tokens to the Rescue\"",
+      "description": "",
+      "start": 1689423600000,
+      "end": 1689424800000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Omoju Miller", "name": "Omoju Miller" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "the-future-is-collective",
+      "name": "\"The Future is Collective\"",
+      "description": "",
+      "start": 1689424800000,
+      "end": 1689426000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Pia Mancini", "name": "Pia Mancini" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "funding-the-commons-or-funding-the-youth",
+      "name": "\"Funding the Commons or Funding the Youth?\"",
+      "description": "",
+      "start": 1689426000000,
+      "end": 1689427200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Christopher Szymczak", "name": "Christopher Szymczak" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "coffee-break",
+      "name": "coffee break",
+      "description": "",
+      "start": 1689427200000,
+      "end": 1689427800000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "contribution-theory-of-value-on-the-evolution-of-markets-and-commons",
+      "name": "\"Contribution theory of value: on the evolution of markets and commons\"",
+      "description": "",
+      "start": 1689427800000,
+      "end": 1689429000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Jason Potts", "name": "Jason Potts" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "grants-for-public-good-establishing-resilient-democratic-funding-mechanisms",
+      "name": "\"Grants for (Public) Good: Establishing Resilient, Democratic Funding Mechanisms\"",
+      "description": "",
+      "start": 1689429000000,
+      "end": 1689430800000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Megan Lister", "name": "Megan Lister" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "zuzalu-a-first-of-its-kind-irl-pop-up-community-experiment",
+      "name": "Zuzalu: A First-of-its-kind IRL Pop-up Community Experiment",
+      "description": "",
+      "start": 1689430800000,
+      "end": 1689432000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Janine Leger", "name": "Janine Leger" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "orchestrating-new-attractor-points-of-scientific-utility",
+      "name": "Orchestrating new attractor points of scientific utility ",
+      "description": "",
+      "start": 1689432000000,
+      "end": 1689433200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Eirini Malliaraki", "name": "Eirini Malliaraki" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "eight-myths-about-technology-research",
+      "name": "Eight Myths About Technology Research",
+      "description": "",
+      "start": 1689433200000,
+      "end": 1689434400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Ben Reinhardt", "name": "Ben Reinhardt" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "context-setting-for-roadmapping",
+      "name": "Context setting for Roadmapping",
+      "description": "",
+      "start": 1689434400000,
+      "end": 1689435000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Silvia Bessa", "name": "Silvia Bessa" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "roadmapping-for-impact-funding",
+      "name": "Roadmapping for Impact Funding",
+      "description": "",
+      "start": 1689435000000,
+      "end": 1689437400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Silvia Bessa", "name": "Silvia Bessa" },
+        { "id": "Ben Reinhardt", "name": "Ben Reinhardt" },
+        { "id": "Joël Thorstensson", "name": "Joël Thorstensson" },
+        { "id": "Eirini", "name": "Eirini" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "close-stage",
+      "name": "Close stage",
+      "description": "",
+      "start": 1689437400000,
+      "end": 1689437400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "speaker-sponsor-dinner-procope",
+      "name": "Speaker-Sponsor Dinner @ Procope",
+      "description": "",
+      "start": 1689445800000,
+      "end": 1689448200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "doors-open-coffee-served",
+      "name": "Doors open, Coffee served",
+      "description": "",
+      "start": 1689490800000,
+      "end": 1689494400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "event-open-ftc-open",
+      "name": "Event Open, FtC Open",
+      "description": "",
+      "start": 1689494400000,
+      "end": 1689495000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
+        { "id": "Matt Frehlich", "name": "Matt Frehlich" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "keynote-fwd-free-world-dialup-or-the-history-of-the-future",
+      "name": "Keynote: \"FWD (Free World Dialup) or The History of the Future\"",
+      "description": "",
+      "start": 1689495000000,
+      "end": 1689496200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Jeff Pulver", "name": "Jeff Pulver" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "why-depin-matters",
+      "name": "Why DePIN Matters",
+      "description": "",
+      "start": 1689496200000,
+      "end": 1689497400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Guy Wuollet", "name": "Guy Wuollet" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "perpetual-archives-as-a-public-good",
+      "name": "Perpetual Archives as a Public Good",
+      "description": "",
+      "start": 1689497400000,
+      "end": 1689499200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Danny O'Brein", "name": "Danny O'Brein" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "surprise-keynote-10-years-in-funding-open-source-protocols",
+      "name": "Surprise Keynote: 10 years in funding open source protocols",
+      "description": "",
+      "start": 1689499200000,
+      "end": 1689500400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Galia Benartzi", "name": "Galia Benartzi" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "coffee-break",
+      "name": "coffee break",
+      "description": "",
+      "start": 1689500400000,
+      "end": 1689501000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "what-money-cant-buy-the-limits-of-ecosystem-funding",
+      "name": "What Money Can't Buy: The Limits of Ecosystem Funding",
+      "description": "",
+      "start": 1689501000000,
+      "end": 1689502200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Ori Applebaum", "name": "Ori Applebaum" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "dependency-funding-with-drips-v2",
+      "name": "Dependency Funding with Drips v2",
+      "description": "",
+      "start": 1689502200000,
+      "end": 1689504000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
         {
-          "id": "LYDSQH",
-          "name": "Gregor Žavcer",
-          "description": "Director of the Swarm Foundation",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/gregor_1tERl6h.jpeg"
-        },
-        {
-          "id": "8VGTDZ",
-          "name": "Costanza Gallo",
-          "description": "Partnerships Manager at Swarm Foundation\r\n\r\n* I've been in tech since 2012, from e-commerce startups, to fortune 500 SaaS companies, to volunteer side projects. I started exploring crypto in 2018 and in 2020 I joined the web3 fight against Internet censorship. I've never looked back since!",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/costi_cVevjqA.jpg"
+          "id": "Eleftherios Diakomichalis ",
+          "name": "Eleftherios Diakomichalis "
         }
       ],
-      "startCut": 2518,
-      "endCut": 2958,
-      "videoPath": "/videos/Swarm Virtual Summit Day 1.mp4"
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "S9NV7A",
-      "name": "Braintrip",
-      "abstract": "tba",
+      "id": "retro-public-harms-and-behavioral-game-theory-solutions",
+      "name": "\"Retro Public Harms and Behavioral Game Theory solutions\"",
       "description": "",
-      "track": "",
-      "start": 1687533600000,
-      "end": 1687534500000,
+      "start": 1689504000000,
+      "end": 1689505200000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": []
+      "speakers": [{ "id": "Matt Stephenson", "name": "Matt Stephenson" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "YL3ZCY",
-      "name": "How do UX and decentralization relate",
-      "abstract": "In this talk DappNode's Pol Lanski will explore the power of decentralized UX",
+      "id": "lunch-break",
+      "name": "Lunch Break",
       "description": "",
-      "track": "",
-      "start": 1687539600000,
-      "end": 1687540500000,
+      "start": 1689505200000,
+      "end": 1689508800000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "worldbuilding-for-impact",
+      "name": "Worldbuilding for Impact",
+      "description": "",
+      "start": 1689508800000,
+      "end": 1689511200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "3A8NK7",
-          "name": "Pol Lanski",
-          "description": "DappNode",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/pol_RuDojWI.jpg"
-        }
-      ]
-    },
-    {
-      "id": "YRLAFQ",
-      "name": "Etherna: Redefining Video Sharing with Decentralization, Transparency, and Uncensorable Contents",
-      "abstract": "Sergio Marchese will present Etherna's solution to video sharing",
-      "description": "",
-      "track": "",
-      "start": 1687537800000,
-      "end": 1687538700000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": []
-    },
-    {
-      "id": "KQCJXE",
-      "name": "Metaprovide - Nextcloud on Swarm",
-      "abstract": "MetaProvide is building collaboration platforms like 'Adminly' -  tailor-made for the wellbeing market, currently used by psychologists, coaches and spiritual teachers etc. \r\n\r\nHowever, through 'Platformly' we instead build platforms for any organisation in need of one. The central emphasis being on integrating Swarm with Nextcloud. This is the topic we wish to cover today. We are extremely interested in how many of the 400 000 already existing Nextcloud-servers could be used with Swarm for decentralized data-storage usage, blockchain interaction, and bee-node hosting. Also Nextcloud wallet-login is currently being worked on.",
-      "description": "",
-      "track": "",
-      "start": 1687364700000,
-      "end": 1687365600000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "ZJ7E3V",
-          "name": "Björn Magalhães",
-          "description": "Founder & Chairman of MetaProvide Holding EKF",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/bjorn_0eQWZlS.png"
-        },
-        {
-          "id": "EL8JSU",
-          "name": "Ron Trevor",
-          "description": "Main programmer of Swarm Integration within Nextcloud",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/ron_j8nX0Wy.jpg"
-        }
-      ]
-    },
-    {
-      "id": "KFLEZX",
-      "name": "Blobs: the stopgap solution for scaling Ethereum",
-      "abstract": "Gabi, developer of Blobscan, the pioneering EIP4844 Blob Transaction explorer, will present Blobs: the stopgap solution for scaling Ethereum",
-      "description": "Blobscan is a Blob Data Explorer that will index the EIP-4844 blobs present in the next hard fork of Ethereum, which proposes a new transaction type with a data field called a blob, containing an opaque byte string up to ~125 kB in size. These blobs are forward-compatible with data availability sampling and can help reduce network burden from growing block sizes and unsustainable transaction gas costs. Blobscan's aim is to make blob data accessible and preserve it for posterity, given that the Ethereum Consensus Layer will only store the blobs for 20-30 days. Blobscan plans to store all blobs for later research and traceability. To achieve this, Blobscan wants to decentralize blob storage in the Swarm, so the data will be accessible even if blobscan.com disappears.",
-      "track": "",
-      "start": 1687536900000,
-      "end": 1687537800000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": []
-    },
-    {
-      "id": "BUGXSL",
-      "name": "Kredeum NFTs Factory - A WordPress plugin with Swarm",
-      "abstract": "Alain Papazoglou and Philippe Pérou from Kredeum will be talking about the WordPress plug-in",
-      "description": "",
-      "track": "",
-      "start": 1687535100000,
-      "end": 1687536000000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": []
-    },
-    {
-      "id": "YW8TYW",
-      "name": "Unstoppable NFTs",
-      "abstract": "Creation of new NFTs capable to pay for pin (storage) of their metadata on SWARM.\r\nProblems:\r\nFirstly, in SWARM, there is actually no public pinning service for any entities: pinning occurs at the local node level. \r\nSecondly, there is an unclear, although possibly transparent (open), mechanism for the exchange rate of tokens that are involved in the pinning process.\r\n\r\nMotivation: Thus, the motivation boils down to developing a comprehensible methodology for a paid semi-public pinning (anyone can request payable  pinning from node operators) with a clear mechanism for the sale and exchange of tokens that is understandable to end users and node owners.",
-      "description": "As example of described above we propose a solution through the description of the complete scenario:\r\nThe user visits the NFT minting service provided by DAO Envelop.\r\nThe user selects the \"Unstoppable NFT\" option in the checkbox.\r\nThe following process takes place:\r\nThe \"swarm_batch\" field is added to the JSON metadata file.\r\nThe node operator purchases the minimum batch of tokens.\r\nThis creates a connection between the swarm_hash and the Swarm-Postage-Batch-Id.\r\nThe obtained NFT is then wrapped in a separate implementation of the Envelop protocol, becoming a wNFT:\r\nIn this implementation, a fee is charged when adding collateral, which is then sent either immediately or upon request (claim) to the SWARM node operator.\r\nThe address of the node operator is specified during the wrapping process, typically in the royalty array or elsewhere.\r\nCollateral is expected to be paid in stablecoins but can potentially be paid in any permitted token or coin.\r\nThe Batch Stamp Guardian microservice, using data from the Envelop Oracle, searches for the described replenishments:\r\nUpon finding them, this microservice converts the received stablecoins to Ether (ETH) or another native currency if it's a different network.\r\nThrough the Cross wNFT service, asset exchange occurs on the Gnosis network.\r\nWithin the Gnosis network, the Cross wNFT service facilitates the purchase of BZZ tokens from a pool (which may need to be created or exist as a separate pool).\r\nNext, the operator's node address is replenished with BZZ tokens.\r\nFinally, the received token batch is topped up with the corresponding amount of tokens (as mentioned above).",
-      "track": "",
-      "start": 1687536000000,
-      "end": 1687536900000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "KPNNVT",
-          "name": "Alexander Shedogubov",
-          "description": "Envelop DAO co-founder, entrepreneur in the field of  IoT, Blockchain and Logistic (Founder Pax Plus)\r\nOther: 34 y.o., 7 years of management experience, 4 years in Web3.0",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/photo_2023-05-24_20.40.13_WcgtY0p.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "XBN9PW",
-      "name": "How to get value from an on-going AI madness",
-      "abstract": "Nowadays all companies big and small are excited about an opportunity to ask AI about doing one's job and saving efforts and money let's look closely at what exactly can be done by AI today and how it can help a real blockchain delivery team. No magic, no false promises, real facts and examples.",
-      "description": "I'm going to talk about a variety of either freely or cheap available AI models to do the following:\r\n1. Create a code\r\n    a) Front End\r\n    b) Back End including Smart contracts in Solidity\r\n2. Test the code\r\n    a) Validating Smart contracts against the best practices\r\n    b) Creating the test cases\r\n    c) creating the code for functional tests\r\n3. Marketing & Communications (briefly as I expect we won't have time)\r\n    a) Creating documentation\r\n    b) Ctearing texts for community management\r\n    c) Event management support: ads, avatars, logos",
-      "track": "",
-      "start": 1687532400000,
-      "end": 1687533300000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "KWZU9V",
-          "name": "Sasha Pitkevich",
-          "description": "Sasha Pitkevich is a blockchain evangelist, a spokesperson, and a global blockchain lead at EPAM, a leading global digital transformation services provider. Sasha has been working on blockchain technology adoption since 2014, leading blockchain practices at global system integrators, consulting many enterprises, and guiding startups and vendors with one major goal in mind: demystify, explain, and help to derive real value out of the decentralization concept. Sasha believes that the world will be much better with the wider adoption of crypto and decentralized solutions, and she can explain it in a way that people listen and understand. She has created the Blockchain Professionals Community (https://wearecommunity.io/communities/blockchain) to provide professionals in the blockchain space with the possibility to connect, share and validate their ideas and concepts independently in the environment they work on a daily basis. Sasha is a frequent speaker at various events and conferences on topics related to Web 3.0, blockchain, smart contracts, and crypto solutions.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/56c2eb9f3ef89043a2740464aed85024_PL4vALL.jpg"
-        }
-      ]
-    },
-    {
-      "id": "DUAQZ7",
-      "name": "The gateway to decentralized object storage",
-      "abstract": "There are currently over 800,000 users of Amazon’s S3 enterprise object storage solution. This represents roughly a 93% market share in a $4.83 billion dollar market, with a compound annual growth of 13.6%.\r\n\r\nCloud storage is a core service enabling almost every technology we utilize today in our personal and business lives. It may be the gateway for the masses to the Web 3.0 ecosystem. Decentralized storage has already been praised in the U.S. Congress by Sen. Pat Toomey for protecting the free press in China.\r\n\r\nIn order to encourage more users to adopt decentralized storage, we need to eliminate key friction points from the onboarding and migration process.",
-      "description": "This lecture will explore the current object storage market metrics including market size, most common use cases, and the most common standards with focus on the most common S3 object storage standard. We will explore how decentralized storage platforms can adopt this standard to greatly reduce the barrier of entry for the majority of current object storage users. \r\n\r\nWe will demonstrate how the Protobox S3 adapter for Swarm enables several enterprise grade software packages to easily switch from AWS S3 storage to Swarm. We will also note that many consumer grade software package rely on the S3 connector and how retail users can adapt decentralized storage via this method as well.",
-      "track": "",
-      "start": 1687538700000,
-      "end": 1687539600000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "NGUQGU",
-          "name": "Samuel Lauridsen",
-          "description": "The firm’s founder draws upon over 15 years of prior experience designing, deploying, and managing mission-critical infrastructure for Silicon Valley’s leading tech companies including Apple, Intel, Facebook, Equinix, and Tesla. In addition to his work in Northern California, he has 6+ years of experience working at one of the largest media conglomerates in the world, including one of the “big five” motion picture studios. Currently based in Los Angeles this connection to the art world brings unique opportunities for collaboration to the project team.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/DSC_00892_R3VMIo3.png"
-        }
-      ]
-    },
-    {
-      "id": "HQKA7P",
-      "name": "Ethereum Hungary Meetup - Livestream from Budapest",
-      "abstract": "Monthly Ethereum Hungary Meetup, sponsored by Swarm Foundation\r\n\r\nProduct demos by Aron Soos, developer Swarm Foundation\r\n\r\nEtherjot - blog on Swarm \r\n\r\n  - Starting from scratch\r\n - Importing from Hugo or Jekyll\r\n - Adding content continuously over time\r\n - Enabling decentralised search in the blog\r\n - Customisation options for blog header, footer, layout\r\n - Swarm\r\n - - Benefits of the website being on web3\r\n - - Under the hood (feeds & mantaray)\r\n - - Working with ENS\r\n\r\nEthercomb - how to stake with many nodes \r\n\r\n- Requirements and steps for running a Bee node and staking normally\r\n- Ethercomb is a tool for node operators to start staking with multiple nodes easily\r\n- showcase which steps are done by the tool for node operators automatically\r\n\r\nmore information: https://www.meetup.com/ethereum-hungary/events/293888428/",
-      "description": "",
-      "track": "",
-      "start": 1687458600000,
-      "end": 1687465800000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": []
-    },
-    {
-      "id": "ELRUS9",
-      "name": "UrbeTalks #9 - Livestream from Rome",
-      "abstract": "UrbeTalks is the monthly event organized by the urbe.eth Community, where builders share their experiences and work challenges in the Web3 world.",
-      "description": "The event features four speakers, each giving a ten-minute talk, delving into various topics related to legal, technical, economic, and more. The goal is to provide high-quality events to a broad and diverse audience.\r\n\r\nThe 4 UrbeTalks will be:\r\nEnrico.eth: Verifiable machine learning inference with ZK\r\n\r\nPaolo Diomede: Introducing The Graph Advocates Program\r\n\r\nDanieleDellaCorte.eth: Etherna, a new paradigm for a multimedia platform\r\n\r\nAlina: ETHDam, the Tornado Aftermath\r\n\r\nThe event concludes with a Q&A session and networking opportunities with the community builders.\r\n\r\nMore information: https://www.eventbrite.at/e/biglietti-urbetalks-9-web3-deep-dives-661130086887",
-      "track": "",
-      "start": 1687374000000,
-      "end": 1687384800000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": []
-    },
-    {
-      "id": "FD9M7U",
-      "name": "Josef Jelacic - Paralelni Polis",
-      "abstract": "Cryptonatives and Parallel Polis",
-      "description": "",
-      "track": "",
-      "start": 1687367400000,
-      "end": 1687368300000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "PVVMLW",
-          "name": "Josef J.",
-          "description": "Josef J. is founder of PWNDAO, organizer of ETHPrague and member of Parallel Polis",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/joje_raxUwTA.jpg"
-        }
-      ]
-    },
-    {
-      "id": "87X9CK",
-      "name": "Swarm Development Update",
-      "abstract": "Swarm Team Development update: Bee client architectural overview, local store rewrite, Storage Incentives phase 4 update, roadmap ahead, dashboard check-in",
-      "description": "* An Architectural Overview of Bee: Writing a New Client\r\n\r\n** The Swarm network is made up of thousands of individual nodes working together to form a global storage drive. Each node is a software client that has certain working parts to maintain presence in the network and carry out responsibilities. The architecture of a bee client can be divided into four parts: peer to peer communication, local storage of chunks and state data, access to and consensus through the blockchain, and some user interface to interact with the client. In the pursuit of writing a new client, these points must be addressed.\r\n\r\n**We'll briefly cover network health, development progress and announcing the brand new localstore and what it means for users. Also there will be an update on the documentation and future efforts and releases.",
-      "track": "",
-      "start": 1687359600000,
-      "end": 1687361400000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "3PVJR8",
-          "name": "Alok Nerurkar",
-          "description": "Senior Developer with the Bee team",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/Screenshot_2023-06-16_at_14.32.19_Z3xqCUR.png"
-        },
-        {
-          "id": "WTLRYL",
-          "name": "Antonio Gonzalo",
-          "description": "Entrepreneur and product guy. Former corporative soul, now following the crypto rabbit hole as deep as Finney takes us. Busy bee.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/tony_nmDWdwr.jpg"
-        },
-        {
-          "id": "QBGFMQ",
-          "name": "Callum Toner",
-          "description": "Product Manager at Swarm, working on Bee team, Research team, and everything in between. Following the progress in Swarm from research to reality to make an unstoppable product",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/Callum_profile_image__Fr7F8Je.jpeg"
-        },
-        {
-          "id": "M7HFVC",
-          "name": "Esad Akar",
-          "description": "Engineer in the Bee Team. Working everyday to improve the core Go Bee client, and help Swarm continue to be a healthy, reliable, and performant network.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/IMG-20221227-WA0006_folZJzH.jpg"
-        }
+        { "id": "​Jahed Momand", "name": "​Jahed Momand" },
+        { "id": "​Scott Moore", "name": "​Scott Moore" },
+        { "id": "​Phil Fogel", "name": "​Phil Fogel" },
+        { "id": "​Jori Armbruster", "name": "​Jori Armbruster" },
+        { "id": "​Beth McCarthy", "name": "​Beth McCarthy" }
       ],
-      "videoPath": "videos/Swarm Virtual Summit Day 1.mp4",
-      "startCut": 960,
-      "endCut": 2485
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "TLN8MY",
-      "name": "Fireside chat live from Ljubljana",
-      "abstract": "TBA",
+      "id": "nature-realms-unleashing-community-power-for-biodiversity-conservation",
+      "name": "\"Nature Realms: Unleashing Community Power for Biodiversity Conservation\"",
       "description": "",
-      "track": "",
-      "start": 1687540500000,
-      "end": 1687544100000,
+      "start": 1689511200000,
+      "end": 1689512400000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": []
+      "speakers": [{ "id": "Mallika Robinson", "name": "Mallika Robinson" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "TZNHFB",
-      "name": "Decentralized CMO (Copyrights Management Org) for Music",
-      "abstract": "Since 2014, the management of copyright in the EU has been formally freed from state monopolies. How can we design a distributed registry and payout system that harness web3 tech?",
-      "description": "In this talk, I'll tap into some legal waters surrounding the copyright market in the EU and show a PoC Dapp developed by ETHTurin.",
-      "track": "",
-      "start": 1687451700000,
-      "end": 1687452600000,
+      "id": "announcement-ethereum-climate-platform",
+      "name": "Announcement: Ethereum Climate Platform",
+      "description": "",
+      "start": 1689512400000,
+      "end": 1689513300000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Steven Haft", "name": "Steven Haft" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "coffee-break",
+      "name": "coffee break",
+      "description": "",
+      "start": 1689513300000,
+      "end": 1689513900000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "data-provenance-and-the-climate-crisis",
+      "name": "Data Provenance and the Climate Crisis",
+      "description": "",
+      "start": 1689513900000,
+      "end": 1689514800000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Alan Ransil", "name": "Alan Ransil" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "public-goods-that-will-onboard-the-next-billion",
+      "name": "Public Goods That Will Onboard the Next Billion",
+      "description": "",
+      "start": 1689514800000,
+      "end": 1689516000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "T8RGWK",
-          "name": "Matteo Alessio Tambussi",
-          "description": "Musician, Linguistic Passionate, Web3 educator and Project Dev.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/gY1XlUk-_400x400_yuVCSiq.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "NMLPJB",
-      "name": "Byzantine-tolerant Error Correction",
-      "abstract": "co-founder of the QAN platform and co-organiser of HacktivityCon, the planet's biggest capture the flag event",
-      "description": "",
-      "track": "",
-      "start": 1687447800000,
-      "end": 1687449000000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "9Q9HEX",
-          "name": "Silur",
-          "description": "Silur started his career as a pentester and hacker at a really young age, with a great affinity to cryptography and higher mathematics. Having a good prior understanding in cryptocurrencies when the industry boomed in 2016, he gained an advantage as an early industry specialist, doing work for the Ethereum foundation until 2018. In 2019 he designed a cipher that entered the NIST Lightweight Encryption Standard competition. Consequently, he proved himself in designing and implementing blockchains from scratch as the co-founder of QANPlatform and as an early partner of CasperLabs. Having built dozens of dApps, protocols and full chains from both mass-market and government clients, Silur is also a co-organizer of the largest Capture the flag event on the planet, in which he challenges the best hackers in the world to break blockchain systems and reproduce historical cryptocurrency hacks. Silur is also a member of the Wigner's research centre of physics where he specializes on quantum computation and post-quantum cryptography. He took a place on the Forbes 30 under 30 list for his achievments in cybersecurity and web3.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/silur_GFV1vZ2.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "88NEY8",
-      "name": "AI is not the issue. Trust is.",
-      "abstract": "talk by Stephane Coillet-Matillon, Kiwix",
-      "description": "",
-      "track": "",
-      "start": 1687363200000,
-      "end": 1687364100000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "THBVNH",
-          "name": "Stephane Coillet-Matillon",
-          "description": "CEO, co-founder – Kiwix",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/stephane_yGWoFKT.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "Y7MWQ9",
-      "name": "10x your productivity using Unbounded Data and Swarm",
-      "abstract": "UnboundedLab.com",
-      "description": "",
-      "track": "",
-      "start": 1687362300000,
-      "end": 1687363200000,
-      "stage": {
-        "id": "main",
-        "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
-      },
-      "speakers": [
-        {
-          "id": "QGKPGR",
-          "name": "Jonathan Levi",
-          "description": "A law-abiding crypto anarchist",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/photo_2023-06-20_18.08.05_JFJ9oxS.jpeg"
-        }
+        { "id": "René Reinsberg", "name": "René Reinsberg" },
+        { "id": "Marek Olszewski", "name": "Marek Olszewski" }
       ],
-      "startCut": 2969,
-      "endCut": 4048,
-      "videoPath": "/videos/Swarm Virtual Summit Day 1.mp4"
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "TDPL3X",
-      "name": "Gaming on the blockchain - promise & execution",
-      "abstract": "Gaming has always been on the forefront of using new technologies since the dawn of the first computers. Throughout the years many technologies have found gaming to be a perfect vehicle to reach billions of people and we are already seeing how blockchains are utilized in gaming. Where does it take us?",
+      "id": "gainforest-ai-x-climate-x-web3",
+      "name": "GainForest (AI x climate x web3)",
       "description": "",
-      "track": "",
-      "start": 1687454100000,
-      "end": 1687454700000,
+      "start": 1689516000000,
+      "end": 1689517200000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "CXDBEM",
-          "name": "Mark Engelhardt",
-          "description": null,
-          "avatarUrl": null
-        }
-      ]
+      "speakers": [{ "id": "David Dao", "name": "David Dao" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "WSBKPD",
-      "name": "From normies to degens",
-      "abstract": "Solarpunk guidelines and contemplations",
+      "id": "hypercerts-how-to-build-modern-impact-funding-systems",
+      "name": "Hypercerts: How to build modern impact funding systems",
       "description": "",
-      "track": "",
-      "start": 1687534500000,
-      "end": 1687535100000,
+      "start": 1689517200000,
+      "end": 1689518400000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "KFY39U",
-          "name": "Barbara R. Lőrincz",
-          "description": "With 7 years of web 3.0 expertise, she co-founded the groundbreaking project solarpunk.buzz, fueled by the belief that the self-sovereign future is just a step away. This passionate gamer-turned-activist immerses herself in the metaverse, harnessing its power to ignite the solarpunk revolution and shape a greener tomorrow. Join her on this extraordinary quest to build a sustainable future; feel free to reach out to her and share your ideas on how to embrace the solarpunk utopia!",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/barbi_JzPDOpI.jpg"
-        }
-      ]
+      "speakers": [{ "id": "Holke Brammer", "name": "Holke Brammer" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "ND3WE8",
-      "name": "Decentralized Waste/Hazard Mapping with CleanApp",
-      "abstract": "leanApp is a global coordination game for waste/hazard mapping. Our protocol rewards players for uploading reports of waste and hazards (launching September, with much more functionality soon). At first glance, these types of images may not seem very valuable or especially sensitive. Why do they need to be stored on a secure dCloud like EthSwarm? There are many reasons our hotspot data requires the highest security and data availability guarantees. One of the strongest is that waste/hazard maps are actually global liability maps, which polluters work hard to keep out of public view. Together, we’re changing that dynamic.",
+      "id": "ai-extinction-risks-challenges-and-opportunities-in-funding-ai-safety",
+      "name": "\"AI Extinction Risks: Challenges and Opportunities in Funding AI Safety\"",
       "description": "",
-      "track": "",
-      "start": 1687364100000,
-      "end": 1687364700000,
+      "start": 1689518400000,
+      "end": 1689519600000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "7DPSR3",
-          "name": "Boris Mamlyuk",
-          "description": "CleanApp",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/photo_2023-06-21_10.11.25_LKZXvba.jpeg"
-        }
-      ]
+      "speakers": [{ "id": "Simeon Campos", "name": "Simeon Campos" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
-      "id": "LQAGTE",
-      "name": "Panel discussion | The importance of resisting censorship",
-      "abstract": "panel discussion with Nadya Tolokonnikova (PussyRiot), Mike Bonnano (The Yes Man) and Scott Beibin (Mordechai Tuchasman) moderated by Lou de Kerhuelvez",
+      "id": "controllable-ai-for-a-safer-more-ethical-future",
+      "name": "Controllable AI for a Safer, More Ethical Future",
       "description": "",
-      "track": "",
-      "start": 1687456500000,
-      "end": 1687458300000,
+      "start": 1689519600000,
+      "end": 1689522300000,
       "stage": {
-        "id": "main",
+        "id": "main-stage",
         "name": "Main stage",
-        "stream": [
-          {
-            "id": "e662b56b-f1a8-4e8a-b82a-cb240f043842"
-          }
-        ]
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "JSCPNS",
-          "name": "Panel Discussion",
-          "description": "inventor, artist, agent, researcher, self-taught engineer, maker and do-er of things",
-          "avatarUrl": null
-        },
-        {
-          "id": "3RCB99",
-          "name": "Mike Bonnano",
-          "description": "Activist, performer, artist",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/mike_bonanno_portrait_zrsB8Ab.jpg"
-        },
-        {
-          "id": "97X3B8",
-          "name": "Nadya Tolokonnikova",
-          "description": "conceptual artist, musician, political activist (Pussy Riot)\r\nNadya Tolokonnikova is a founding member of Pussy Riot, the feminist protest art movement that now counts hundreds of people among its numbers.\r\nShe was sentenced in 2012 to two years imprisonment following “Punk Prayer,”  an anti-Putin performance piece she and conspirators staged inside a cathedral in Moscow. She started a hunger strike protesting the conditions in which she was being held and was ultimately sent to a Siberian penal colony before being released in December 2013.\r\nShe was declared a “foreign agent” by Russia in 2021 and has lived in exile ever since. \r\nShe is a co-founder of the independent news service and media outlet Mediazona. She co- founded UnicornDAO to create equality and visibility for women-identified and lgbtq+ artists in the crypto/web3 space, and was instrumental in raising more than $7 million in support of Ukraine via UkraineDAO. \r\nShe has spoken before the US Congress, British Parliament and European Parliament. \r\nShe collaborated with Bansky on his “Dismaland” exhibition and created an immersive experience at the Saatchi Gallery in London. She is the author of Read & Riot: A Pussy Riot Guide to Activism.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/Nadya_Tolokonnikova_MucJ2J1.jpg"
-        },
-        {
-          "id": "HCE9P8",
-          "name": "Lou de Kerhuelvez",
-          "description": "Lou is a governance researcher exploring alternative economic, justice, and political systems to legacy institutions in the context of the digital revolutions - I systems able to meet the existential challenges of our time.\r\n\r\nFor the past 6 years Lou has been building and sharing visions of technology-enabled better futures, and supporting a transnational, multi-disciplinary, decentralized scientific community advancing those goals via Foresight Institute. \r\n \r\nThrough Embassy Network and Feÿtopia, they grow an intervowen network of place-based communities experimenting with new forms of governance and solidarity. \r\n\r\nLou is the steward of a radical, decentralized abolitionist collective focused on community-based harm prevention and harm response.  They build alternative justices systems - advocating for non-punitive, non-coercive, behavior and system transformation.",
-          "avatarUrl": "https://summit.ethswarm.org/media/avatars/lou_CT8GFxZ.png"
-        }
-      ]
+        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
+        { "id": "Simeon Campos", "name": "Simeon Campos" },
+        { "id": "Charbel-Raphael Sergerie", "name": "Charbel-Raphael Sergerie" }
+      ],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "artizen-fund-x-funding-the-commons-a-mechanism-design-experiment-in-participatory-capital-allocation-for-public-goods",
+      "name": "Artizen Fund x Funding the Commons: A Mechanism Design Experiment in Participatory Capital Allocation for Public Goods",
+      "description": "",
+      "start": 1689522300000,
+      "end": 1689523200000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Artizen Fund", "name": "Artizen Fund" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "occupy-the-commons-wine-on-the-seine",
+      "name": "Occupy the Commons! Wine on the Seine",
+      "description": "",
+      "start": 1689525000000,
+      "end": 1689527400000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     }
   ]
 }

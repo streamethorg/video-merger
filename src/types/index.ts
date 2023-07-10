@@ -10,22 +10,19 @@ export interface Stage {
 
 export interface Speaker {
   id: string;
+  avatarUrl?: string;
   name: string;
-  description: string | null;
-  avatarUrl: string | null;
 }
 
 export interface Session {
   id: string;
   name: string;
-  abstract: string;
-  description: string;
-  track: string;
+  description?: string;
   start: number;
   end: number;
   stage: Stage;
   speakers?: Speaker[];
-  startCut?: number;
-  endCut?: number;
-  videoPath?: string;
+  video?: string;
+  startCut?: string;
+  endCut?: string;
 }

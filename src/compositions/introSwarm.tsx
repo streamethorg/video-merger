@@ -8,7 +8,6 @@ import {
 } from 'remotion';
 import { Session as SessionType } from '../types';
 import SpringIn from '../components/ZoomIn';
-import React from 'react';
 import MoveObject from '../components/MoveObject';
 import { SwarmLogo } from '../components/SwarmLogo';
 import { loadFont } from '@remotion/google-fonts/Inter';
@@ -78,61 +77,45 @@ export function IntroSwarm(props: Props) {
 
       <Sequence name="Speaker info" from={70}>
         <AbsoluteFill>
-          <div
-            style={{
-              transform: 'translateX(-1000px) translateY(300px)',
-              fontSize: 70,
-              fontFamily: 'Arial',
-            }}
-          >
-            <Sequence name="Image" durationInFrames={durationInFrames}>
-              <MoveObject x={1150} y={0} durationInSeconds={1}>
-                <div
-                  style={{
-                    width: '300px',
-                    height: '300px',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    transform: 'translateY(-20px)',
-                  }}
-                >
-                  <Img
-                    /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-                    // @ts-ignore
-                    src={props.session.speakers[0].avatarUrl}
-                    alt="description"
-                    style={{ width: '100%', height: 'auto' }}
-                  />
-                </div>
-              </MoveObject>
-            </Sequence>
-            <Sequence name="Speaker name" durationInFrames={durationInFrames}>
-              <MoveObject x={1150} y={0} durationInSeconds={0.8}>
-                <div style={{ transform: 'translateY(300px)' }}>
-                  {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-                  {/* @ts-ignore */}
-                  {props.session.speakers[0].name}
-                </div>
-              </MoveObject>
-            </Sequence>
-            <Sequence name="Session name" durationInFrames={durationInFrames}>
-              <MoveObject x={1150} y={0} durationInSeconds={0.6}>
-                <div
-                  style={{
-                    transform: 'translateY(400px)',
-                    fontFamily,
-                    fontWeight: '200',
-                    fontSize: 60,
-                  }}
-                >
-                  {splitTextIntoLines(props.session.name, 30).map(
-                    (line, index) => (
-                      <div key={index}>{line}</div>
-                    ),
-                  )}
-                </div>
-              </MoveObject>
-            </Sequence>
+          <div style={{
+            transform: "translateY(200px) translateX(-1000px)"
+          }}>
+          {props.session.speakers.map((speaker, index) => (
+            <div
+              key={index}
+              style={{
+                transform: `translateY(${300 + index * -75}px)`,
+                fontSize: 60,
+                fontFamily: 'Arial',
+              }}
+            >
+              <Sequence key={index} name={`Speaker: ${speaker.name}`} durationInFrames={durationInFrames}>
+                <MoveObject x={1150} y={0} durationInSeconds={0.8}>
+                  <div>
+                    {speaker.name}
+                  </div>
+                </MoveObject>
+              </Sequence>
+            </div>
+          ))}
+          <Sequence name="Session name" durationInFrames={durationInFrames}>
+            <MoveObject x={1150} y={0} durationInSeconds={0.6}>
+              <div
+                style={{
+                  transform: 'translateY(400px)',
+                  fontFamily,
+                  fontWeight: '200',
+                  fontSize: 40,
+                }}
+              >
+                {splitTextIntoLines(props.session.name, 30).map(
+                  (line, index) => (
+                    <div key={index}>{line}</div>
+                  ),
+                )}
+              </div>
+            </MoveObject>
+          </Sequence>
           </div>
         </AbsoluteFill>
       </Sequence>
