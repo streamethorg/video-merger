@@ -15,6 +15,11 @@ export async function uploadAsset() {
 
   const files = readdirSync('out/sessions/');
 
+  console.log(`Files in out/sessions/:`);
+  for (const file of files) {
+    console.log(file);
+  }
+
   for (const filePath of files) {
     console.log('Uploading asset..');
     const videoName = path.basename(filePath, '.mp4');
