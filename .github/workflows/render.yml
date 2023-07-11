@@ -41,7 +41,7 @@ jobs:
         run: mkdir -p ./public/videos/
 
       - name: Get Video
-        run: curl -L -o ./public/videos/stream.mp4 "$VIDEOURL"
+        run: curl -L -o ./public/videos/stream.mp4 https://lp-playback.com/hls/c931rgp8va3hcx7y/video
 
       - name: Render video
         run: yarn render
