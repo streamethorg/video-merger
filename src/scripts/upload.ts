@@ -6,7 +6,7 @@ if (!process.env.LIVEPEER_APIKEY) {
   console.error('process.env.LIVEPEER_APIKEY is not defined');
 }
 
-export async function uploadAsset() {
+async function uploadAsset() {
   const { provider } = createClient({
     provider: studioProvider({
       apiKey: process.env.LIVEPEER_APIKEY ?? '',
@@ -24,7 +24,7 @@ export async function uploadAsset() {
     console.log('Uploading asset..');
     const videoName = path.basename(filePath, '.mp4');
     const stream = createReadStream(`out/sessions/${filePath}`);
-    const asset = await provider.createAsset({
+    await provider.createAsset({
       sources: [
         {
           name: videoName,
@@ -42,3 +42,5 @@ export async function uploadAsset() {
     console.log(`Uploaded asset ${videoName}`);
   }
 }
+
+uploadAsset();
