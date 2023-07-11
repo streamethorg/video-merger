@@ -1,6 +1,13 @@
 import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream, readdirSync } from 'fs';
 import path from 'path';
+import fs from 'fs'
+import toml from 'toml'
+
+
+const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
+
+const event = config.event;
 
 if (!process.env.LIVEPEER_APIKEY) {
   console.error('process.env.LIVEPEER_APIKEY is not defined');
@@ -27,12 +34,12 @@ async function uploadAsset() {
     await provider.createAsset({
       sources: [
         {
-          name: videoName,
+          name: `${event}-${videoName}`,
           file: stream,
           storage: {
             ipfs: true,
             metadata: {
-              name: videoName,
+              name: `${event}-${videoName}`,
             },
           },
         },
