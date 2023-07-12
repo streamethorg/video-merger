@@ -1,8 +1,16 @@
-import React from 'react';
-import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
-import { SwarmLogo } from './SwarmLogo';
+import {
+  spring,
+  useCurrentFrame,
+  useVideoConfig,
+  Img,
+  staticFile,
+} from 'remotion';
 
-const SpringIn = () => {
+interface Props {
+  image: string;
+}
+
+const SpringIn = (props: Props) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -16,7 +24,7 @@ const SpringIn = () => {
 
   return (
     <div style={{ transform: `scale(${scale})` }}>
-      <SwarmLogo />
+      <Img src={staticFile(props.image)} />
     </div>
   );
 };

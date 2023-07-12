@@ -9,7 +9,7 @@ import {
   Video,
   Audio,
 } from 'remotion';
-import { IntroSwarm } from './introSwarm';
+import { Intro } from './intro';
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 
@@ -20,7 +20,6 @@ interface Props {
   session: SessionType;
 }
 
-
 function convertToSeconds(time: string | undefined): number {
   if (time) {
     const parts = time.split(':').map(Number);
@@ -30,7 +29,7 @@ function convertToSeconds(time: string | undefined): number {
   return 0;
 }
 
-const IntroSwarmWithVideo: React.FC<Props> = ({ session }) => {
+const IntroWithVideo: React.FC<Props> = ({ session }) => {
   const { durationInFrames, fps } = useVideoConfig();
   const frame = useCurrentFrame();
   const startFadeFrame = durationInFrames - 50;
@@ -69,15 +68,21 @@ const IntroSwarmWithVideo: React.FC<Props> = ({ session }) => {
         />
       </Sequence>
       <Sequence durationInFrames={175}>
-        <IntroSwarm session={session} />
+        <Intro session={session} />
       </Sequence>
-      <Audio 
-        src={staticFile("/audio/507_short1_innovation-design_0019_preview.mp3")} 
-        endAt={175} 
+      <Audio
+        src={staticFile('/audio/507_short1_innovation-design_0019_preview.mp3')}
+        endAt={175}
         volume={(f) =>
           f < 135
-            ? interpolate(f, [0, 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
-            : interpolate(f, [135, 175], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
+            ? interpolate(f, [0, 10], [0, 1], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              })
+            : interpolate(f, [135, 175], [1, 0], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              })
         }
       />
       <AbsoluteFill style={{ backgroundColor: 'black', opacity }} />
@@ -95,7 +100,8 @@ export function Compositions() {
         session.startCut &&
         session.endCut &&
         convertToSeconds(session.endCut) >= 3 &&
-        convertToSeconds(session.endCut) - convertToSeconds(session.startCut) > 0,
+        convertToSeconds(session.endCut) - convertToSeconds(session.startCut) >
+          0,
     )
     .map((session) => {
       if (session.speakers) {
@@ -115,12 +121,15 @@ export function Compositions() {
         <Composition
           key={index}
           id={`session-${session.id}`}
-          component={IntroSwarmWithVideo}
+          component={IntroWithVideo}
           width={1920}
           height={1080}
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
-          durationInFrames={convertToSeconds(session.endCut) * FPS - convertToSeconds(session.startCut) * FPS}
+          durationInFrames={
+            convertToSeconds(session.endCut) * FPS -
+            convertToSeconds(session.startCut) * FPS
+          }
           fps={FPS}
           defaultProps={{ session }}
         />
