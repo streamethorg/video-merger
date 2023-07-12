@@ -12,9 +12,9 @@ import MoveObject from '../components/MoveObject';
 
 // CONSTANTS - Please change these to change the theme of the animation
 import { loadFont } from '@remotion/google-fonts/Inter';
-const LEFT_COLOUR = '#3F3';
-const RIGHT_COLOUR = '#FFFFFF';
-const LOGO_PICTURE = '/images/SwarmLogo.svg';
+const LEFT_COLOUR = '#00F839';
+const RIGHT_COLOUR = '#0DFBFF';
+const LOGO_PICTURE = '/images/FtC.svg';
 const SCALE_IMAGE = 2;
 
 const { fontFamily } = loadFont('normal', {

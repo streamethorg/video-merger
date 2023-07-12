@@ -1,6 +1,3 @@
-import { useVideoConfig } from 'remotion';
-import { useCurrentFrame } from 'remotion';
-import { interpolate } from 'remotion';
 import {
   Composition,
   Sequence,
@@ -8,6 +5,9 @@ import {
   staticFile,
   Video,
   Audio,
+  useVideoConfig,
+  useCurrentFrame,
+  interpolate,
 } from 'remotion';
 import { Intro } from './intro';
 import SESSIONS from '../../public/json/sessions.json';
