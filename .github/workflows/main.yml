@@ -1,0 +1,25 @@
+name: Deploy to Google Cloud
+
+on:
+  push:
+    branches:
+      - FtC
+
+permissions:
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install gcloud CLI
+      uses: google-github-actions/setup-gcloud@v0.3.0
+
+    - name: Obtain OIDC token
+      run: |
+        echo "OIDC Token File Path: $ACTIONS_ID_TOKEN_REQUEST_TOKEN_PATH"
+        OIDC_TOKEN=$(cat $ACTIONS_ID_TOKEN_REQUEST_TOKEN_PATH)
+        echo "OIDC Token: $OIDC_TOKEN"
