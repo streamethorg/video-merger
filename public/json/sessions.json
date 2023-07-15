@@ -13,8 +13,8 @@
       },
       "speakers": [],
       "video": "",
-      "startCut": "0:10:00",
-      "endCut": "0:10:00"
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
       "id": "funding-the-commons-an-incubation-ecosystem-for-public-goods-funding-infrastructure",
@@ -33,12 +33,12 @@
         { "id": "Matt Frehlich", "name": "Matt Frehlich" }
       ],
       "video": "",
-      "startCut": "0:10:00",
-      "endCut": "0:10:15"
+      "startCut": "0:12:45",
+      "endCut": "0:23:00"
     },
     {
-      "id": "supporting-network-goods-at-protocol-labs",
-      "name": "Supporting Network Goods at Protocol Labs",
+      "id": "a-case-study-network-goods-in-protocol-labs",
+      "name": "A case study: Network Goods in Protocol Labs",
       "description": "",
       "start": 1689408000000,
       "end": 1689408900000,
@@ -52,12 +52,12 @@
         { "id": "Matt Frehlich", "name": "Matt Frehlich" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "0:24:00",
+      "endCut": "0:39:00"
     },
     {
-      "id": "a-fireside-chat-with-guy-wuollet",
-      "name": "A Fireside Chat with Guy Wuollet",
+      "id": "a-fireside-chat-with-guy-wuollet-and-addie-wagenknecht",
+      "name": "A Fireside Chat with Guy Wuollet and Addie Wagenknecht",
       "description": "",
       "start": 1689408900000,
       "end": 1689410100000,
@@ -67,12 +67,12 @@
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        { "id": "Guy Wuollet", "name": "Guy Wuollet" },
-        { "id": "Addie Wagenknecht", "name": "Addie Wagenknecht" }
+        { "id": "Addie Wagenknecht", "name": "Addie Wagenknecht" },
+        { "id": "Guy Wuollet", "name": "Guy Wuollet" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "0:39:45",
+      "endCut": "0:55:00"
     },
     {
       "id": "how-refi-will-change-the-world",
@@ -87,12 +87,12 @@
       },
       "speakers": [{ "id": "Xochitl Cazador", "name": "Xochitl Cazador" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "0:56:40",
+      "endCut": "1:07:15"
     },
     {
-      "id": "special-announcement-octant-gamifying-perpetual-funding-of-public-goods",
-      "name": "Special announcement: Octant: gamifying perpetual funding of public goods",
+      "id": "whats-at-stake-eth-and-public-goods-funding",
+      "name": "What's at Stake: ETH & Public Goods Funding",
       "description": "",
       "start": 1689411300000,
       "end": 1689413100000,
@@ -105,8 +105,8 @@
         { "id": "Julian Zawistowski", "name": "Julian Zawistowski" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "1:27:00",
+      "endCut": "1:54:15"
     },
     {
       "id": "coffee-break",
@@ -137,8 +137,8 @@
       },
       "speakers": [{ "id": "Kevin Owocki", "name": "Kevin Owocki" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "1:55:00",
+      "endCut": "2:24:05"
     },
     {
       "id": "keynote-priorities-for-public-goods-builders-in-2023",
@@ -153,8 +153,8 @@
       },
       "speakers": [{ "id": "Juan Benet", "name": "Juan Benet" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "2:24:15",
+      "endCut": "2:51:30"
     },
     {
       "id": "the-open-web-is-near-how-the-bos-ndc-and-daos-are-creating-a-decentralized-web",
@@ -169,8 +169,8 @@
       },
       "speakers": [{ "id": "Marieke Flament", "name": "Marieke Flament" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "2:54:25",
+      "endCut": "3:08:00"
     },
     {
       "id": "copylefting-the-patent-system-with-desci",
@@ -187,8 +187,8 @@
         { "id": "Primavera De Filippi", "name": "Primavera De Filippi" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "3:10:00",
+      "endCut": "3:36:00"
     },
     {
       "id": "lunch-break",
@@ -219,8 +219,8 @@
       },
       "speakers": [{ "id": "Chika Uwazie", "name": "Chika Uwazie" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "4:43:00",
+      "endCut": "5:02:00"
     },
     {
       "id": "soulbound-reputation-tokens-to-the-rescue",
@@ -235,8 +235,8 @@
       },
       "speakers": [{ "id": "Omoju Miller", "name": "Omoju Miller" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "5:03:00",
+      "endCut": "5:22:00"
     },
     {
       "id": "the-future-is-collective",
@@ -251,8 +251,8 @@
       },
       "speakers": [{ "id": "Pia Mancini", "name": "Pia Mancini" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "5:23:00",
+      "endCut": "5:39:20"
     },
     {
       "id": "funding-the-commons-or-funding-the-youth",
@@ -301,12 +301,12 @@
       },
       "speakers": [{ "id": "Jason Potts", "name": "Jason Potts" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "5:57:00",
+      "endCut": "6:13:00"
     },
     {
-      "id": "grants-for-public-good-establishing-resilient-democratic-funding-mechanisms",
-      "name": "\"Grants for (Public) Good: Establishing Resilient, Democratic Funding Mechanisms\"",
+      "id": "dependency-funding-with-drips-v2",
+      "name": "Dependency Funding with Drips v2",
       "description": "",
       "start": 1689429000000,
       "end": 1689430800000,
@@ -315,10 +315,15 @@
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Megan Lister", "name": "Megan Lister" }],
+      "speakers": [
+        {
+          "id": "Eleftherios Diakomichalis ",
+          "name": "Eleftherios Diakomichalis "
+        }
+      ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "6:13:10",
+      "endCut": "6:33:00"
     },
     {
       "id": "zuzalu-a-first-of-its-kind-irl-pop-up-community-experiment",
@@ -333,8 +338,8 @@
       },
       "speakers": [{ "id": "Janine Leger", "name": "Janine Leger" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "6:33:40",
+      "endCut": "7:03:00"
     },
     {
       "id": "orchestrating-new-attractor-points-of-scientific-utility",
@@ -349,8 +354,8 @@
       },
       "speakers": [{ "id": "Eirini Malliaraki", "name": "Eirini Malliaraki" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "7:05:10",
+      "endCut": "7:24:15"
     },
     {
       "id": "eight-myths-about-technology-research",
@@ -365,31 +370,15 @@
       },
       "speakers": [{ "id": "Ben Reinhardt", "name": "Ben Reinhardt" }],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
-    },
-    {
-      "id": "context-setting-for-roadmapping",
-      "name": "Context setting for Roadmapping",
-      "description": "",
-      "start": 1689434400000,
-      "end": 1689435000000,
-      "stage": {
-        "id": "main-stage",
-        "name": "Main stage",
-        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-      },
-      "speakers": [{ "id": "Silvia Bessa", "name": "Silvia Bessa" }],
-      "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "7:24:30",
+      "endCut": "7:44:39"
     },
     {
       "id": "roadmapping-for-impact-funding",
       "name": "Roadmapping for Impact Funding",
       "description": "",
-      "start": 1689435000000,
-      "end": 1689437400000,
+      "start": 1689434400000,
+      "end": 1689436800000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -402,15 +391,15 @@
         { "id": "Eirini", "name": "Eirini" }
       ],
       "video": "",
-      "startCut": "0:00:00",
-      "endCut": "0:00:00"
+      "startCut": "7:45:00",
+      "endCut": "8:22:20"
     },
     {
       "id": "close-stage",
       "name": "Close stage",
       "description": "",
-      "start": 1689437400000,
-      "end": 1689437400000,
+      "start": 1689437100000,
+      "end": 1689437100000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -569,8 +558,8 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "dependency-funding-with-drips-v2",
-      "name": "Dependency Funding with Drips v2",
+      "id": "grants-for-public-good-establishing-resilient-democratic-funding-mechanisms",
+      "name": "\"Grants for (Public) Good: Establishing Resilient, Democratic Funding Mechanisms\"",
       "description": "",
       "start": 1689502200000,
       "end": 1689504000000,
@@ -579,12 +568,7 @@
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [
-        {
-          "id": "Eleftherios Diakomichalis ",
-          "name": "Eleftherios Diakomichalis "
-        }
-      ],
+      "speakers": [{ "id": "Megan Lister", "name": "Megan Lister" }],
       "video": "",
       "startCut": "0:00:00",
       "endCut": "0:00:00"
@@ -622,8 +606,8 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "worldbuilding-for-impact",
-      "name": "Worldbuilding for Impact",
+      "id": "invisible-hands-tangible-solutions-is-capitalism-really-the-problem",
+      "name": "Invisible Hands, Tangible Solutions: Is Capitalism Really the Problem?",
       "description": "",
       "start": 1689508800000,
       "end": 1689511200000,
@@ -633,11 +617,18 @@
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        { "id": "​Jahed Momand", "name": "​Jahed Momand" },
-        { "id": "​Scott Moore", "name": "​Scott Moore" },
-        { "id": "​Phil Fogel", "name": "​Phil Fogel" },
-        { "id": "​Jori Armbruster", "name": "​Jori Armbruster" },
-        { "id": "​Beth McCarthy", "name": "​Beth McCarthy" }
+        {
+          "id": "​Jesse Pollak, Creator of Base and Head of Protocols, Coinbase",
+          "name": "​Jesse Pollak, Creator of Base and Head of Protocols, Coinbase"
+        },
+        {
+          "id": "​Lucas Vogelsang, Co-Founder, Centrifuge",
+          "name": "​Lucas Vogelsang, Co-Founder, Centrifuge"
+        },
+        {
+          "id": "​Cassidy Daly, Product Strategy, Centrifuge - Moderator",
+          "name": "​Cassidy Daly, Product Strategy, Centrifuge - Moderator"
+        }
       ],
       "video": "",
       "startCut": "0:00:00",
@@ -727,8 +718,8 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "gainforest-ai-x-climate-x-web3",
-      "name": "GainForest (AI x climate x web3)",
+      "id": "gainforest-a-global-non-profit-to-help-fund-our-natural-world-with-ai-and-web3",
+      "name": "GainForest: A Global Non-Profit To Help Fund Our Natural World With AI & Web3",
       "description": "",
       "start": 1689516000000,
       "end": 1689517200000,
@@ -798,14 +789,33 @@
       "id": "artizen-fund-x-funding-the-commons-a-mechanism-design-experiment-in-participatory-capital-allocation-for-public-goods",
       "name": "Artizen Fund x Funding the Commons: A Mechanism Design Experiment in Participatory Capital Allocation for Public Goods",
       "description": "",
-      "start": 1689522300000,
-      "end": 1689523200000,
+      "start": 1689521400000,
+      "end": 1689522300000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [{ "id": "Artizen Fund", "name": "Artizen Fund" }],
+      "video": "",
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
+    },
+    {
+      "id": "closing-remarks",
+      "name": "Closing Remarks",
+      "description": "",
+      "start": 1689522300000,
+      "end": 1689522300000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Matt Frehlich", "name": "Matt Frehlich" },
+        { "id": "David Casey", "name": "David Casey" }
+      ],
       "video": "",
       "startCut": "0:00:00",
       "endCut": "0:00:00"
