@@ -11,7 +11,8 @@
     "prettier": "prettier './src' --write",
     "getVideo": "ts-node './src/scripts/videoFetcher.ts'",
     "cutAndRender": "ts-node './src/scripts/cutAndRender.ts'",
-    "uploadVideo": "ts-node './src/scripts/upload.ts'"
+    "uploadVideo": "ts-node './src/scripts/upload.ts'",
+    "renderAndUpload": "ts-node './src/scripts/renderAndUpload.ts'"
   },
   "sideEffects": [
     "*.css"
