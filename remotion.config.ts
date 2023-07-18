@@ -1,7 +1,8 @@
-import { Config } from 'remotion';
+import { Config } from '@remotion/cli/config';
 import { webpackOverride } from './src/webpack-override';
 
-Config.setImageFormat('jpeg');
+Config.setCrf(1);
+Config.setJpegQuality(100);
 Config.setOverwriteOutput(true);
 Config.setBrowserExecutable('~/Applications/Google Chrome.app');
 

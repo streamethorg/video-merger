@@ -22,7 +22,7 @@ const onProgress: RenderMediaOnProgress = ({ progress }) => {
 };
 
 const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-const {event} = config;
+const { event } = config;
 
 if (!process.env.LIVEPEER_APIKEY) {
   console.error('process.env.LIVEPEER_APIKEY is not defined');
@@ -53,7 +53,7 @@ const start = async () => {
         composition,
         serveUrl: bundled,
         outputLocation: `out/sessions/${composition.id}.mp4`,
-        videoBitrate: '500M',
+        crf: 1,
         onProgress,
       });
 

@@ -104,6 +104,7 @@ export function Intro(props: Props) {
                   key={index}
                   style={{
                     transform: `translateY(${300 + index * -75}px)`,
+                    color: '#000000',
                     fontSize: 60,
                     fontFamily,
                     fontWeight: 600,
@@ -125,6 +126,7 @@ export function Intro(props: Props) {
                   <div
                     style={{
                       transform: 'translateY(400px)',
+                      color: '#000000',
                       fontFamily,
                       fontWeight: '200',
                       fontSize: 40,
