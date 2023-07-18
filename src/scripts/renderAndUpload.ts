@@ -1,7 +1,6 @@
 import { join } from 'path';
 import { bundle } from '@remotion/bundler';
 import { getCompositions, renderMedia } from '@remotion/renderer';
-import { webpackOverride } from '../webpack-override';
 import { RenderMediaOnProgress } from '@remotion/renderer';
 
 import { createClient, studioProvider } from '@livepeer/react';
@@ -38,7 +37,6 @@ const start = async () => {
   console.log('Find compositions...');
   const bundled = await bundle({
     entryPoint: join(process.cwd(), 'src', 'index.ts'),
-    webpackOverride: (config) => webpackOverride(config),
   });
 
   console.log('Fetching compositions...');

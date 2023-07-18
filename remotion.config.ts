@@ -1,9 +1,47 @@
 import { Config } from '@remotion/cli/config';
-import { webpackOverride } from './src/webpack-override';
 
 Config.setCrf(1);
 Config.setJpegQuality(100);
 Config.setOverwriteOutput(true);
-Config.setBrowserExecutable('~/Applications/Google Chrome.app');
 
-Config.overrideWebpackConfig(webpackOverride);
+Config.overrideWebpackConfig((currentConfiguration) => {
+  return {
+    ...currentConfiguration,
+    module: {
+      ...currentConfiguration.module,
+      rules: [
+        ...(currentConfiguration.module?.rules
+          ? currentConfiguration.module.rules
+          : []
+        ).filter((rule) => {
+          if (rule === '...') {
+            return false;
+          }
+          if (rule.test?.toString().includes('.css')) {
+            return false;
+          }
+          return true;
+        }),
+        {
+          test: /\.css$/i,
+          use: [
+            'style-loader',
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    'postcss-preset-env',
+                    'tailwindcss',
+                    'autoprefixer',
+                  ],
+                },
+              },
+            },
+          ],
+        },
+      ],
+    },
+  };
+});
