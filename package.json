@@ -19,16 +19,16 @@
   ],
   "dependencies": {
     "@livepeer/react": "^2.6.0",
-    "@remotion/cli": "3.3.101",
-    "@remotion/google-fonts": "3.3.101",
-    "@remotion/motion-blur": "^4.0.6",
+    "@remotion/cli": "4.0.7",
+    "@remotion/google-fonts": "4.0.7",
+    "@remotion/motion-blur": "4.0.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "3.3.101",
+    "remotion": "4.0.7",
     "toml": "^3.0.0"
   },
   "devDependencies": {
-    "@remotion/eslint-config": "3.3.101",
+    "@remotion/eslint-config": "4.0.7",
     "@types/node-fetch": "^2.6.4",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
