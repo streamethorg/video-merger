@@ -71,7 +71,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
         <Intro session={session} />
       </Sequence>
       <Audio
-        src={staticFile('/audio/507_short1_innovation-design_0019_preview.mp3')}
+        src={staticFile('/audio/507_short1_innovation-design_0019.wav')}
         endAt={175}
         volume={(f) =>
           f < 135
