@@ -103,6 +103,7 @@ export function Intro(props: Props) {
                 <div
                   key={index}
                   style={{
+                    color: '#000000',
                     transform: `translateY(${300 + index * -75}px)`,
                     fontSize: 60,
                     fontFamily,
@@ -124,6 +125,7 @@ export function Intro(props: Props) {
                 <MoveObject x={1150} y={0} durationInSeconds={0.6}>
                   <div
                     style={{
+                      color: '#000000',
                       transform: 'translateY(400px)',
                       fontFamily,
                       fontWeight: '200',
