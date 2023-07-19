@@ -2,12 +2,12 @@ import { join } from 'path';
 import { bundle } from '@remotion/bundler';
 import { getCompositions, renderMedia } from '@remotion/renderer';
 import { RenderMediaOnProgress } from '@remotion/renderer';
-
 import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream } from 'fs';
 import path from 'path';
 import fs from 'fs';
 import toml from 'toml';
+import { webpackOverride } from '../webpack-override';
 
 let lastProgressPrinted = -1;
 
@@ -21,7 +21,7 @@ const onProgress: RenderMediaOnProgress = ({ progress }) => {
 };
 
 const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-const {event} = config;
+const { event } = config;
 
 if (!process.env.LIVEPEER_APIKEY) {
   console.error('process.env.LIVEPEER_APIKEY is not defined');
@@ -37,6 +37,7 @@ const start = async () => {
   console.log('Find compositions...');
   const bundled = await bundle({
     entryPoint: join(process.cwd(), 'src', 'index.ts'),
+    webpackOverride,
   });
 
   console.log('Fetching compositions...');
