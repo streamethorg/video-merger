@@ -35,6 +35,7 @@ const start = async () => {
         videoBitrate: '500M',
         onProgress,
       });
+      lastProgressPrinted = -1;
     }
   }
 };

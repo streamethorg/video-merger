@@ -55,6 +55,7 @@ const start = async () => {
         onProgress,
       });
 
+      lastProgressPrinted = -1;
       await uploadAsset(`out/sessions/${composition.id}.mp4`);
     }
   }
