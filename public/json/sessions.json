@@ -4,8 +4,8 @@
       "id": "doors-open-coffee-served",
       "name": "Doors open, Coffee served",
       "description": "",
-      "start": 1689490800000,
-      "end": 1689494400000,
+      "start": 1689404400000,
+      "end": 1689407400000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -17,11 +17,31 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "event-open-ftc-open",
-      "name": "Event Open, FtC Open",
-      "description": "",
-      "start": 1689494400000,
-      "end": 1689495000000,
+      "id": "funding-the-commons-an-incubation-ecosystem-for-public-goods-funding-infrastructure",
+      "name": "Funding the Commons, an Incubation Ecosystem for Public Goods Funding Infrastructure",
+      "description": "This video is a summary of the Funding the Commons Paris event. The event aims to build a community focused on funding public goods and creating sustainable models for support. It includes workshops, an art gallery, and a parallel conference hosted by the Forsyte Institute. The video introduces David Casey as the new leader of Funding the Commons and mentions future plans for hackathons, residencies, and conferences in Berlin and Taipei. Partnerships with organizations like Gitcoin and the Gollem Foundation are highlighted. The event is taking place at Sorbonne University and there are plans for a quadratic funding round with Artisan Funds.",
+      "start": 1689407100000,
+      "end": 1689408000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
+        { "id": "David Casey", "name": "David Casey" },
+        { "id": "Matt Frehlich", "name": "Matt Frehlich" }
+      ],
+      "video": "https://lp-playback.com/hls/ecbdo0gg6wfc3w3n/index.m3u8",
+      "startCut": "0:12:45",
+      "endCut": "0:23:00"
+    },
+    {
+      "id": "a-case-study-network-goods-in-protocol-labs",
+      "name": "A case study: Network Goods in Protocol Labs",
+      "description": "The video explores the funding and development of network goods in the crypto field. The speakers emphasize the importance of grants and quadratic funding rounds for infrastructure development. They discuss the need for decentralized methods of resource allocation and highlight the value of public goods. Various projects and initiatives aimed at addressing funding, distribution, impact assessment, and project identification within the crypto ecosystem are mentioned. Topics such as mechanism selection, quantitative versus qualitative assessment, user perspectives, and scalability versus efficiency are also discussed. The video encourages building new coordination systems to tackle challenges and promoting regenerative sources of public goods funding.",
+      "start": 1689408000000,
+      "end": 1689408900000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -31,80 +51,69 @@
         { "id": "Evan Miyazono", "name": "Evan Miyazono" },
         { "id": "Matt Frehlich", "name": "Matt Frehlich" }
       ],
-      "video": "",
-      "startCut": "0:26:00",
-      "endCut": "0:30:00"
+      "video": "https://lp-playback.com/hls/4b8eoxjks01ih61z/index.m3u8",
+      "startCut": "0:24:00",
+      "endCut": "0:39:00"
     },
     {
-      "id": "keynote-fwd-free-world-dialup-or-the-history-of-the-future",
-      "name": "Keynote: \"FWD (Free World Dialup) or The History of the Future\"",
-      "description": "",
-      "start": 1689495000000,
-      "end": 1689496200000,
+      "id": "a-fireside-chat-with-guy-wuollet-and-addie-wagenknecht",
+      "name": "A Fireside Chat with Guy Wuollet and Addie Wagenknecht",
+      "description": "In this video, two individuals discuss their experiences and perspectives on public goods funding and decentralized finance in the crypto field. They touch on topics such as decentralized physical infrastructure projects, redundancies in current infrastructure, sustainable revenue models for projects like Filecoin and MEVs, proactive funding models, coordination issues in decentralized organizations, and the role of venture capital in funding public goods. The conversation explores the challenges and potential solutions for funding mechanisms in the crypto space.\n\nThe video features an interview with Guy Oulay, a partner at A16 Zine Crypto, who has conducted independent research in partnership with Protocol Labs. The conversation focuses on various topics within the crypto field, including public goods funding, decentralized finance, and decentralized physical infrastructure projects. They discuss the challenges and potential solutions in funding mechanisms for developers and projects, as well as the role of VCs in supporting public goods funding. The interview highlights the importance of coordination, pragmatism, and tangible outcomes in driving progress in the crypto space.\n\nThe conversation also delves into the challenges of funding public goods compared to more tangible and high-return projects. They explore the potential of permissionless contribution and the need for better coordination mechanisms.",
+      "start": 1689408900000,
+      "end": 1689410100000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Jeff Pulver", "name": "Jeff Pulver" }],
-      "video": "",
-      "startCut": "0:30:15",
-      "endCut": "0:54:00"
+      "speakers": [
+        { "id": "Addie Wagenknecht", "name": "Addie Wagenknecht" },
+        { "id": "Guy Wuollet", "name": "Guy Wuollet" }
+      ],
+      "video": "https://lp-playback.com/hls/5bd03snfis7b8b7q/index.m3u8",
+      "startCut": "0:39:45",
+      "endCut": "0:55:00"
     },
     {
-      "id": "why-depin-matters",
-      "name": "Why DePIN Matters",
-      "description": "",
-      "start": 1689496200000,
-      "end": 1689497400000,
+      "id": "how-refi-will-change-the-world",
+      "name": "How ReFi Will Change the World",
+      "description": "This video features a speaker discussing the urgent need for action on climate change and global poverty. They introduce the concept of regenerative finance, which prioritizes long-term sustainability and social justice. The speaker explores the potential of blockchain technology, specifically on the Celo platform, to democratize ownership and reallocate resources. They highlight several projects on Celo that address environmental, social, and economic issues, such as reforestation, under-collateralized lending, and universal basic income initiatives. The speaker emphasizes Celo's mission to build a regenerative economy and challenges the industry's current measure of success. They propose a new approach based on meeting basic needs, personal and professional growth, community support, and environmental impact. The video concludes by emphasizing the importance of collaboration and collective action to drive change and create awareness.",
+      "start": 1689410100000,
+      "end": 1689411300000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Guy Wuollet", "name": "Guy Wuollet" }],
-      "video": "",
-      "startCut": "0:54:45",
-      "endCut": "1:12:05"
+      "speakers": [{ "id": "Xochitl Cazador", "name": "Xochitl Cazador" }],
+      "video": "https://lp-playback.com/hls/ef87wkslmotieapz/index.m3u8",
+      "startCut": "0:56:40",
+      "endCut": "1:07:15"
     },
     {
-      "id": "perpetual-archives-as-a-public-good",
-      "name": "Perpetual Archives as a Public Good",
+      "id": "whats-at-stake-eth-and-public-goods-funding",
+      "name": "What's at Stake: ETH & Public Goods Funding",
       "description": "",
-      "start": 1689497400000,
-      "end": 1689499200000,
+      "start": 1689411300000,
+      "end": 1689413100000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Danny O'Brein", "name": "Danny O'Brein" }],
-      "video": "",
-      "startCut": "1:12:40",
-      "endCut": "1:36:00"
-    },
-    {
-      "id": "surprise-keynote-10-years-in-funding-open-source-protocols",
-      "name": "Surprise Keynote: 10 years in funding open source protocols",
-      "description": "",
-      "start": 1689499200000,
-      "end": 1689500400000,
-      "stage": {
-        "id": "main-stage",
-        "name": "Main stage",
-        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-      },
-      "speakers": [{ "id": "Galia Benartzi", "name": "Galia Benartzi" }],
-      "video": "",
-      "startCut": "1:36:30",
-      "endCut": "1:48:00"
+      "speakers": [
+        { "id": "Julian Zawistowski", "name": "Julian Zawistowski" }
+      ],
+      "video": "https://lp-playback.com/hls/17568rdz5sqfcy48/index.m3u8",
+      "startCut": "1:27:00",
+      "endCut": "1:54:15"
     },
     {
       "id": "coffee-break",
       "name": "coffee break",
       "description": "",
-      "start": 1689500400000,
-      "end": 1689501000000,
+      "start": 1689413100000,
+      "end": 1689413700000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -116,59 +125,77 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "what-money-cant-buy-the-limits-of-ecosystem-funding",
-      "name": "What Money Can't Buy: The Limits of Ecosystem Funding",
-      "description": "",
-      "start": 1689501000000,
-      "end": 1689502200000,
+      "id": "an-attractor-for-public-goods-funding",
+      "name": "An Attractor For Public Goods Funding",
+      "description": "In this video, Kevin Owocki, co-founder of Gitcoin, discusses the concept of attractors in the context of public goods funding in the crypto field. He explains that an attractor is a set of states through which a system tends to evolve, and in public goods funding, it refers to designing psychological incentive mechanisms to encourage contributions. Wachey describes different types of attractors and emphasizes the importance of building multiple strong and stable attractors. He shares his vision for creating a hyper structure on top of EVM-based blockchains to fund public goods and reward contributors. Wachey also discusses challenges in interfacing with government funding and suggests starting with quadratic funding tools for fiat ecosystems before transitioning to blockchain-based solutions. He encourages builders to explore coordination mechanisms and leverage existing protocols like Gitcoin's Alo Protocol for effective public goods funding.",
+      "start": 1689413700000,
+      "end": 1689414900000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Ori Applebaum", "name": "Ori Applebaum" }],
-      "video": "",
-      "startCut": "2:00:00",
-      "endCut": "2:26:10"
+      "speakers": [{ "id": "Kevin Owocki", "name": "Kevin Owocki" }],
+      "video": "https://lp-playback.com/hls/db60kj2cwyyqtjkq/index.m3u8",
+      "startCut": "1:55:00",
+      "endCut": "2:24:05"
     },
     {
-      "id": "grants-for-public-good-establishing-resilient-democratic-funding-mechanisms",
-      "name": "\"Grants for (Public) Good: Establishing Resilient, Democratic Funding Mechanisms\"",
-      "description": "",
-      "start": 1689502200000,
-      "end": 1689504000000,
+      "id": "priorities-for-public-goods-builders-in-2023",
+      "name": "Priorities for Public Goods Builders in 2023",
+      "description": "In this video, the speaker discusses the broad context of the current time period and reflects on the goals set out in the crypto field about a year ago. They emphasize the critical nature of this century and the need for systemic upgrades to navigate the challenges we face. The speaker highlights two major threads of technology development: blockchain and AI. They discuss how blockchain enables global scale coordination and coordination for better goals, while AI presents both capabilities and risks. The speaker also mentions the importance of funding public goods through crypto networks and leveraging AI capabilities to improve mechanisms. They discuss various funding mechanisms and coordination systems in the crypto space, as well as the potential for crypto networks to fund scientific research at a scale comparable to nation states. The speaker reviews the progress made in the community and project goals set in the previous year, highlighting successes and areas for improvement. They then outline community goals for 2023-2024, including growing events, expanding workshops and hackathons, formalizing community groups, and emphasizing performance evaluations. The speaker also presents project goals such as growing HyperCerts, scaling HyperCerts billboards, enabling reverse HyperCerts auctions, making impact evaluators on-chain observable and forkable, establishing network funds on-chain, developing IP NFTs, implementing aqueducts for blockchain networks to route value to public goods funding, creating an open-source funding alignment tool, and studying outcomes more robustly. The video concludes by emphasizing the potential of CryptoEcon to solve planetary problems but highlighting the need to do it well and study outcomes. The speaker acknowledges the challenges posed by CryptoWinter but expresses optimism for future growth in the crypto field.",
+      "start": 1689414900000,
+      "end": 1689416700000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Megan Lister", "name": "Megan Lister" }],
-      "video": "",
-      "startCut": "2:27:00",
-      "endCut": "2:48:10"
+      "speakers": [{ "id": "Juan Benet", "name": "Juan Benet" }],
+      "video": "https://lp-playback.com/hls/58d4v6a74i3opcfj/index.m3u8",
+      "startCut": "2:24:15",
+      "endCut": "2:51:30"
     },
     {
-      "id": "retro-public-harms-and-behavioral-game-theory-solutions",
-      "name": "\"Retro Public Harms and Behavioral Game Theory solutions\"",
-      "description": "",
-      "start": 1689504000000,
-      "end": 1689505200000,
+      "id": "the-open-web-is-near-how-the-bos-ndc-and-daos-are-creating-a-decentralized-web",
+      "name": "\"The Open Web is NEAR: How the BOS, NDC, and DAOs are creating a Decentralized Web\"",
+      "description": "In this video, the speaker provides an update on the progress and goals of the crypto project called Near. Near aims to build a better web and believes in the open web concept. The project started with the idea of using AI to create any program or website, but pivoted to focus on blockchain technology. Near prioritizes simplicity for developers and end users, as well as security, scalability, and sustainability. The project is now transitioning into a blockchain operating system that brings together different ecosystems to contribute to the open web vision. The speaker discusses the importance of decentralization and highlights three pillars for further decentralizing the Near ecosystem: research and development, entrepreneurship and contribution, and community and governance. They also mention initiatives like Dev Hub, Near Horizon, and decentralized governance on the blockchain operating system. The video emphasizes the need for simplicity, inclusiveness, and accessibility in order to bring millions of users into the open web.\n\nThis text is a summary of a video about the crypto platform NIR. The speaker discusses the platform's history, its focus on simplicity and usability, and its mission to create an open web. They explain how NIR has evolved into a blockchain operating system that allows different ecosystems to contribute and collaborate. The video also highlights the importance of decentralization, research and development, entrepreneurship, and community governance in further decentralizing the NIR ecosystem. The speaker encourages developers to visit the NIR website and participate in building the open web. They also mention the platform's emphasis on diversity and inclusion in order to make participation accessible to all users.\n\nIn this video, the speaker provides an update on the progress of the Near blockchain ecosystem. They discuss the origins of Near, which started as a project focused on AI and freelancers using blockchain for payments. However, they realized that blockchain technology needed to be faster, cheaper, and more usable. As a result, they pivoted to become a layer one proof of stake blockchain with a focus on simplicity and mass adoption. The speaker also highlights the recent evolution of Near into a blockchain operating system, aiming to create an open web through multi-chain functionality, middleware, and an easy onboarding process called FastOS. They emphasize the importance of decentralization in achieving openness, inclusiveness, participation, and censorship resistance. The speaker then outlines three core pillars for further decentralization: research and development, entrepreneurship and contribution, and community and governance. They discuss specific initiatives within each pillar, such as the Dev Hub for developer contributions, NIR Horizon for gathering founders and backers, and decentralized governance through community-led initiatives. The video concludes with a focus on",
+      "start": 1689416700000,
+      "end": 1689417900000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Matt Stephenson", "name": "Matt Stephenson" }],
-      "video": "",
-      "startCut": "2:48:40",
-      "endCut": "3:12:10"
+      "speakers": [{ "id": "Marieke Flament", "name": "Marieke Flament" }],
+      "video": "https://lp-playback.com/hls/542b8o1292y53xkc/index.m3u8",
+      "startCut": "2:54:25",
+      "endCut": "3:08:00"
+    },
+    {
+      "id": "copylefting-the-patent-system-with-desci",
+      "name": "\"Copylefting the patent system with DeSci\"",
+      "description": "This video introduces a new project called D.A. that aims to revolutionize the patent system and promote more collaborative and cooperative innovation. The current patent system is criticized for being inefficient, costly, and exclusionary, leading to redundant innovation and negative outcomes for society. D.A. proposes a solution by creating a decentralized collaboration system where ideas can be submitted, reviewed, and developed into patent applications. Approved patents are then placed in a defensive patent pool with copyleft restrictions, allowing non-commercial use without permission and encouraging derivative works to be added to the pool. The video explains how the system would work, from idea submission to inclusion in the patent pool, and discusses potential concerns about monopolistic practices. The project also highlights the application of this system in other industries such as AI and pharmaceuticals. Overall, D.A. aims to foster open innovation, incentivize collaboration, and provide economic rewards for scientific progress in a more inclusive and cooperative manner.",
+      "start": 1689417900000,
+      "end": 1689419100000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [
+        { "id": "Primavera De Filippi", "name": "Primavera De Filippi" }
+      ],
+      "video": "https://lp-playback.com/hls/75fc9vlx25ym4jts/index.m3u8",
+      "startCut": "3:10:00",
+      "endCut": "3:36:00"
     },
     {
       "id": "lunch-break",
       "name": "Lunch Break",
       "description": "",
-      "start": 1689505200000,
-      "end": 1689508800000,
+      "start": 1689419100000,
+      "end": 1689422400000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -180,77 +207,77 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "invisible-hands-tangible-solutions-is-capitalism-really-the-problem",
-      "name": "Invisible Hands, Tangible Solutions: Is Capitalism Really the Problem?",
+      "id": "the-case-for-the-network-state-for-the-african-diaspora",
+      "name": "\"The case for the network state for the African diaspora\"",
+      "description": "In this video, the speaker discusses the challenges faced by decentralized communities and the need for transparent and sustainable funding. They explain that while decentralized autonomous organizations (DAOs) offer a solution to funding decentralized communities, there are still several problems to overcome. The first challenge is finding the balance between coordination and decentralization within DAOs. The speaker also highlights the difficulties of maintaining participation and building a community within DAOs. Additionally, they emphasize the lack of legacy infrastructure in DAOs, which makes it challenging for individuals to connect with the traditional financial system. The speaker argues that in order to create a viable future, technology needs to be built in collaboration with those who are currently excluded from the legacy system. They introduce Open Collective as a platform that provides transparent management of funds for decentralized fiat communities, offering tax deductibility for donors and employment opportunities for community members. The speaker concludes by emphasizing the importance of co-creating and co-designing collective technology with grassroots culture and ensuring shared and participatory governance.",
+      "start": 1689422400000,
+      "end": 1689423600000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Chika Uwazie", "name": "Chika Uwazie" }],
+      "video": "https://lp-playback.com/hls/2b30al6350yblqb9/index.m3u8",
+      "startCut": "4:43:00",
+      "endCut": "5:02:00"
+    },
+    {
+      "id": "soulbound-reputation-tokens-to-the-rescue",
+      "name": "\"Soulbound Reputation Tokens to the Rescue\"",
+      "description": "In this video, Omodju Miller discusses the importance of funding open source projects in the crypto field. He shares his experiences working at Google.org and GitHub, highlighting the challenges faced by corporations in funding social problems and coordinating decentralized industries. Miller proposes a solution involving a token-based system that assigns value to developers' contributions and encourages corporations to commit a percentage of their profits or equity to fund this system. He encourages others to take on this project and offers his expertise as an advisor.",
+      "start": 1689423600000,
+      "end": 1689424800000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Omoju Miller", "name": "Omoju Miller" }],
+      "video": "https://lp-playback.com/hls/c2efy2sop40jw4vn/index.m3u8",
+      "startCut": "5:03:00",
+      "endCut": "5:22:00"
+    },
+    {
+      "id": "the-future-is-collective",
+      "name": "\"The Future is Collective\"",
+      "description": "In this video, the speaker discusses the challenges and complexities of working in international development, including structural inequalities, historical injustices, capitalism, globalization, and racism. They introduce UNICEF and their Office of Innovation, which focuses on using technology to support program goals. They mention UNICEF's venture fund and acceptance of cryptocurrency. The speaker explains the concept of digital public goods (DPGs) and emphasizes UNICEF's commitment to funding them. They highlight the importance of funding young people and promoting a more equitable digital future. The video concludes with a call to include young people in projects and a discussion on the challenges of funding DPGs.",
+      "start": 1689424800000,
+      "end": 1689426000000,
+      "stage": {
+        "id": "main-stage",
+        "name": "Main stage",
+        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+      },
+      "speakers": [{ "id": "Pia Mancini", "name": "Pia Mancini" }],
+      "video": "https://lp-playback.com/hls/11a4gx2ijefz9enl/index.m3u8",
+      "startCut": "5:23:00",
+      "endCut": "5:39:20"
+    },
+    {
+      "id": "funding-the-commons-or-funding-the-youth",
+      "name": "\"Funding the Commons or Funding the Youth?\"",
       "description": "",
-      "start": 1689508800000,
-      "end": 1689511200000,
+      "start": 1689426000000,
+      "end": 1689427200000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        {
-          "id": "​Jesse Pollak, Creator of Base and Head of Protocols, Coinbase",
-          "name": "​Jesse Pollak, Creator of Base and Head of Protocols, Coinbase"
-        },
-        {
-          "id": "​Lucas Vogelsang, Co-Founder, Centrifuge",
-          "name": "​Lucas Vogelsang, Co-Founder, Centrifuge"
-        },
-        {
-          "id": "​Cassidy Daly, Product Strategy, Centrifuge - Moderator",
-          "name": "​Cassidy Daly, Product Strategy, Centrifuge - Moderator"
-        }
+        { "id": "Christopher Szymczak", "name": "Christopher Szymczak" }
       ],
       "video": "",
-      "startCut": "4:10:30",
-      "endCut": "4:56:20"
-    },
-    {
-      "id": "nature-realms-unleashing-community-power-for-biodiversity-conservation",
-      "name": "\"Nature Realms: Unleashing Community Power for Biodiversity Conservation\"",
-      "description": "",
-      "start": 1689511200000,
-      "end": 1689512400000,
-      "stage": {
-        "id": "main-stage",
-        "name": "Main stage",
-        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-      },
-      "speakers": [
-        {
-          "id": "Mallika Robinson, Co-founder of Guardians of Earth",
-          "name": "Mallika Robinson, Co-founder of Guardians of Earth"
-        }
-      ],
-      "video": "",
-      "startCut": "4:57:50",
-      "endCut": "5:12:10"
-    },
-    {
-      "id": "announcement-ethereum-climate-platform",
-      "name": "Announcement: Ethereum Climate Platform",
-      "description": "",
-      "start": 1689512400000,
-      "end": 1689513300000,
-      "stage": {
-        "id": "main-stage",
-        "name": "Main stage",
-        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-      },
-      "speakers": [{ "id": "Steven Haft", "name": "Steven Haft" }],
-      "video": "",
-      "startCut": "5:12:10",
-      "endCut": "5:26:10"
+      "startCut": "0:00:00",
+      "endCut": "0:00:00"
     },
     {
       "id": "coffee-break",
       "name": "coffee break",
       "description": "",
-      "start": 1689513300000,
-      "end": 1689513900000,
+      "start": 1689427200000,
+      "end": 1689427800000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
@@ -262,149 +289,133 @@
       "endCut": "0:00:00"
     },
     {
-      "id": "data-provenance-and-the-climate-crisis",
-      "name": "Data Provenance and the Climate Crisis",
-      "description": "",
-      "start": 1689513900000,
-      "end": 1689514800000,
+      "id": "contribution-theory-of-value-on-the-evolution-of-markets-and-commons",
+      "name": "\"Contribution theory of value: on the evolution of markets and commons\"",
+      "description": "In this video, Jason Potts discusses the concept of building new economies for the future. He emphasizes the need for better markets and better commons to solve big social problems. Potts suggests combining the properties of both markets and commons to create a new type of mechanism, which he refers to as an \"object-oriented economy.\" He explains that markets are efficient mechanisms for computing local information into prices, while commons provide better governance. Potts argues that by combining these two mechanisms, we can build next-generation economies that are more computationally complex and better equipped to address social and environmental challenges. He acknowledges that this idea is still experimental but believes that recent advancements in technology have made it possible to explore and implement these new types of mechanisms.\n\nIn this video, Jason Potts discusses the need for building new economies and the role of markets and commons in this process. He highlights the limitations of traditional economic systems and the importance of incorporating externalities and better governance. Potts proposes a new approach that combines the properties of both markets and commons, creating a new mechanism for economic coordination. He emphasizes the need for more compute in both markets and commons, suggesting that richer information sources are essential for solving big social problems. Potts also mentions the potential of Web 3 technologies in enabling this new type of mechanism. Overall, he argues that next-generation economies should be next-generation computers, combining decentralized mechanisms to create a more effective and inclusive economic system.\n\nIn this video, Jason Potts discusses the concept of building new economies for the future. He starts by explaining the current economic system, which is based on market economies and government intervention. However, he points out that this system has limitations, particularly in dealing with externalities. He then introduces the concept of commons, which refers to local governance systems for resources. Potts suggests that the future of economies lies in combining markets and commons into a new mechanism that can compute and coordinate economic activities more effectively. He emphasizes the need for better markets and better commons, both of which require more compute power. Potts proposes building an object-oriented economy that allows for the creation of multiple economies at different scales. He believes that combining market mechanisms with contributions from commons can lead to a new theory of value that incorporates richer information into prices. Potts concludes by stating that this approach to building next-generation economies is only possible now due to advancements in technology, particularly in terms of scalable compute components.",
+      "start": 1689427800000,
+      "end": 1689429000000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Alan Ransil", "name": "Alan Ransil" }],
-      "video": "",
-      "startCut": "5:36:40",
-      "endCut": "5:53:20"
+      "speakers": [{ "id": "Jason Potts", "name": "Jason Potts" }],
+      "video": "https://lp-playback.com/hls/03019i3fmbm75zdr/index.m3u8",
+      "startCut": "5:57:00",
+      "endCut": "6:13:00"
     },
     {
-      "id": "public-goods-that-will-onboard-the-next-billion",
-      "name": "Public Goods That Will Onboard the Next Billion",
-      "description": "",
-      "start": 1689514800000,
-      "end": 1689516000000,
+      "id": "dependency-funding-with-drips-v2",
+      "name": "Dependency Funding with Drips v2",
+      "description": "In this video, Eleftherios, the co-founder of the Radical Project, introduces DRIPS, a decentralized toolkit for funding public goods and open-source software. He discusses existing methods of funding and their limitations, highlighting the importance of interdependency. He explores the crypto Web3 space and mentions inspiring projects like Gitcoin and retroactive public goods funding. \n\nDRIPS takes a retroactive approach to funding and focuses on the interconnected nature of software and public goods. It offers continuous or recurring funding options and streamlines the funding experience for software projects. The core feature is a list that includes Ethereum addresses, ENS names, and Git repositories to allocate funds accordingly.\n\nAdditional tools within DRIPS simplify funding, including an identity solution using oracles and Chainlink. Continuous payments are emphasized for trust minimization assumptions and flexibility. The next iteration of the DRIPS toolkit is live, with a proposal to allocate $1 million from the RadWorks DAO.\n\nDRIPS enables possibilities like programmatically linking profits to dependencies, distributing native tokens to dependencies, issuing hyper-search for public goods contributions, and creating multi-party games within DAOs. Funding dependencies and creating cultural norms within the Web3 space are emphasized.\n\nThe video concludes with a Q&A session addressing questions about allocation percentages and decision-making processes within DRIPS. Eleftherios suggests looking at the work of the Optimism Collective for programmatically funding based on profitability.",
+      "start": 1689429000000,
+      "end": 1689430800000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        { "id": "René Reinsberg", "name": "René Reinsberg" },
-        { "id": "Marek Olszewski", "name": "Marek Olszewski" }
+        {
+          "id": "Eleftherios Diakomichalis ",
+          "name": "Eleftherios Diakomichalis "
+        }
       ],
-      "video": "",
-      "startCut": "5:54:40",
-      "endCut": "6:15:00"
+      "video": "https://lp-playback.com/hls/91bb2q7f7ysg6061/index.m3u8",
+      "startCut": "6:13:10",
+      "endCut": "6:33:00"
     },
     {
-      "id": "gainforest-a-global-non-profit-to-help-fund-our-natural-world-with-ai-and-web3",
-      "name": "GainForest: A Global Non-Profit To Help Fund Our Natural World With AI & Web3",
+      "id": "zuzalu-a-first-of-its-kind-irl-pop-up-community-experiment",
+      "name": "Zuzalu: A First-of-its-kind IRL Pop-up Community Experiment",
       "description": "",
-      "start": 1689516000000,
-      "end": 1689517200000,
+      "start": 1689430800000,
+      "end": 1689432000000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "David Dao", "name": "David Dao" }],
-      "video": "",
-      "startCut": "6:15:45",
-      "endCut": "6:35:00"
+      "speakers": [{ "id": "Janine Leger", "name": "Janine Leger" }],
+      "video": "https://lp-playback.com/hls/687586kfc8xgy2t7/index.m3u8",
+      "startCut": "6:33:40",
+      "endCut": "7:03:00"
     },
     {
-      "id": "hypercerts-how-to-build-modern-impact-funding-systems",
-      "name": "Hypercerts: How to build modern impact funding systems",
+      "id": "orchestrating-new-attractor-points-of-scientific-utility",
+      "name": "Orchestrating new attractor points of scientific utility ",
       "description": "",
-      "start": 1689517200000,
-      "end": 1689518400000,
+      "start": 1689432000000,
+      "end": 1689433200000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Holke Brammer", "name": "Holke Brammer" }],
-      "video": "",
-      "startCut": "6:36:00",
-      "endCut": "6:51:00"
+      "speakers": [{ "id": "Eirini Malliaraki", "name": "Eirini Malliaraki" }],
+      "video": "https://lp-playback.com/hls/bb899khgk60q3xrf/index.m3u8",
+      "startCut": "7:05:10",
+      "endCut": "7:24:15"
     },
     {
-      "id": "ai-extinction-risks-challenges-and-opportunities-in-funding-ai-safety",
-      "name": "\"AI Extinction Risks: Challenges and Opportunities in Funding AI Safety\"",
-      "description": "",
-      "start": 1689518400000,
-      "end": 1689519600000,
+      "id": "eight-myths-about-technology-research",
+      "name": "Eight Myths About Technology Research",
+      "description": "In this video, the speaker discusses eight myths about technology research in the crypto field. They challenge the perception that only basic science produces public goods and argue that technology research also contributes to public goods. They debunk the myth that public goods research is solely the responsibility of the government, highlighting tensions between government research and accountability to taxpayers. The speaker addresses the belief that startups are good for research, explaining how startups often prioritize commercialization over pre-commercial research. They argue that researchers should focus on paying it forward instead of expecting immediate rewards. The importance of research management and acknowledging that technology resides in people's heads is emphasized. The speaker also highlights the difficulty of measuring technology impact due to uncertainty. Lastly, they challenge the notion that planning is worthless and advocate for better planning processes. Overall, the video provides insights into misconceptions surrounding technology research in the crypto field and offers alternative perspectives on these topics.",
+      "start": 1689433200000,
+      "end": 1689434400000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Simeon Campos", "name": "Simeon Campos" }],
-      "video": "",
-      "startCut": "6:52:05",
-      "endCut": "7:11:10"
+      "speakers": [{ "id": "Ben Reinhardt", "name": "Ben Reinhardt" }],
+      "video": "https://lp-playback.com/hls/592agyeyfihisas8/index.m3u8",
+      "startCut": "7:24:30",
+      "endCut": "7:44:39"
     },
     {
-      "id": "controllable-ai-for-a-safer-more-ethical-future",
-      "name": "Controllable AI for a Safer, More Ethical Future",
-      "description": "",
-      "start": 1689519600000,
-      "end": 1689522300000,
+      "id": "roadmapping-for-impact-funding",
+      "name": "Roadmapping for Impact Funding",
+      "description": "In this video, a panel of experts in the crypto field discuss the significance of road mapping. They highlight how road maps facilitate collaboration, coordination, and knowledge sharing among stakeholders. The panelists debate the visual representation of road maps, with some advocating for detailed graphs while others emphasize concise and actionable information. The video emphasizes the value of road mapping in aligning stakeholders and driving impactful science and technology advancements in the crypto industry.",
+      "start": 1689434400000,
+      "end": 1689436800000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
       "speakers": [
-        { "id": "Evan Miyazono", "name": "Evan Miyazono" },
-        { "id": "Simeon Campos", "name": "Simeon Campos" },
-        { "id": "Charbel-Raphael Sergerie", "name": "Charbel-Raphael Sergerie" }
+        { "id": "Silvia Bessa", "name": "Silvia Bessa" },
+        { "id": "Ben Reinhardt", "name": "Ben Reinhardt" },
+        { "id": "Joël Thorstensson", "name": "Joël Thorstensson" },
+        { "id": "Eirini", "name": "Eirini" }
       ],
-      "video": "",
-      "startCut": "7:12:00",
-      "endCut": "7:40:00"
+      "video": "https://lp-playback.com/hls/5dbejnht7ojlpuzq/index.m3u8",
+      "startCut": "7:45:00",
+      "endCut": "8:22:20"
     },
     {
-      "id": "artizen-fund-x-funding-the-commons-a-mechanism-design-experiment-in-participatory-capital-allocation-for-public-goods",
-      "name": "Artizen Fund x Funding the Commons: A Mechanism Design Experiment in Participatory Capital Allocation for Public Goods",
+      "id": "close-stage",
+      "name": "Close stage",
       "description": "",
-      "start": 1689521400000,
-      "end": 1689522300000,
+      "start": 1689437100000,
+      "end": 1689437100000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
         "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
       },
-      "speakers": [{ "id": "Artizen Fund", "name": "Artizen Fund" }],
-      "video": "",
-      "startCut": "7:41:00",
-      "endCut": "7:56:00"
-    },
-    {
-      "id": "closing-remarks",
-      "name": "Closing Remarks",
-      "description": "",
-      "start": 1689522300000,
-      "end": 1689522300000,
-      "stage": {
-        "id": "main-stage",
-        "name": "Main stage",
-        "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-      },
-      "speakers": [
-        { "id": "Matt Frehlich", "name": "Matt Frehlich" },
-        { "id": "David Casey", "name": "David Casey" }
-      ],
+      "speakers": [],
       "video": "",
       "startCut": "0:00:00",
       "endCut": "0:00:00"
     },
     {
-      "id": "occupy-the-commons-wine-on-the-seine",
-      "name": "Occupy the Commons! Wine on the Seine",
+      "id": "speaker-sponsor-dinner-procope",
+      "name": "Speaker-Sponsor Dinner @ Procope",
       "description": "",
-      "start": 1689525000000,
-      "end": 1689527400000,
+      "start": 1689445800000,
+      "end": 1689448200000,
       "stage": {
         "id": "main-stage",
         "name": "Main stage",
