@@ -1,9 +1,8 @@
 import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream, readdirSync } from 'fs';
 import path from 'path';
-import fs from 'fs'
-import toml from 'toml'
-
+import fs from 'fs';
+import toml from 'toml';
 
 const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
 
