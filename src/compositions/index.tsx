@@ -10,6 +10,7 @@ import {
     interpolate,
 } from 'remotion';
 import { BaseOneIntro } from './base1_intro';
+import { BaseTwoIntro } from './base2_intro';
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 import {
@@ -64,16 +65,8 @@ function IntroWithVideo(props: Props) {
 
     return (
         <div>
-            <Sequence name="Video" from={150}>
-                <Video
-                    src={staticFile(G_VIDEO_PATH)}
-                    startFrom={startCutInSeconds * fps}
-                    endAt={endCutInSeconds * fps}
-                    volume={() => videoVolume}
-                />
-            </Sequence>
             <Sequence durationInFrames={175}>
-                <BaseOneIntro session={session} />
+                <BaseTwoIntro session={session} />
             </Sequence>
             <Audio
                 src={staticFile(G_AUDIO_PATH)}
