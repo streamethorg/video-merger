@@ -1,5 +1,5 @@
 import { loadFont } from '@remotion/google-fonts/Roboto';
-import { staticFile } from 'remotion';
+import { staticFile, delayRender, continueRender } from 'remotion';
 
 // Global
 export const G_EVENT = 'FtC';
@@ -14,6 +14,20 @@ export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 export const { fontFamily } = loadFont('normal', {
     weights: ['400', '300'],
 });
+
+/// / Use the following if you have a none-Google Font
+const waitForFont = delayRender();
+const font = new FontFace(
+    `Latin Modern`,
+    `url('${staticFile('font/lmsans10-bold.otf')}') format('otf')`,
+);
+
+font.load()
+    .then(() => {
+        document.fonts.add(font);
+        continueRender(waitForFont);
+    })
+    .catch((err) => console.log('Error loading font', err));
 
 /// / Advanced
 export const G_SCALE_IMAGE = 2;
