@@ -40,7 +40,8 @@ function clampInterpolation(f: number, start: number[], end: number[]): number {
     });
 }
 
-const IntroWithVideo: React.FC<Props> = ({ session }) => {
+function IntroWithVideo(props: Props) {
+    const { session } = props;
     const { durationInFrames, fps } = useVideoConfig();
     const frame = useCurrentFrame();
     const startFadeFrame = durationInFrames - 50;
@@ -71,7 +72,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
                 />
             </Sequence>
             <Sequence durationInFrames={175}>
-                <BaseOneIntro session={session}/>
+                <BaseOneIntro session={session} />
             </Sequence>
             <Audio
                 src={staticFile(AUDIO_PATH)}
@@ -91,7 +92,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
             <AbsoluteFill style={{ backgroundColor: 'black', opacity }} />
         </div>
     );
-};
+}
 
 export function Compositions() {
     const processedSessions = sessions

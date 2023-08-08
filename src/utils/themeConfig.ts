@@ -5,7 +5,7 @@ export const G_LOGO_PICTURE = '/images/FtC.svg';
 
 /// / Please check Google Font what weights you can use
 export const { fontFamily } = loadFont('normal', {
-  weights: ['400', '300'],
+    weights: ['400', '300'],
 });
 
 /// / Advanced
