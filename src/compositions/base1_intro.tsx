@@ -10,38 +10,21 @@ import { CameraMotionBlur } from '@remotion/motion-blur';
 import { Speaker as SpeakerType, Session as SessionType } from '../types';
 import SpringIn from '../components/ZoomIn';
 import MoveObject from '../components/MoveObject';
-
-// CONSTANTS - Please change these to change the theme of the animation
-import { loadFont } from '@remotion/google-fonts/Vollkorn';
-const LEFT_COLOUR = '#00F839';
-const RIGHT_COLOUR = '#0DFBFF';
-const LOGO_PICTURE = '/images/FtC.svg';
-const SCALE_IMAGE = 2;
-
-const { fontFamily } = loadFont('normal', {
-    weights: ['400', '600'],
-});
+import {
+    fontFamily,
+    BASE1_LEFT_COLOUR,
+    BASE1_RIGHT_COLOUR,
+    G_LOGO_PICTURE,
+    G_SCALE_IMAGE,
+} from '../utils/themeConfig';
+import { splitTextIntoLines } from '../utils/textUtils';
 
 interface Props {
     session: SessionType;
 }
 
-function splitTextIntoLines(text: string, maxLen: number): string[] {
-    const lines = [];
-    let currentLine = '';
-    for (const word of text.split(' ')) {
-        if (currentLine.length + word.length > maxLen) {
-            lines.push(currentLine.trim());
-            currentLine = word;
-        } else {
-            currentLine += ` ${word}`;
-        }
-    }
-    lines.push(currentLine.trim());
-    return lines;
-}
-
-export function Intro(props: Props) {
+export function BaseOneIntro(props: Props) {
+    const { session } = props;
     const { durationInFrames } = useVideoConfig();
     const frame = useCurrentFrame();
     const opacity = interpolate(
@@ -59,7 +42,7 @@ export function Intro(props: Props) {
                 <Sequence name="Background">
                     <AbsoluteFill
                         style={{
-                            background: `linear-gradient(to right, ${LEFT_COLOUR}, ${RIGHT_COLOUR})`,
+                            background: `linear-gradient(to right, ${BASE1_LEFT_COLOUR}, ${BASE1_RIGHT_COLOUR})`,
                         }}
                     />
                 </Sequence>
@@ -67,9 +50,9 @@ export function Intro(props: Props) {
                 <Sequence durationInFrames={70}>
                     <AbsoluteFill>
                         <div
-                            style={{ transform: `scale(${SCALE_IMAGE})` }}
+                            style={{ transform: `scale(${G_SCALE_IMAGE})` }}
                             className="flex items-center justify-center h-screen">
-                            <SpringIn image={LOGO_PICTURE} />
+                            <SpringIn image={G_LOGO_PICTURE} />
                         </div>
                     </AbsoluteFill>
                 </Sequence>
@@ -77,13 +60,13 @@ export function Intro(props: Props) {
                 <Sequence from={69}>
                     <AbsoluteFill>
                         <div
-                            style={{ transform: `scale(${SCALE_IMAGE})` }}
+                            style={{ transform: `scale(${G_SCALE_IMAGE})` }}
                             className="flex items-center justify-center h-screen">
                             <MoveObject
-                                x={600 / SCALE_IMAGE}
+                                x={600 / G_SCALE_IMAGE}
                                 y={0}
                                 durationInSeconds={0.5}>
-                                <Img src={staticFile(LOGO_PICTURE)} />
+                                <Img src={staticFile(G_LOGO_PICTURE)} />
                             </MoveObject>
                         </div>
                     </AbsoluteFill>
@@ -96,8 +79,8 @@ export function Intro(props: Props) {
                                 transform:
                                     'translateY(200px) translateX(-1000px)',
                             }}>
-                            {props.session.speakers &&
-                                props.session.speakers.map((speaker, index) => (
+                            {session.speakers &&
+                                session.speakers.map((speaker, index) => (
                                     <SpeakerInfo
                                         speaker={speaker}
                                         index={index}

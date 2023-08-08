@@ -9,7 +9,7 @@ import {
     useCurrentFrame,
     interpolate,
 } from 'remotion';
-import { Intro } from './intro';
+import { BaseOneIntro } from './base1_intro';
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 
@@ -71,7 +71,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
                 />
             </Sequence>
             <Sequence durationInFrames={175}>
-                <Intro session={session} />
+                <BaseOneIntro session={session}/>
             </Sequence>
             <Audio
                 src={staticFile(AUDIO_PATH)}
@@ -122,13 +122,15 @@ export function Compositions() {
 
     return (
         <>
-            {processedSessions.map((session) => (
+            {processedSessions.map((session, index) => (
                 <Composition
-                    key={session.id}
+                    key={index}
                     id={`session-${session.id}`}
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
                     durationInFrames={
                         convertToSeconds(session.endCut) * FPS -
                         convertToSeconds(session.startCut) * FPS
