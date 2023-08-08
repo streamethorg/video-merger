@@ -1,4 +1,5 @@
 import { loadFont } from '@remotion/google-fonts/Roboto';
+import { staticFile } from 'remotion';
 
 // Global
 export const G_LOGO_PICTURE = '/images/FtC.svg';

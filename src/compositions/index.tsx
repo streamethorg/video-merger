@@ -131,8 +131,6 @@ export function Compositions() {
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
                     durationInFrames={
                         convertToSeconds(session.endCut) * G_FPS -
                         convertToSeconds(session.startCut) * G_FPS
