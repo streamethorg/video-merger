@@ -1,10 +1,5 @@
 name: Render videos
 
-on:
-  push:
-    branches:
-      - FtC
-
 jobs:
   build:
     runs-on: ubuntu-latest

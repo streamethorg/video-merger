@@ -7,7 +7,7 @@
     "build": "remotion render",
     "render": "ts-node src/scripts/render",
     "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "eslint:check": "eslint src --ext ts,tsx,js,jsx && tsc",
     "prettier:fix": "prettier './src' --write",
     "prettier:check": "prettier './src' --check",
     "getVideo": "ts-node './src/scripts/videoFetcher.ts'",
