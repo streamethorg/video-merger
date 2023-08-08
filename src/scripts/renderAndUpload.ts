@@ -5,9 +5,8 @@ import { RenderMediaOnProgress } from '@remotion/renderer';
 import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream } from 'fs';
 import path from 'path';
-import fs from 'fs';
-import toml from 'toml';
 import { webpackOverride } from '../webpack-override';
+import { G_EVENT } from '../utils/themeConfig';
 
 let lastProgressPrinted = -1;
 
@@ -19,9 +18,6 @@ const onProgress: RenderMediaOnProgress = ({ progress }) => {
         lastProgressPrinted = progressPercent;
     }
 };
-
-const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-const { event } = config;
 
 if (!process.env.LIVEPEER_APIKEY) {
     console.error('process.env.LIVEPEER_APIKEY is not defined');
@@ -69,7 +65,7 @@ async function uploadAsset(filePath: string) {
     await provider.createAsset({
         sources: [
             {
-                name: `${event}-${videoName}`,
+                name: `${G_EVENT}-${videoName}`,
                 file: stream,
                 storage: {
                     ipfs: true,

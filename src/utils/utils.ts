@@ -14,3 +14,12 @@ export function splitTextIntoLines(text: string, maxLen: number) {
 
     return lines;
 }
+
+export function convertToSeconds(time: string | undefined): number {
+    return time
+        ? time
+              .split(':')
+              .map(Number)
+              .reduce((acc, val, index) => acc + val * 60 ** (2 - index), 0)
+        : 0;
+}

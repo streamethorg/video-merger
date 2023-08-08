@@ -2,10 +2,13 @@ import { loadFont } from '@remotion/google-fonts/Roboto';
 import { staticFile } from 'remotion';
 
 // Global
+export const G_EVENT = 'FtC';
 export const G_LOGO_PICTURE = '/images/FtC.svg';
 export const G_FPS = 25;
 export const G_VIDEO_PATH = '/videos/stream.mp4';
-export const G_AUDIO_PATH = '/audio/507_short1_innovation-design_0019.wav';
+export const G_AUDIO_PATH = staticFile(
+    '/audio/507_short1_innovation-design_0019.wav',
+);
 export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 /// / Please check Google Font what weights you can use

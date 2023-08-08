@@ -18,20 +18,12 @@ import {
     G_FPS,
     G_DEFAULT_AVATAR_URL,
 } from '../utils/themeConfig';
+import { convertToSeconds } from '../utils/utils';
 
 const sessions: SessionType[] = SESSIONS.data;
 
 interface Props {
     session: SessionType;
-}
-
-function convertToSeconds(time: string | undefined): number {
-    return time
-        ? time
-              .split(':')
-              .map(Number)
-              .reduce((acc, val, index) => acc + val * 60 ** (2 - index), 0)
-        : 0;
 }
 
 function clampInterpolation(f: number, start: number[], end: number[]): number {
@@ -76,7 +68,7 @@ function IntroWithVideo(props: Props) {
                 <BaseOneIntro session={session} />
             </Sequence>
             <Audio
-                src={staticFile(G_AUDIO_PATH)}
+                src={G_AUDIO_PATH}
                 endAt={175}
                 volume={(f) =>
                     f < 135

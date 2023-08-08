@@ -17,7 +17,7 @@ import {
     G_LOGO_PICTURE,
     G_SCALE_IMAGE,
 } from '../utils/themeConfig';
-import { splitTextIntoLines } from '../utils/textUtils';
+import { splitTextIntoLines } from '../utils/utils';
 
 interface Props {
     session: SessionType;
