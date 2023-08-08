@@ -14,19 +14,30 @@ import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 
 const sessions: SessionType[] = SESSIONS.data;
+
 const FPS = 25;
+const VIDEO_PATH = '/videos/stream.mp4';
+const AUDIO_PATH = '/audio/507_short1_innovation-design_0019.wav';
+const DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 interface Props {
     session: SessionType;
 }
 
 function convertToSeconds(time: string | undefined): number {
-    if (time) {
-        const parts = time.split(':').map(Number);
-        return parts[0] * 3600 + parts[1] * 60 + parts[2];
-    }
+    return time
+        ? time
+              .split(':')
+              .map(Number)
+              .reduce((acc, val, index) => acc + val * 60 ** (2 - index), 0)
+        : 0;
+}
 
-    return 0;
+function clampInterpolation(f: number, start: number[], end: number[]): number {
+    return interpolate(f, start, end, {
+        extrapolateLeft: 'clamp',
+        extrapolateRight: 'clamp',
+    });
 }
 
 const IntroWithVideo: React.FC<Props> = ({ session }) => {
@@ -34,24 +45,16 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
     const frame = useCurrentFrame();
     const startFadeFrame = durationInFrames - 50;
 
-    const opacity = interpolate(
+    const opacity = clampInterpolation(
         frame,
         [startFadeFrame, durationInFrames],
         [0, 1],
-        {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-        },
     );
 
-    const videoVolume = interpolate(
+    const videoVolume = clampInterpolation(
         frame,
         [startFadeFrame, durationInFrames],
         [1, 0],
-        {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-        },
     );
 
     const startCutInSeconds = convertToSeconds(session.startCut);
@@ -61,7 +64,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
         <div>
             <Sequence name="Video" from={150}>
                 <Video
-                    src={staticFile('/videos/stream.mp4')}
+                    src={staticFile(VIDEO_PATH)}
                     startFrom={startCutInSeconds * fps}
                     endAt={endCutInSeconds * fps}
                     volume={() => videoVolume}
@@ -71,7 +74,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
                 <Intro session={session} />
             </Sequence>
             <Audio
-                src={staticFile('/audio/507_short1_innovation-design_0019.wav')}
+                src={staticFile(AUDIO_PATH)}
                 endAt={175}
                 volume={(f) =>
                     f < 135
@@ -91,7 +94,6 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
 };
 
 export function Compositions() {
-    const defaultAvatarUrl = staticFile('/images/ETHLogo.jpg');
     const processedSessions = sessions
         .filter(
             (session) =>
@@ -108,7 +110,7 @@ export function Compositions() {
             if (session.speakers) {
                 session.speakers.forEach((speaker) => {
                     if (speaker.avatarUrl === null) {
-                        speaker.avatarUrl = defaultAvatarUrl;
+                        speaker.avatarUrl = DEFAULT_AVATAR_URL;
                         console.warn(
                             `${session.id} has no avatar, changing it to default`,
                         );
@@ -120,15 +122,13 @@ export function Compositions() {
 
     return (
         <>
-            {processedSessions.map((session, index) => (
+            {processedSessions.map((session) => (
                 <Composition
-                    key={index}
+                    key={session.id}
                     id={`session-${session.id}`}
-                    component={IntroWithVideo}
+                    component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
                     durationInFrames={
                         convertToSeconds(session.endCut) * FPS -
                         convertToSeconds(session.startCut) * FPS

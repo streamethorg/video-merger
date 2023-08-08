@@ -5,8 +5,7 @@ import fs from 'fs';
 import toml from 'toml';
 
 const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-
-const event = config.event;
+const {event} = config;
 
 if (!process.env.LIVEPEER_APIKEY) {
     console.error('process.env.LIVEPEER_APIKEY is not defined');

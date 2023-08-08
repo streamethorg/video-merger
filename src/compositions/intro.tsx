@@ -7,7 +7,7 @@ import {
     Img,
 } from 'remotion';
 import { CameraMotionBlur } from '@remotion/motion-blur';
-import { Session as SessionType } from '../types';
+import { Speaker as SpeakerType, Session as SessionType } from '../types';
 import SpringIn from '../components/ZoomIn';
 import MoveObject from '../components/MoveObject';
 
@@ -26,20 +26,18 @@ interface Props {
     session: SessionType;
 }
 
-function splitTextIntoLines(text: string, maxLen: number) {
-    const words = text.split(' ');
-    const lines: string[] = [''];
-    let lineIndex = 0;
-
-    words.forEach((word) => {
-        if ((lines[lineIndex] + word).length > maxLen) {
-            lines.push(word);
-            lineIndex++;
+function splitTextIntoLines(text: string, maxLen: number): string[] {
+    const lines = [];
+    let currentLine = '';
+    for (const word of text.split(' ')) {
+        if (currentLine.length + word.length > maxLen) {
+            lines.push(currentLine.trim());
+            currentLine = word;
         } else {
-            lines[lineIndex] += ` ${word}`;
+            currentLine += ` ${word}`;
         }
-    });
-
+    }
+    lines.push(currentLine.trim());
     return lines;
 }
 
@@ -55,8 +53,6 @@ export function Intro(props: Props) {
         },
     );
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     return (
         <CameraMotionBlur samples={5}>
             <AbsoluteFill style={{ opacity }}>
@@ -100,55 +96,18 @@ export function Intro(props: Props) {
                                 transform:
                                     'translateY(200px) translateX(-1000px)',
                             }}>
-                            {props.session.speakers.map((speaker, index) => (
-                                <div
-                                    key={index}
-                                    style={{
-                                        color: '#000000',
-                                        transform: `translateY(${
-                                            300 + index * -75
-                                        }px)`,
-                                        fontSize: 60,
-                                        fontFamily,
-                                        fontWeight: 600,
-                                    }}>
-                                    <Sequence
-                                        key={index}
-                                        name={`Speaker: ${speaker.name}`}
-                                        durationInFrames={durationInFrames}>
-                                        <MoveObject
-                                            x={1150}
-                                            y={0}
-                                            durationInSeconds={0.8}>
-                                            <div>{speaker.name}</div>
-                                        </MoveObject>
-                                    </Sequence>
-                                </div>
-                            ))}
-                            <Sequence
-                                name="Session name"
-                                durationInFrames={durationInFrames}>
-                                <MoveObject
-                                    x={1150}
-                                    y={0}
-                                    durationInSeconds={0.6}>
-                                    <div
-                                        style={{
-                                            color: '#000000',
-                                            transform: 'translateY(400px)',
-                                            fontFamily,
-                                            fontWeight: '200',
-                                            fontSize: 40,
-                                        }}>
-                                        {splitTextIntoLines(
-                                            props.session.name,
-                                            30,
-                                        ).map((line, index) => (
-                                            <div key={index}>{line}</div>
-                                        ))}
-                                    </div>
-                                </MoveObject>
-                            </Sequence>
+                            {props.session.speakers &&
+                                props.session.speakers.map((speaker, index) => (
+                                    <SpeakerInfo
+                                        speaker={speaker}
+                                        index={index}
+                                        durationInFrames={durationInFrames}
+                                    />
+                                ))}
+                            <SessionName
+                                name={props.session.name}
+                                durationInFrames={durationInFrames}
+                            />
                         </div>
                     </AbsoluteFill>
                 </Sequence>
@@ -156,3 +115,49 @@ export function Intro(props: Props) {
         </CameraMotionBlur>
     );
 }
+
+const SpeakerInfo: React.FC<{
+    speaker: SpeakerType;
+    index: number;
+    durationInFrames: number;
+}> = ({ speaker, index, durationInFrames }) => (
+    <div
+        key={index}
+        style={{
+            color: '#000000',
+            transform: `translateY(${300 + index * -75}px)`,
+            fontSize: 60,
+            fontFamily,
+            fontWeight: 600,
+        }}>
+        <Sequence
+            name={`Speaker: ${speaker.name}`}
+            durationInFrames={durationInFrames}>
+            <MoveObject x={1150} y={0} durationInSeconds={0.8}>
+                <div>{speaker.name}</div>
+            </MoveObject>
+        </Sequence>
+    </div>
+);
+
+const SessionName: React.FC<{ name: string; durationInFrames: number }> = ({
+    name,
+    durationInFrames,
+}) => (
+    <Sequence name="Session name" durationInFrames={durationInFrames}>
+        <MoveObject x={1150} y={0} durationInSeconds={0.6}>
+            <div
+                style={{
+                    color: '#000000',
+                    transform: 'translateY(400px)',
+                    fontFamily,
+                    fontWeight: '200',
+                    fontSize: 40,
+                }}>
+                {splitTextIntoLines(name, 30).map((line, key) => (
+                    <div key={key}>{line}</div>
+                ))}
+            </div>
+        </MoveObject>
+    </Sequence>
+);
