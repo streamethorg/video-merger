@@ -9,16 +9,17 @@ import {
     useCurrentFrame,
     interpolate,
 } from 'remotion';
-import { Intro } from './intro';
+import { BaseOneIntro } from './base1_intro';
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
+import {
+    G_AUDIO_PATH,
+    G_VIDEO_PATH,
+    G_FPS,
+    G_DEFAULT_AVATAR_URL,
+} from '../utils/themeConfig';
 
 const sessions: SessionType[] = SESSIONS.data;
-
-const FPS = 25;
-const VIDEO_PATH = '/videos/stream.mp4';
-const AUDIO_PATH = '/audio/507_short1_innovation-design_0019.wav';
-const DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 interface Props {
     session: SessionType;
@@ -40,7 +41,8 @@ function clampInterpolation(f: number, start: number[], end: number[]): number {
     });
 }
 
-const IntroWithVideo: React.FC<Props> = ({ session }) => {
+function IntroWithVideo(props: Props) {
+    const { session } = props;
     const { durationInFrames, fps } = useVideoConfig();
     const frame = useCurrentFrame();
     const startFadeFrame = durationInFrames - 50;
@@ -64,17 +66,17 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
         <div>
             <Sequence name="Video" from={150}>
                 <Video
-                    src={staticFile(VIDEO_PATH)}
+                    src={staticFile(G_VIDEO_PATH)}
                     startFrom={startCutInSeconds * fps}
                     endAt={endCutInSeconds * fps}
                     volume={() => videoVolume}
                 />
             </Sequence>
             <Sequence durationInFrames={175}>
-                <Intro session={session} />
+                <BaseOneIntro session={session} />
             </Sequence>
             <Audio
-                src={staticFile(AUDIO_PATH)}
+                src={staticFile(G_AUDIO_PATH)}
                 endAt={175}
                 volume={(f) =>
                     f < 135
@@ -91,7 +93,7 @@ const IntroWithVideo: React.FC<Props> = ({ session }) => {
             <AbsoluteFill style={{ backgroundColor: 'black', opacity }} />
         </div>
     );
-};
+}
 
 export function Compositions() {
     const processedSessions = sessions
@@ -110,7 +112,7 @@ export function Compositions() {
             if (session.speakers) {
                 session.speakers.forEach((speaker) => {
                     if (speaker.avatarUrl === null) {
-                        speaker.avatarUrl = DEFAULT_AVATAR_URL;
+                        speaker.avatarUrl = G_DEFAULT_AVATAR_URL;
                         console.warn(
                             `${session.id} has no avatar, changing it to default`,
                         );
@@ -122,18 +124,18 @@ export function Compositions() {
 
     return (
         <>
-            {processedSessions.map((session) => (
+            {processedSessions.map((session, index) => (
                 <Composition
-                    key={session.id}
+                    key={index}
                     id={`session-${session.id}`}
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
                     durationInFrames={
-                        convertToSeconds(session.endCut) * FPS -
-                        convertToSeconds(session.startCut) * FPS
+                        convertToSeconds(session.endCut) * G_FPS -
+                        convertToSeconds(session.startCut) * G_FPS
                     }
-                    fps={FPS}
+                    fps={G_FPS}
                     defaultProps={{ session }}
                 />
             ))}
