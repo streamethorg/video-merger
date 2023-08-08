@@ -1,6 +1,9 @@
 {
-	"extends": "@remotion",
-	"env": {
-		"node": true
-	}
+    "extends": "@remotion",
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+    }
 }
