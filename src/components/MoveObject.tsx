@@ -1,15 +1,17 @@
 import React, { ReactNode } from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, Easing } from 'remotion';
 
-interface Props {
+const MoveObject = ({
+    x,
+    y,
+    durationInSeconds,
+    children,
+}: {
     x: number;
     y: number;
     durationInSeconds: number;
     children: ReactNode;
-}
-
-const MoveObject = (props: Props) => {
-    const { x, y, durationInSeconds, children } = props;
+}) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
     const progress = Math.min(frame / (durationInSeconds * fps), 1);
@@ -23,14 +25,14 @@ const MoveObject = (props: Props) => {
     });
 
     return (
-        <div>
+        <>
             <div
                 style={{
                     transform: `translate(${transitionX}px, ${transitionY}px)`,
                 }}>
                 {children}
             </div>
-        </div>
+        </>
     );
 };
 
