@@ -9,8 +9,6 @@ import {
     useCurrentFrame,
     interpolate,
 } from 'remotion';
-import { BaseOneIntro } from './base1_intro';
-import { BaseTwoIntro } from './base2_intro';
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 import {
@@ -18,7 +16,10 @@ import {
     G_VIDEO_PATH,
     G_FPS,
     G_DEFAULT_AVATAR_URL,
+    G_ANIMATION_PATH,
 } from '../utils/themeConfig';
+import Text from '../components/Text';
+import MoveObject from '../components/MoveObject';
 
 const sessions: SessionType[] = SESSIONS.data;
 
@@ -60,31 +61,81 @@ function IntroWithVideo(props: Props) {
         [1, 0],
     );
 
+    const computeOpacity = (f: any) => {
+        return interpolate(f, [135, 175], [1, 0], {
+            extrapolateLeft: 'clamp',
+            extrapolateRight: 'clamp',
+        });
+    };
+
+    const videoOpacity = computeOpacity(frame);
     const startCutInSeconds = convertToSeconds(session.startCut);
     const endCutInSeconds = convertToSeconds(session.endCut);
 
     return (
-        <div>
-            <Sequence durationInFrames={175}>
-                <BaseTwoIntro session={session} />
+        <>
+            <Sequence name="Video" from={125}>
+                <Video
+                    src={staticFile(G_VIDEO_PATH)}
+                    startFrom={startCutInSeconds * fps}
+                    endAt={endCutInSeconds * fps}
+                    volume={() => videoVolume}
+                />
+            </Sequence>
+            <Sequence durationInFrames={170}>
+                <Video
+                    muted
+                    style={{ opacity: videoOpacity }}
+                    src={staticFile(G_ANIMATION_PATH)}
+                />
+            </Sequence>
+            <Sequence from={30} durationInFrames={110}>
+                <MoveObject x={0} y={-550} durationInSeconds={1.5}>
+                    <Text
+                        text={session.name}
+                        x={350}
+                        y={1200}
+                        colour="white"
+                        fontWeight={600}
+                        opacity={videoOpacity}
+                    />
+                </MoveObject>
+
+                {session.speakers &&
+                    session.speakers.map((speaker, index) => (
+                        <MoveObject
+                            key={speaker.id}
+                            x={0}
+                            y={-650 - index * 100}
+                            durationInSeconds={1.5}>
+                            <Text
+                                text={speaker.name}
+                                x={-500}
+                                y={1400}
+                                colour="white"
+                                fontWeight={600}
+                                opacity={videoOpacity}
+                            />
+                        </MoveObject>
+                    ))}
             </Sequence>
             <Audio
                 src={staticFile(G_AUDIO_PATH)}
-                endAt={175}
+                endAt={150}
                 volume={(f) =>
-                    f < 135
+                    f < 115
                         ? interpolate(f, [0, 10], [0, 1], {
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
-                        : interpolate(f, [135, 175], [1, 0], {
+                        : interpolate(f, [115, 150], [1, 0], {
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
                 }
             />
             <AbsoluteFill style={{ backgroundColor: 'black', opacity }} />
-        </div>
+        </>
     );
 }
 

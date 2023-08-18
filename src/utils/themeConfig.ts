@@ -7,6 +7,7 @@ export const G_TEMPLATE = 'BaseOneIntro';
 export const G_LOGO_PICTURE = '/images/FtC.svg';
 export const G_FPS = 25;
 export const G_VIDEO_PATH = '/videos/stream.mp4';
+export const G_ANIMATION_PATH = '/animations/ProtocolBerg_animation.mov';
 export const G_AUDIO_PATH = '/audio/507_short1_innovation-design_0019.wav';
 export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
