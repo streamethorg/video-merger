@@ -120,7 +120,7 @@ function IntroWithVideo(props: Props) {
                     />
                 </div>
             </Sequence>
-            <Sequence>
+            <Sequence durationInFrames={170}>
                 <div style={{ opacity: videoOpacity }}>
                     <Rect
                         width={750}
