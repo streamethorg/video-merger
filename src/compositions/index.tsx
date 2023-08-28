@@ -12,7 +12,6 @@ import {
 import SESSIONS from '../../public/json/sessions.json';
 import { Session as SessionType } from '../types';
 import {
-    G_AUDIO_PATH,
     G_VIDEO_PATH,
     G_FPS,
     G_DEFAULT_AVATAR_URL,
@@ -20,9 +19,10 @@ import {
 } from '../utils/themeConfig';
 import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
-import { Rect } from '@remotion/shapes';
+import { Circle } from '@remotion/shapes';
 
 const sessions: SessionType[] = SESSIONS.data;
+const DURATION_ANIMATION = 210;
 
 interface Props {
     readonly session: SessionType;
@@ -63,14 +63,19 @@ function IntroWithVideo(props: Props) {
     );
 
     const computeOpacity = (f: any) => {
-        return interpolate(f, [135, 175], [1, 0], {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-        });
+        return interpolate(
+            f,
+            [DURATION_ANIMATION - 30, DURATION_ANIMATION],
+            [1, 0],
+            {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+            },
+        );
     };
 
     const showText = (f: any) => {
-        return interpolate(f, [15, 30], [0, 1], {
+        return interpolate(f, [100, 130], [0, 1], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
         });
@@ -79,10 +84,13 @@ function IntroWithVideo(props: Props) {
     const videoOpacity = computeOpacity(frame);
     const startCutInSeconds = convertToSeconds(session.startCut);
     const endCutInSeconds = convertToSeconds(session.endCut);
+    const allSpeakerNames = session
+        .speakers!.map((speaker) => speaker.name)
+        .join('\n');
 
     return (
         <>
-            <Sequence name="Video" from={125}>
+            <Sequence name="Video" from={DURATION_ANIMATION - 30}>
                 <Video
                     src={staticFile(G_VIDEO_PATH)}
                     startFrom={startCutInSeconds * fps}
@@ -90,64 +98,49 @@ function IntroWithVideo(props: Props) {
                     volume={() => videoVolume}
                 />
             </Sequence>
-            <Sequence durationInFrames={170}>
+            <Sequence durationInFrames={DURATION_ANIMATION}>
                 <Video
-                    muted
                     style={{ opacity: videoOpacity }}
                     src={staticFile(G_ANIMATION_PATH)}
                 />
             </Sequence>
-            {session.speakers!.map((speaker, index) => (
-                <Sequence name="Name(s)" durationInFrames={170}>
-                    <div style={{ opacity: videoOpacity }}>
-                        <Text
-                            text={speaker.name}
-                            x={760}
-                            y={350 - index * 80}
-                            opacity={showText(frame)}
-                        />
-                    </div>
-                </Sequence>
-            ))}
-            <Sequence name="Title" durationInFrames={170}>
-                <div style={{ opacity: videoOpacity }}>
+            <Sequence name="Name(s)" durationInFrames={DURATION_ANIMATION}>
+                <div
+                    style={{
+                        width: '100%',
+                        opacity: videoOpacity,
+                    }}>
                     <Text
-                        text={splitTextIntoString(session.name, 30)}
-                        x={760}
-                        y={460}
+                        text={allSpeakerNames}
+                        x={0}
+                        y={session.name.length < 50 ? 650 : 770}
+                        color="white"
+                        fontSize={50}
                         opacity={showText(frame)}
+                    />
+                </div>
+            </Sequence>
+            <Sequence name="Title" durationInFrames={DURATION_ANIMATION}>
+                <div
+                    style={{
+                        width: '100%',
+                        opacity: videoOpacity,
+                    }}>
+                    <Text
+                        text={splitTextIntoString(
+                            session.name.toUpperCase(),
+                            50,
+                        )}
+                        x={0}
+                        y={580}
+                        color="white"
+                        opacity={showText(frame)}
+                        fontSize={50}
+                        fontFamily="Latin Modern Caps"
                         fontWeight={600}
                     />
                 </div>
             </Sequence>
-            <Sequence durationInFrames={170}>
-                <div style={{ opacity: videoOpacity }}>
-                    <Rect
-                        width={750}
-                        height={3}
-                        fill="black"
-                        style={{
-                            opacity: showText(frame),
-                            transform: 'translateX(760px) translateY(445px)',
-                        }}
-                    />
-                </div>
-            </Sequence>
-            <Audio
-                src={staticFile(G_AUDIO_PATH)}
-                endAt={150}
-                volume={(f) =>
-                    f < 115
-                        ? interpolate(f, [0, 10], [0, 1], {
-                              extrapolateLeft: 'clamp',
-                              extrapolateRight: 'clamp',
-                          })
-                        : interpolate(f, [115, 150], [1, 0], {
-                              extrapolateLeft: 'clamp',
-                              extrapolateRight: 'clamp',
-                          })
-                }
-            />
             <AbsoluteFill style={{ backgroundColor: 'black', opacity }} />
         </>
     );

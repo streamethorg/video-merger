@@ -1,30 +1,35 @@
-import { fontFamily } from '../utils/themeConfig';
+// Import { fontFamily } from '../utils/themeConfig';
 
 function Text({
     text,
     x,
     y,
-    colour = 'black',
+    color = 'black',
     fontWeight = 400,
+    fontSize = 60,
+    fontFamily = 'Latin Modern',
     opacity = 1,
 }: {
     text: string;
     x: number;
     y: number;
-    colour?: string;
+    color?: string;
     fontWeight?: number;
+    fontSize?: number;
+    fontFamily?: string;
     opacity?: number;
 }) {
     const lines = text.split('\n').map((line, i) => <div key={i}>{line}</div>);
     return (
         <div
             style={{
-                color: colour,
+                color,
                 transform: `translateX(${x}px) translateY(${y}px)`,
-                fontSize: 60,
+                fontSize,
                 fontFamily,
                 fontWeight,
                 opacity,
+                textAlign: 'center',
             }}>
             {lines}
         </div>
