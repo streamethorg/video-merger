@@ -26,20 +26,23 @@ const { provider } = createClient({
 });
 
 const onProgress: RenderMediaOnProgress = ({ progress }) => {
-  const progressPercent = Math.floor(progress * 100);
-  
-  if (progressPercent > lastProgressPrinted) {
-    const progressBarLength = 50;
-    const numberOfEqualSigns = Math.floor(progress * progressBarLength);
-    const numberOfDashes = progressBarLength - numberOfEqualSigns;
-    
-    const progressBar = `[${'='.repeat(numberOfEqualSigns)}>${'-'.repeat(numberOfDashes)}] ${progressPercent}%`;
-    
-    process.stdout.clearLine(0);
-    process.stdout.cursorTo(0);
-    process.stdout.write(progressBar);
-    
-    lastProgressPrinted = progressPercent;
+    const progressPercent = Math.floor(progress * 100);
+
+    if (progressPercent > lastProgressPrinted) {
+        const progressBarLength = 50;
+        const numberOfEqualSigns = Math.floor(progress * progressBarLength);
+        const numberOfDashes = progressBarLength - numberOfEqualSigns;
+
+        const progressBar = `[${'='.repeat(numberOfEqualSigns)}>${'-'.repeat(
+            numberOfDashes,
+        )}] ${progressPercent}%`;
+
+        process.stdout.clearLine(0);
+        process.stdout.cursorTo(0);
+        process.stdout.write(progressBar);
+
+        lastProgressPrinted = progressPercent;
+    }
 };
 
 const start = async () => {
