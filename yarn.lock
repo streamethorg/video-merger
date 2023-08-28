@@ -1031,6 +1031,11 @@
   dependencies:
     remotion "4.0.20"
 
+"@remotion/paths@4.0.27":
+  version "4.0.27"
+  resolved "https://registry.yarnpkg.com/@remotion/paths/-/paths-4.0.27.tgz#033b80df56bc236dcf52d72cb4cae5ad4c06aaf6"
+  integrity sha512-v/0ELyneHeUoExA5rK74DVKQverYqea0Ec5CkKY/KBqIuIJPj9Qan2FAa+o1t/Bt/+k+O/4bxemuxdZpPk4vQw==
+
 "@remotion/player@4.0.20":
   version "4.0.20"
   resolved "https://registry.yarnpkg.com/@remotion/player/-/player-4.0.20.tgz#4014b37c6fc2ac98fe83112f1158b757fabe45db"
@@ -1056,6 +1061,13 @@
     "@remotion/compositor-linux-x64-gnu" "4.0.20"
     "@remotion/compositor-linux-x64-musl" "4.0.20"
     "@remotion/compositor-win32-x64-msvc" "4.0.20"
+
+"@remotion/shapes@^4.0.27":
+  version "4.0.27"
+  resolved "https://registry.yarnpkg.com/@remotion/shapes/-/shapes-4.0.27.tgz#f1dc72340a03b1f7aa2a2953dc15ca3d519fbc09"
+  integrity sha512-0uFLX8Zsk4rPFt6WuH2GUhBvUw7j10IhWlpjyc8Bbwpbd5LSz2045zYvFYSWNhAlrthqJY6ilaezNL7QisK1jg==
+  dependencies:
+    "@remotion/paths" "4.0.27"
 
 "@remotion/tailwind@4.0.20":
   version "4.0.20"

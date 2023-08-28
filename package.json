@@ -24,6 +24,7 @@
     "@remotion/google-fonts": "4.0.20",
     "@remotion/lottie": "4.0.20",
     "@remotion/motion-blur": "4.0.20",
+    "@remotion/shapes": "^4.0.27",
     "lottie-web": "^5.12.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

@@ -19,8 +19,8 @@ import {
     G_ANIMATION_PATH,
 } from '../utils/themeConfig';
 import Text from '../components/Text';
-import MoveObject from '../components/MoveObject';
-import { AfterEffectsAnimation } from '../components/AfterEffectsAnimation';
+import { splitTextIntoString } from '../utils/textUtils';
+import { Rect } from '@remotion/shapes';
 
 const sessions: SessionType[] = SESSIONS.data;
 
@@ -69,6 +69,13 @@ function IntroWithVideo(props: Props) {
         });
     };
 
+    const showText = (f: any) => {
+        return interpolate(f, [15, 30], [0, 1], {
+            extrapolateLeft: 'clamp',
+            extrapolateRight: 'clamp',
+        });
+    };
+
     const videoOpacity = computeOpacity(frame);
     const startCutInSeconds = convertToSeconds(session.startCut);
     const endCutInSeconds = convertToSeconds(session.endCut);
@@ -90,8 +97,41 @@ function IntroWithVideo(props: Props) {
                     src={staticFile(G_ANIMATION_PATH)}
                 />
             </Sequence>
-            <Sequence from={30} durationInFrames={108}>
-                <AfterEffectsAnimation name="name" title="hi" />
+            {session.speakers!.map((speaker, index) => (
+                <Sequence name="Name(s)" durationInFrames={170}>
+                    <div style={{ opacity: videoOpacity }}>
+                        <Text
+                            text={speaker.name}
+                            x={760}
+                            y={350 - index * 80}
+                            opacity={showText(frame)}
+                        />
+                    </div>
+                </Sequence>
+            ))}
+            <Sequence name="Title" durationInFrames={170}>
+                <div style={{ opacity: videoOpacity }}>
+                    <Text
+                        text={splitTextIntoString(session.name, 30)}
+                        x={760}
+                        y={460}
+                        opacity={showText(frame)}
+                        fontWeight={600}
+                    />
+                </div>
+            </Sequence>
+            <Sequence>
+                <div style={{ opacity: videoOpacity }}>
+                    <Rect
+                        width={750}
+                        height={3}
+                        fill="black"
+                        style={{
+                            opacity: showText(frame),
+                            transform: 'translateX(760px) translateY(445px)',
+                        }}
+                    />
+                </div>
             </Sequence>
             <Audio
                 src={staticFile(G_AUDIO_PATH)}

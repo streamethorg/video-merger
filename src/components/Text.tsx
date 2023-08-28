@@ -15,6 +15,7 @@ function Text({
     fontWeight?: number;
     opacity?: number;
 }) {
+    const lines = text.split('\n').map((line, i) => <div key={i}>{line}</div>);
     return (
         <div
             style={{
@@ -25,7 +26,7 @@ function Text({
                 fontWeight,
                 opacity,
             }}>
-            {text}
+            {lines}
         </div>
     );
 }
