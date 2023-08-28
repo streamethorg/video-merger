@@ -1,5 +1,5 @@
 import { loadFont } from '@remotion/google-fonts/Vollkorn';
-import { staticFile, delayRender, continueRender } from 'remotion';
+import { staticFile } from 'remotion';
 
 // Global
 export const G_EVENT = 'FtC';

@@ -24,10 +24,10 @@ export function splitTextIntoString(text: string, maxLen: number): string {
         if ((lines[lineIndex] + word).length > maxLen) {
             lines.push(word);
             lineIndex++;
-        } else if (lines[lineIndex] !== '') {
-            lines[lineIndex] += ` ${word}`;
-        } else {
+        } else if (lines[lineIndex] === '') {
             lines[lineIndex] = word;
+        } else {
+            lines[lineIndex] += ` ${word}`;
         }
     });
 
