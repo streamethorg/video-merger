@@ -5,14 +5,14 @@ import { RenderMediaOnProgress } from '@remotion/renderer';
 import { createClient, studioProvider } from '@livepeer/react';
 import { createReadStream } from 'fs';
 import path from 'path';
-import fs from 'fs';
-import toml from 'toml';
 import { webpackOverride } from '../webpack-override';
 
-let lastProgressPrinted = -1;
+let lastProgressPrinted = 0;
 
-const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-const { event } = config;
+if (!process.env.EVENT) {
+    console.error('process.env.EVENT is not defined');
+    process.exit(1);
+}
 
 if (!process.env.LIVEPEER_APIKEY) {
     console.error('process.env.LIVEPEER_APIKEY is not defined');
@@ -26,12 +26,20 @@ const { provider } = createClient({
 });
 
 const onProgress: RenderMediaOnProgress = ({ progress }) => {
-    const progressPercent = Math.floor(progress * 100);
-
-    if (progressPercent > lastProgressPrinted) {
-        console.log(`Rendering is ${progressPercent}% complete`);
-        lastProgressPrinted = progressPercent;
-    }
+  const progressPercent = Math.floor(progress * 100);
+  
+  if (progressPercent > lastProgressPrinted) {
+    const progressBarLength = 50;
+    const numberOfEqualSigns = Math.floor(progress * progressBarLength);
+    const numberOfDashes = progressBarLength - numberOfEqualSigns;
+    
+    const progressBar = `[${'='.repeat(numberOfEqualSigns)}>${'-'.repeat(numberOfDashes)}] ${progressPercent}%`;
+    
+    process.stdout.clearLine(0);
+    process.stdout.cursorTo(0);
+    process.stdout.write(progressBar);
+    
+    lastProgressPrinted = progressPercent;
 };
 
 const start = async () => {
@@ -53,11 +61,11 @@ const start = async () => {
                 composition,
                 serveUrl: bundled,
                 outputLocation: `out/sessions/${composition.id}.mp4`,
-                videoBitrate: '500M',
+                videoBitrate: '50M',
                 onProgress,
             });
 
-            lastProgressPrinted = -1;
+            lastProgressPrinted = 0;
             await uploadAsset(`out/sessions/${composition.id}.mp4`);
         }
     }
@@ -70,12 +78,12 @@ async function uploadAsset(filePath: string) {
     await provider.createAsset({
         sources: [
             {
-                name: `${event}-${videoName}`,
+                name: `${process.env.EVENT}-${videoName}`,
                 file: stream,
                 storage: {
                     ipfs: true,
                     metadata: {
-                        name: `${event}-${videoName}`,
+                        name: `${process.env.EVENT}-${videoName}`,
                     },
                 },
             },
@@ -85,11 +93,7 @@ async function uploadAsset(filePath: string) {
     console.log(`Uploaded asset ${videoName}`);
 }
 
-start()
-    .then(() => {
-        process.exit(0);
-    })
-    .catch((err) => {
-        console.log(err);
-        process.exit(1);
-    });
+start().catch((err) => {
+    console.log(err);
+    process.exit(1);
+});
