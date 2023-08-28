@@ -11,6 +11,20 @@ import { webpackOverride } from '../webpack-override';
 
 let lastProgressPrinted = -1;
 
+const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
+const { event } = config;
+
+if (!process.env.LIVEPEER_APIKEY) {
+    console.error('process.env.LIVEPEER_APIKEY is not defined');
+    process.exit(1);
+}
+
+const { provider } = createClient({
+    provider: studioProvider({
+        apiKey: process.env.LIVEPEER_APIKEY ?? '',
+    }),
+});
+
 const onProgress: RenderMediaOnProgress = ({ progress }) => {
     const progressPercent = Math.floor(progress * 100);
 
@@ -19,19 +33,6 @@ const onProgress: RenderMediaOnProgress = ({ progress }) => {
         lastProgressPrinted = progressPercent;
     }
 };
-
-const config = toml.parse(fs.readFileSync('./config.toml', 'utf-8'));
-const { event } = config;
-
-if (!process.env.LIVEPEER_APIKEY) {
-    console.error('process.env.LIVEPEER_APIKEY is not defined');
-}
-
-const { provider } = createClient({
-    provider: studioProvider({
-        apiKey: process.env.LIVEPEER_APIKEY ?? '',
-    }),
-});
 
 const start = async () => {
     console.log('Find compositions...');
