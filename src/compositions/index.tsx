@@ -20,11 +20,12 @@ import {
 } from '../utils/themeConfig';
 import Text from '../components/Text';
 import MoveObject from '../components/MoveObject';
+import { AfterEffectsAnimation } from '../components/AfterEffectsAnimation';
 
 const sessions: SessionType[] = SESSIONS.data;
 
 interface Props {
-    session: SessionType;
+    readonly session: SessionType;
 }
 
 function convertToSeconds(time: string | undefined): number {
@@ -89,35 +90,8 @@ function IntroWithVideo(props: Props) {
                     src={staticFile(G_ANIMATION_PATH)}
                 />
             </Sequence>
-            <Sequence from={30} durationInFrames={110}>
-                <MoveObject x={0} y={-550} durationInSeconds={1.5}>
-                    <Text
-                        text={session.name}
-                        x={350}
-                        y={1200}
-                        colour="white"
-                        fontWeight={600}
-                        opacity={videoOpacity}
-                    />
-                </MoveObject>
-
-                {session.speakers &&
-                    session.speakers.map((speaker, index) => (
-                        <MoveObject
-                            key={speaker.id}
-                            x={0}
-                            y={-650 - index * 100}
-                            durationInSeconds={1.5}>
-                            <Text
-                                text={speaker.name}
-                                x={-500}
-                                y={1400}
-                                colour="white"
-                                fontWeight={600}
-                                opacity={videoOpacity}
-                            />
-                        </MoveObject>
-                    ))}
+            <Sequence from={30} durationInFrames={108}>
+                <AfterEffectsAnimation name="name" title="hi" />
             </Sequence>
             <Audio
                 src={staticFile(G_AUDIO_PATH)}

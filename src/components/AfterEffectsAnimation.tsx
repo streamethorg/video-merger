@@ -1,5 +1,3 @@
-import { useCurrentFrame } from 'remotion';
-import { interpolate } from 'remotion';
 import { Lottie, LottieAnimationData } from '@remotion/lottie';
 import { useEffect, useState } from 'react';
 import {
@@ -13,8 +11,8 @@ export const AfterEffectsAnimation = ({
     name,
     title,
 }: {
-    name: string;
-    title: string;
+    readonly name: string;
+    readonly title: string;
 }) => {
     const [handle] = useState(() => delayRender('Loading Lottie animation'));
     const [animationData, setAnimationData] =
@@ -24,10 +22,10 @@ export const AfterEffectsAnimation = ({
         fetch(staticFile('animations/protocol_berg.json'))
             .then((data) => data.json())
             .then((json) => {
-                let jsonString = JSON.stringify(json);
+                const jsonString = JSON.stringify(json);
 
-                jsonString = jsonString.replace('PLACEHOLDER_NAME', name);
-                jsonString = jsonString.replace('PLACEHOLDER_TITLE', title);
+                // JsonString = jsonString.replace(/PLACEHOLDER_NAME/g, name);
+                // jsonString = jsonString.replace(/PLACEHOLDER_TITLE/g, title);
 
                 const updatedJson = JSON.parse(jsonString);
 

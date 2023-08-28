@@ -28,7 +28,10 @@ font.load()
         document.fonts.add(font);
         continueRender(waitForFont);
     })
-    .catch((err) => console.log('Error loading font', err));
+    .catch((err) => {
+        console.log('Error loading font', err);
+        continueRender(waitForFont);
+    });
 
 /// / Advanced
 export const G_SCALE_IMAGE = 2;
