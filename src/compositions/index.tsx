@@ -113,7 +113,7 @@ function IntroWithVideo(props: Props) {
                     <Text
                         text={allSpeakerNames.toUpperCase()}
                         x={0}
-                        y={session.name.length < 50 ? 650 : 770}
+                        y={session.name.length < 50 ? 690 : 770}
                         color="white"
                         fontSize={50}
                         fontFamily="Latin Modern Caps"
