@@ -111,11 +111,12 @@ function IntroWithVideo(props: Props) {
                         opacity: videoOpacity,
                     }}>
                     <Text
-                        text={allSpeakerNames}
+                        text={allSpeakerNames.toUpperCase()}
                         x={0}
                         y={session.name.length < 50 ? 650 : 770}
                         color="white"
                         fontSize={50}
+                        fontFamily="Latin Modern Caps"
                         opacity={showText(frame)}
                     />
                 </div>
@@ -127,16 +128,12 @@ function IntroWithVideo(props: Props) {
                         opacity: videoOpacity,
                     }}>
                     <Text
-                        text={splitTextIntoString(
-                            session.name.toUpperCase(),
-                            50,
-                        )}
+                        text={splitTextIntoString(session.name, 50)}
                         x={0}
                         y={580}
                         color="white"
                         opacity={showText(frame)}
                         fontSize={50}
-                        fontFamily="Latin Modern Caps"
                         fontWeight={600}
                     />
                 </div>

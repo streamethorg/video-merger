@@ -1,4 +1,4 @@
-import { staticFile, delayRender, continueRender} from 'remotion';
+import { staticFile, delayRender, continueRender } from 'remotion';
 
 // Global
 export const G_EVENT = 'FtC';
@@ -19,10 +19,13 @@ export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 const waitForFont = delayRender();
 const fontCaps = new FontFace(
     `Latin Modern Caps`,
-    `url('${staticFile("/font/lmromancaps10-regular.otf")}') format('opentype')`,
+    `url('${staticFile(
+        '/font/lmromancaps10-regular.otf',
+    )}') format('opentype')`,
 );
 
-fontCaps.load()
+fontCaps
+    .load()
     .then(() => {
         document.fonts.add(font);
     })
@@ -32,7 +35,7 @@ fontCaps.load()
 
 const font = new FontFace(
     `Latin Modern`,
-    `url('${staticFile("/font/lmroman8-regular.otf")}') format('opentype')`,
+    `url('${staticFile('/font/lmroman10-regular.otf')}') format('opentype')`,
 );
 
 font.load()
