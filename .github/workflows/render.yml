@@ -1,47 +1,47 @@
-name: Render videos
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: FtC
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@latest
-
-      - name: Setup ffmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg libx264-dev
-
-      - name: Install ts-node
-        run: yarn global add ts-node
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Install Livepeer React
-        run: yarn add @livepeer/react
-
-      - name: Ensure output directory exists
-        run: mkdir -p ./public/videos/
-
-      - name: Get Video
-        run: curl -L -o ./public/videos/stream.mp4 https://lp-playback.com/hls/7a5615xoit8gk6py/1080p0.mp4
-
-      - name: Render video
-        run: yarn render
-
-      - name: Upload video
-        run: yarn uploadVideo
-        env:
-          LIVEPEER_APIKEY: ${{ secrets.LIVEPEER_APIKEY }}
+# name: Render videos
+#
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#         with:
+#           ref: FtC
+#
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: 16
+#
+#       - name: Setup Chrome
+#         uses: browser-actions/setup-chrome@latest
+#
+#       - name: Setup ffmpeg
+#         run: |
+#           sudo apt-get update
+#           sudo apt-get install -y ffmpeg libx264-dev
+#
+#       - name: Install ts-node
+#         run: yarn global add ts-node
+#
+#       - name: Install dependencies
+#         run: yarn install
+#
+#       - name: Install Livepeer React
+#         run: yarn add @livepeer/react
+#
+#       - name: Ensure output directory exists
+#         run: mkdir -p ./public/videos/
+#
+#       - name: Get Video
+#         run: curl -L -o ./public/videos/stream.mp4 https://lp-playback.com/hls/7a5615xoit8gk6py/1080p0.mp4
+#
+#       - name: Render video
+#         run: yarn render
+#
+#       - name: Upload video
+#         run: yarn uploadVideo
+#         env:
+#           LIVEPEER_APIKEY: ${{ secrets.LIVEPEER_APIKEY }}
