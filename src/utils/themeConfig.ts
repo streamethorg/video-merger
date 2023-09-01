@@ -12,9 +12,7 @@ export const G_AUDIO_PATH = '/audio/522_short1_cream-soda-day_0018_preview.mp3';
 export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 /// / Please check Google Font what weights you can use
-export const { fontFamily } = loadFont('normal', {
-    weights: ['600', '400'],
-});
+export const { fontFamily } = loadFont();
 
 /// / Use the following if you have a none-Google Font
 // const waitForFont = delayRender();

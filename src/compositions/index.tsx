@@ -102,9 +102,11 @@ function IntroWithVideo(props: Props) {
                     <div style={{ opacity: videoOpacity }}>
                         <Text
                             text={speaker.name}
-                            x={760}
-                            y={350 - index * 80}
+                            x={770}
+                            y={390 - index * 80}
                             opacity={showText(frame)}
+                            fontWeight={800}
+                            fontSize={65}
                         />
                     </div>
                 </Sequence>
@@ -113,8 +115,8 @@ function IntroWithVideo(props: Props) {
                 <div style={{ opacity: videoOpacity }}>
                     <Text
                         text={splitTextIntoString(session.name, 30)}
-                        x={760}
-                        y={460}
+                        x={770}
+                        y={560}
                         opacity={showText(frame)}
                         fontWeight={600}
                     />
@@ -128,7 +130,7 @@ function IntroWithVideo(props: Props) {
                         fill="black"
                         style={{
                             opacity: showText(frame),
-                            transform: 'translateX(760px) translateY(445px)',
+                            transform: 'translateX(770px) translateY(520px)',
                         }}
                     />
                 </div>
