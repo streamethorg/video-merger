@@ -83,12 +83,6 @@ function IntroWithVideo(props: Props) {
     return (
         <>
             <Sequence name="Video" from={125}>
-                <Video
-                    src={staticFile(G_VIDEO_PATH)}
-                    startFrom={startCutInSeconds * fps}
-                    endAt={endCutInSeconds * fps}
-                    volume={() => videoVolume}
-                />
             </Sequence>
             <Sequence durationInFrames={170}>
                 <Video
@@ -103,18 +97,18 @@ function IntroWithVideo(props: Props) {
                         <Text
                             text={speaker.name}
                             x={760}
-                            y={350 - index * 80}
+                            y={335 - index * 80}
                             opacity={showText(frame)}
                         />
                     </div>
                 </Sequence>
             ))}
             <Sequence name="Title" durationInFrames={170}>
-                <div style={{ opacity: videoOpacity }}>
+                <div className='leading-tight' style={{ opacity: videoOpacity }}>
                     <Text
                         text={splitTextIntoString(session.name, 30)}
                         x={760}
-                        y={460}
+                        y={490}
                         opacity={showText(frame)}
                         fontWeight={600}
                     />
@@ -128,7 +122,7 @@ function IntroWithVideo(props: Props) {
                         fill="black"
                         style={{
                             opacity: showText(frame),
-                            transform: 'translateX(760px) translateY(445px)',
+                            transform: 'translateX(760px) translateY(450px)',
                         }}
                     />
                 </div>
