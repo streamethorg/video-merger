@@ -9,8 +9,8 @@ import {
     useCurrentFrame,
     interpolate,
 } from 'remotion';
+import { ISession as SessionType, ISpeaker as SpeakerType } from '../types';
 import SESSIONS from '../../public/json/sessions.json';
-import { Session as SessionType } from '../types';
 import {
     G_AUDIO_PATH,
     G_VIDEO_PATH,
@@ -22,7 +22,13 @@ import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
 
-const sessions: SessionType[] = SESSIONS.data;
+const sessions: SessionType[] = SESSIONS.map(session => {
+  return {
+    ...session,
+    start: new Date(session.start),
+    end: new Date(session.end),
+  };
+});
 
 interface Props {
     readonly session: SessionType;
@@ -83,6 +89,12 @@ function IntroWithVideo(props: Props) {
     return (
         <>
             <Sequence name="Video" from={125}>
+                <Video
+                    src={staticFile(G_VIDEO_PATH)}
+                    startFrom={startCutInSeconds * fps}
+                    endAt={endCutInSeconds * fps}
+                    volume={() => videoVolume}
+                />
             </Sequence>
             <Sequence durationInFrames={170}>
                 <Video
@@ -104,7 +116,9 @@ function IntroWithVideo(props: Props) {
                 </Sequence>
             ))}
             <Sequence name="Title" durationInFrames={170}>
-                <div className='leading-tight' style={{ opacity: videoOpacity }}>
+                <div
+                    className="leading-tight"
+                    style={{ opacity: videoOpacity }}>
                     <Text
                         text={splitTextIntoString(session.name, 30)}
                         x={760}
@@ -150,7 +164,7 @@ function IntroWithVideo(props: Props) {
 export function Compositions() {
     const processedSessions = sessions
         .filter(
-            (session) =>
+            (session: SessionType) =>
                 session.speakers &&
                 session.speakers.length > 0 &&
                 session.startCut &&
@@ -160,11 +174,11 @@ export function Compositions() {
                     convertToSeconds(session.startCut) >
                     0,
         )
-        .map((session) => {
+        .map((session: SessionType) => {
             if (session.speakers) {
-                session.speakers.forEach((speaker) => {
-                    if (speaker.avatarUrl === null) {
-                        speaker.avatarUrl = G_DEFAULT_AVATAR_URL;
+                session.speakers.forEach((speaker: SpeakerType) => {
+                    if (speaker.photo === null) {
+                        speaker.photo = G_DEFAULT_AVATAR_URL;
                         console.warn(
                             `${session.id} has no avatar, changing it to default`,
                         );
@@ -176,7 +190,7 @@ export function Compositions() {
 
     return (
         <>
-            {processedSessions.map((session, index) => (
+            {processedSessions.map((session: SessionType, index: number) => (
                 <Composition
                     key={index}
                     id={`session-${session.id}`}
