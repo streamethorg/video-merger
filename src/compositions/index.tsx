@@ -22,12 +22,12 @@ import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
 
-const sessions: SessionType[] = SESSIONS.map(session => {
-  return {
-    ...session,
-    start: new Date(session.start),
-    end: new Date(session.end),
-  };
+const sessions: SessionType[] = SESSIONS.map((session) => {
+    return {
+        ...session,
+        start: new Date(session.start),
+        end: new Date(session.end),
+    };
 });
 
 interface Props {
@@ -193,7 +193,7 @@ export function Compositions() {
             {processedSessions.map((session: SessionType, index: number) => (
                 <Composition
                     key={index}
-                    id={`session-${session.id}`}
+                    id={session.id.replace(/_/g, '-')}
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}

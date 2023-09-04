@@ -17,7 +17,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/a_future_to_protocol_upgradability.jpg"
+        "coverImage": "/sessions/protocol_berg/a_future_to_protocol_upgradability.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:10:00"
     },
     {
         "id": "agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime",
@@ -37,7 +39,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime.jpg"
+        "coverImage": "/sessions/protocol_berg/agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "beyond_indexers_trustless_application_data_snapshots",
@@ -57,7 +61,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/beyond_indexers_trustless_application_data_snapshots.jpg"
+        "coverImage": "/sessions/protocol_berg/beyond_indexers_trustless_application_data_snapshots.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "blockchain_node_db_designs_from_geth_to_erigon",
@@ -77,7 +83,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/blockchain_node_db_designs_from_geth_to_erigon.jpg"
+        "coverImage": "/sessions/protocol_berg/blockchain_node_db_designs_from_geth_to_erigon.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "closing_ceremony",
@@ -104,7 +112,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/closing_ceremony.jpg"
+        "coverImage": "/sessions/protocol_berg/closing_ceremony.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "cometbft_the_shooting_star_of_blockchain_consensus_protocols",
@@ -124,7 +134,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/cometbft_the_shooting_star_of_blockchain_consensus_protocols.jpg"
+        "coverImage": "/sessions/protocol_berg/cometbft_the_shooting_star_of_blockchain_consensus_protocols.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "creating_a_browserembedded_light_client_a_postmortem",
@@ -144,7 +156,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/creating_a_browserembedded_light_client_a_postmortem.jpg"
+        "coverImage": "/sessions/protocol_berg/creating_a_browserembedded_light_client_a_postmortem.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "crossing_chains_with_confidence_unlocking_smart_contract_users_through_ibc_actor_callbacks",
@@ -171,7 +185,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/crossing_chains_with_confidence_unlocking_smart_contract_users_through_ibc_actor_callbacks.jpg"
+        "coverImage": "/sessions/protocol_berg/crossing_chains_with_confidence_unlocking_smart_contract_users_through_ibc_actor_callbacks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "crossing_the_interoperability_bridge_a_deep_dive_into_building_interoperable_dapps_with_ibc",
@@ -198,7 +214,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/crossing_the_interoperability_bridge_a_deep_dive_into_building_interoperable_dapps_with_ibc.jpg"
+        "coverImage": "/sessions/protocol_berg/crossing_the_interoperability_bridge_a_deep_dive_into_building_interoperable_dapps_with_ibc.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "decentralized_and_shared_sequencer_architecture",
@@ -218,7 +236,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/decentralized_and_shared_sequencer_architecture.jpg"
+        "coverImage": "/sessions/protocol_berg/decentralized_and_shared_sequencer_architecture.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "developer_tooling_education_and_funding",
@@ -238,7 +258,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/developer_tooling_education_and_funding.jpg"
+        "coverImage": "/sessions/protocol_berg/developer_tooling_education_and_funding.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "dynamic_ibc_the_new_wave_of_dapp_composability",
@@ -258,7 +280,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/dynamic_ibc_the_new_wave_of_dapp_composability.jpg"
+        "coverImage": "/sessions/protocol_berg/dynamic_ibc_the_new_wave_of_dapp_composability.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "emerging_interfaces_for_building_web3_applications",
@@ -278,7 +302,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/emerging_interfaces_for_building_web3_applications.jpg"
+        "coverImage": "/sessions/protocol_berg/emerging_interfaces_for_building_web3_applications.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "ephemery_disposable_public_testnet",
@@ -298,7 +324,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/ephemery_disposable_public_testnet.jpg"
+        "coverImage": "/sessions/protocol_berg/ephemery_disposable_public_testnet.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "essential_maths_for_zero_knowledge_proofs",
@@ -318,7 +346,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/essential_maths_for_zero_knowledge_proofs.jpg"
+        "coverImage": "/sessions/protocol_berg/essential_maths_for_zero_knowledge_proofs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "evolution_of_optimistic_rollup_proofs",
@@ -338,7 +368,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/evolution_of_optimistic_rollup_proofs.jpg"
+        "coverImage": "/sessions/protocol_berg/evolution_of_optimistic_rollup_proofs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "how_to_unleash_the_power_of_account_abstraction",
@@ -358,7 +390,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/how_to_unleash_the_power_of_account_abstraction.jpg"
+        "coverImage": "/sessions/protocol_berg/how_to_unleash_the_power_of_account_abstraction.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "idk_what_x_is_and_at_this_point_im_afraid_to_ask",
@@ -378,7 +412,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/idk_what_x_is_and_at_this_point_im_afraid_to_ask.jpg"
+        "coverImage": "/sessions/protocol_berg/idk_what_x_is_and_at_this_point_im_afraid_to_ask.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "indexing_ethereum_mainnet_for_nearzero_cost",
@@ -405,7 +441,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/indexing_ethereum_mainnet_for_nearzero_cost.jpg"
+        "coverImage": "/sessions/protocol_berg/indexing_ethereum_mainnet_for_nearzero_cost.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "indexing_the_planet_for_good",
@@ -425,7 +463,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/indexing_the_planet_for_good.jpg"
+        "coverImage": "/sessions/protocol_berg/indexing_the_planet_for_good.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "interplanetary_consensus_scaling_the_open_data_economy",
@@ -445,7 +485,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/interplanetary_consensus_scaling_the_open_data_economy.jpg"
+        "coverImage": "/sessions/protocol_berg/interplanetary_consensus_scaling_the_open_data_economy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "libp2p_workshop__building_a_peertopeer_chat_application_in_rust",
@@ -465,7 +507,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/libp2p_workshop__building_a_peertopeer_chat_application_in_rust.jpg"
+        "coverImage": "/sessions/protocol_berg/libp2p_workshop__building_a_peertopeer_chat_application_in_rust.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "measuring_decentralization_across_l2_networks",
@@ -485,7 +529,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/measuring_decentralization_across_l2_networks.jpg"
+        "coverImage": "/sessions/protocol_berg/measuring_decentralization_across_l2_networks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "metadataprivate_data_transfer",
@@ -505,7 +551,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/metadataprivate_data_transfer.jpg"
+        "coverImage": "/sessions/protocol_berg/metadataprivate_data_transfer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "misadventures_in_governance",
@@ -525,7 +573,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/misadventures_in_governance.jpg"
+        "coverImage": "/sessions/protocol_berg/misadventures_in_governance.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "opening_ceremony",
@@ -552,7 +602,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/opening_ceremony.jpg"
+        "coverImage": "/sessions/protocol_berg/opening_ceremony.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "operationlevel_concurrent_transaction_execution_for_ethereum",
@@ -572,7 +624,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/operationlevel_concurrent_transaction_execution_for_ethereum.jpg"
+        "coverImage": "/sessions/protocol_berg/operationlevel_concurrent_transaction_execution_for_ethereum.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "p2p_set_reconciliation_as_storageheavy_dapp_infrastructure_20",
@@ -592,7 +646,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/p2p_set_reconciliation_as_storageheavy_dapp_infrastructure_20.jpg"
+        "coverImage": "/sessions/protocol_berg/p2p_set_reconciliation_as_storageheavy_dapp_infrastructure_20.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "parachain_consensus_from_the_ground_up",
@@ -612,7 +668,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/parachain_consensus_from_the_ground_up.jpg"
+        "coverImage": "/sessions/protocol_berg/parachain_consensus_from_the_ground_up.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "peertopeer_code_collaboration_with_radicle",
@@ -639,7 +697,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/peertopeer_code_collaboration_with_radicle.jpg"
+        "coverImage": "/sessions/protocol_berg/peertopeer_code_collaboration_with_radicle.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "permanent_decentralized_storage_the_use_case_of_verifiably_backing_up_external_chain_state",
@@ -659,7 +719,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/permanent_decentralized_storage_the_use_case_of_verifiably_backing_up_external_chain_state.jpg"
+        "coverImage": "/sessions/protocol_berg/permanent_decentralized_storage_the_use_case_of_verifiably_backing_up_external_chain_state.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "postconference_mixer",
@@ -671,7 +733,9 @@
         "speakers": [],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/postconference_mixer.jpg"
+        "coverImage": "/sessions/protocol_berg/postconference_mixer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "postconference_social_mixer",
@@ -683,7 +747,9 @@
         "speakers": [],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/postconference_social_mixer.jpg"
+        "coverImage": "/sessions/protocol_berg/postconference_social_mixer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "powdr__a_modular_stack_for_zkvms",
@@ -703,7 +769,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/powdr__a_modular_stack_for_zkvms.jpg"
+        "coverImage": "/sessions/protocol_berg/powdr__a_modular_stack_for_zkvms.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "protocol_guild_funding__incentivising_core_protocol_work",
@@ -723,7 +791,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/protocol_guild_funding__incentivising_core_protocol_work.jpg"
+        "coverImage": "/sessions/protocol_berg/protocol_guild_funding__incentivising_core_protocol_work.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "rawsciousness",
@@ -750,7 +820,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/rawsciousness.jpg"
+        "coverImage": "/sessions/protocol_berg/rawsciousness.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "real_web3_messaging_must_be_encrypted_decentralized_and_interoperable_utilizing_dm3_protocol_as_layer_0_of_messaging",
@@ -770,7 +842,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/real_web3_messaging_must_be_encrypted_decentralized_and_interoperable_utilizing_dm3_protocol_as_layer_0_of_messaging.jpg"
+        "coverImage": "/sessions/protocol_berg/real_web3_messaging_must_be_encrypted_decentralized_and_interoperable_utilizing_dm3_protocol_as_layer_0_of_messaging.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "recursive_snarks_for_efficiency_scalability_and_privacy",
@@ -790,7 +864,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/recursive_snarks_for_efficiency_scalability_and_privacy.jpg"
+        "coverImage": "/sessions/protocol_berg/recursive_snarks_for_efficiency_scalability_and_privacy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "retroactive_public_goods_funding_2_rounds_in",
@@ -810,7 +886,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/retroactive_public_goods_funding_2_rounds_in.jpg"
+        "coverImage": "/sessions/protocol_berg/retroactive_public_goods_funding_2_rounds_in.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "roll_your_own_crypto",
@@ -830,7 +908,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/roll_your_own_crypto.jpg"
+        "coverImage": "/sessions/protocol_berg/roll_your_own_crypto.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "running_rollups_on_light_nodes",
@@ -857,7 +937,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/running_rollups_on_light_nodes.jpg"
+        "coverImage": "/sessions/protocol_berg/running_rollups_on_light_nodes.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "testing_large_scale_networks_with_testground",
@@ -877,7 +959,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/testing_large_scale_networks_with_testground.jpg"
+        "coverImage": "/sessions/protocol_berg/testing_large_scale_networks_with_testground.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "testnet_or_not_here_we_come_a_deep_dive_into_running_test_networks",
@@ -904,7 +988,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/testnet_or_not_here_we_come_a_deep_dive_into_running_test_networks.jpg"
+        "coverImage": "/sessions/protocol_berg/testnet_or_not_here_we_come_a_deep_dive_into_running_test_networks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_anoma_protocol_and_its_design_process",
@@ -924,7 +1010,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_anoma_protocol_and_its_design_process.jpg"
+        "coverImage": "/sessions/protocol_berg/the_anoma_protocol_and_its_design_process.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_best_of_both_worlds_exploring_the_role_of_centralization_in_ipfs",
@@ -944,7 +1032,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_best_of_both_worlds_exploring_the_role_of_centralization_in_ipfs.jpg"
+        "coverImage": "/sessions/protocol_berg/the_best_of_both_worlds_exploring_the_role_of_centralization_in_ipfs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_blockspace_expo",
@@ -992,7 +1082,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_blockspace_expo.jpg"
+        "coverImage": "/sessions/protocol_berg/the_blockspace_expo.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_forest_that_protects_the_public_good_nym_mixnet_for_libp2p_privacy",
@@ -1019,7 +1111,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_forest_that_protects_the_public_good_nym_mixnet_for_libp2p_privacy.jpg"
+        "coverImage": "/sessions/protocol_berg/the_forest_that_protects_the_public_good_nym_mixnet_for_libp2p_privacy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_holeky_testnet_launch_hangout",
@@ -1053,7 +1147,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_holeky_testnet_launch_hangout.jpg"
+        "coverImage": "/sessions/protocol_berg/the_holeky_testnet_launch_hangout.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_nature_of_the_protocol",
@@ -1087,7 +1183,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_nature_of_the_protocol.jpg"
+        "coverImage": "/sessions/protocol_berg/the_nature_of_the_protocol.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "the_problem_of_historical_data_availability_in_evm_chains",
@@ -1121,7 +1219,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/the_problem_of_historical_data_availability_in_evm_chains.jpg"
+        "coverImage": "/sessions/protocol_berg/the_problem_of_historical_data_availability_in_evm_chains.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "verkle_sync__bring_a_node_up_in_minutes",
@@ -1148,7 +1248,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/verkle_sync__bring_a_node_up_in_minutes.jpg"
+        "coverImage": "/sessions/protocol_berg/verkle_sync__bring_a_node_up_in_minutes.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "whisk_returning_privacy_to_ethereum_proposers",
@@ -1168,7 +1270,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/whisk_returning_privacy_to_ethereum_proposers.jpg"
+        "coverImage": "/sessions/protocol_berg/whisk_returning_privacy_to_ethereum_proposers.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "will_your_crypto_project_be_censored_philosophy_and_practice_of_censorship",
@@ -1188,7 +1292,9 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/will_your_crypto_project_be_censored_philosophy_and_practice_of_censorship.jpg"
+        "coverImage": "/sessions/protocol_berg/will_your_crypto_project_be_censored_philosophy_and_practice_of_censorship.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     },
     {
         "id": "worldcoin_maximally_private_digital_identity",
@@ -1208,6 +1314,8 @@
         ],
         "playbackId": "",
         "eventId": "protocol_berg",
-        "coverImage": "/sessions/protocol_berg/worldcoin_maximally_private_digital_identity.jpg"
+        "coverImage": "/sessions/protocol_berg/worldcoin_maximally_private_digital_identity.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
     }
 ]
