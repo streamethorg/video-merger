@@ -4,7 +4,6 @@ import {
     AbsoluteFill,
     staticFile,
     Video,
-    Audio,
     useVideoConfig,
     useCurrentFrame,
     interpolate,
@@ -19,7 +18,6 @@ import {
 } from '../utils/themeConfig';
 import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
-import { Circle } from '@remotion/shapes';
 
 const DURATION_ANIMATION = 210;
 const sessions: SessionType[] = SESSIONS.map((session) => {
@@ -122,7 +120,7 @@ function IntroWithVideo(props: Props) {
                         y={session.name.length < 50 ? 690 : 770}
                         color="white"
                         fontSize={50}
-                        fontFamily="Latin Modern Caps"
+                        fontFamily={"Latin Modern Caps"}
                         opacity={showText(frame)}
                     />
                 </div>
