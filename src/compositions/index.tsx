@@ -9,8 +9,8 @@ import {
     useCurrentFrame,
     interpolate,
 } from 'remotion';
+import { ISession as SessionType, ISpeaker as SpeakerType } from '../types';
 import SESSIONS from '../../public/json/sessions.json';
-import { Session as SessionType } from '../types';
 import {
     G_AUDIO_PATH,
     G_VIDEO_PATH,
@@ -22,7 +22,13 @@ import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
 
-const sessions: SessionType[] = SESSIONS.data;
+const sessions: SessionType[] = SESSIONS.map((session) => {
+    return {
+        ...session,
+        start: new Date(session.start),
+        end: new Date(session.end),
+    };
+});
 
 interface Props {
     readonly session: SessionType;
@@ -102,8 +108,8 @@ function IntroWithVideo(props: Props) {
                     <div style={{ opacity: videoOpacity }}>
                         <Text
                             text={speaker.name}
-                            x={770}
-                            y={390 - index * 80}
+                            x={760}
+                            y={335 - index * 80}
                             opacity={showText(frame)}
                             fontWeight={800}
                             fontSize={65}
@@ -112,11 +118,13 @@ function IntroWithVideo(props: Props) {
                 </Sequence>
             ))}
             <Sequence name="Title" durationInFrames={170}>
-                <div style={{ opacity: videoOpacity }}>
+                <div
+                    className="leading-tight"
+                    style={{ opacity: videoOpacity }}>
                     <Text
                         text={splitTextIntoString(session.name, 30)}
-                        x={770}
-                        y={560}
+                        x={760}
+                        y={490}
                         opacity={showText(frame)}
                         fontWeight={600}
                     />
@@ -130,7 +138,7 @@ function IntroWithVideo(props: Props) {
                         fill="black"
                         style={{
                             opacity: showText(frame),
-                            transform: 'translateX(770px) translateY(520px)',
+                            transform: 'translateX(760px) translateY(450px)',
                         }}
                     />
                 </div>
@@ -158,7 +166,7 @@ function IntroWithVideo(props: Props) {
 export function Compositions() {
     const processedSessions = sessions
         .filter(
-            (session) =>
+            (session: SessionType) =>
                 session.speakers &&
                 session.speakers.length > 0 &&
                 session.startCut &&
@@ -168,11 +176,11 @@ export function Compositions() {
                     convertToSeconds(session.startCut) >
                     0,
         )
-        .map((session) => {
+        .map((session: SessionType) => {
             if (session.speakers) {
-                session.speakers.forEach((speaker) => {
-                    if (speaker.avatarUrl === null) {
-                        speaker.avatarUrl = G_DEFAULT_AVATAR_URL;
+                session.speakers.forEach((speaker: SpeakerType) => {
+                    if (speaker.photo === null) {
+                        speaker.photo = G_DEFAULT_AVATAR_URL;
                         console.warn(
                             `${session.id} has no avatar, changing it to default`,
                         );
@@ -184,10 +192,10 @@ export function Compositions() {
 
     return (
         <>
-            {processedSessions.map((session, index) => (
+            {processedSessions.map((session: SessionType, index: number) => (
                 <Composition
                     key={index}
-                    id={`session-${session.id}`}
+                    id={session.id.replace(/_/g, '-')}
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
