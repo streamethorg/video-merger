@@ -19,7 +19,7 @@
         "eventId": "protocol_berg",
         "coverImage": "/sessions/protocol_berg/a_future_to_protocol_upgradability.jpg",
         "startCut": "00:00:00",
-        "endCut": "00:10:00"
+        "endCut": "00:00:30"
     },
     {
         "id": "agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime",
@@ -41,7 +41,7 @@
         "eventId": "protocol_berg",
         "coverImage": "/sessions/protocol_berg/agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime.jpg",
         "startCut": "00:00:00",
-        "endCut": "00:00:00"
+        "endCut": "00:01:30"
     },
     {
         "id": "beyond_indexers_trustless_application_data_snapshots",
@@ -84,8 +84,8 @@
         "playbackId": "",
         "eventId": "protocol_berg",
         "coverImage": "/sessions/protocol_berg/blockchain_node_db_designs_from_geth_to_erigon.jpg",
-        "startCut": "00:00:00",
-        "endCut": "00:00:00"
+        "startCut": "00:01:00",
+        "endCut": "00:02:00"
     },
     {
         "id": "closing_ceremony",

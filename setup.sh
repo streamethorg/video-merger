@@ -12,9 +12,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-
 curl -L -H "Accept: application/json" "http://app.streameth.org/api/organizations/${ORGANIZATION}/events/${EVENT}/sessions" > ./public/json/sessions.json
-
 
 yarn
 mkdir -p ./public/videos/
