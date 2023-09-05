@@ -1,436 +1,1321 @@
-{
-    "data": [
-        {
-            "id": "doors-open-coffee-served",
-            "name": "Doors open, Coffee served",
-            "description": "",
-            "start": 1689404400000,
-            "end": 1689407400000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+[
+    {
+        "id": "a_future_to_protocol_upgradability",
+        "name": "A Future to Protocol Upgradability",
+        "description": "Discussing our current protocol upgradability governance practices (pausability, timelocks, emergency operational procedures) and how we can move towards more sustainable on-chain consensus-driven governance as a path to decentralized protocol governance.",
+        "start": "2023-09-15T12:30:00.000Z",
+        "end": "2023-09-15T12:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "tina",
+                "name": "tina",
+                "bio": "product at eigenlayer, previously fuel network and element finance (now delv tech).",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/IMG_2476_9D26BPo.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/a_future_to_protocol_upgradability.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:30"
+    },
+    {
+        "id": "agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime",
+        "name": "Agile Coretime: A Periodic, Sale-based Method for Assigning Polkadot Coretime",
+        "description": "The \"Polkadot Ubiquitous Computer\" (or just Polkadot UC), represents the public service provided by the Polkadot Network: it is a trust-free, WebAssembly-based, multicore, internet-native omnipresent virtual machine which is highly resilient to interference and corruption. The present system of allocating resources of the Polkadot Ubiquitous Computer (parachain slot auctions) is based on a model of one-core-per-parachain: this is a legacy interpretation of the Polkadot platform and is not a reflection of its present capabilities. With Polkadot's capability to adapt to its users'need, a new paradign for allocating coretime is being implemented by ecosystem teams. Coretime on the Polkadot UC is envisioned to be sold by the Polkadot System in two separate formats: Bulk Coretime and Instantaneous Coretime. When a Polkadot Core is utilized, we say it is dedicated to a \"Task\" rather than a \"parachain\". The Task to which a Core is dedicated may change at every Relay-chain block and while one predominant type of Task is to secure a Cumulus-based blockchain (i.e. a parachain), other types of Tasks are envisioned. Bulk Coretime is sold periodically on a specialised system chain known as the \"Coretime-chain\" and allocated in advance of its usage, whereas Instantaneous Coretime is sold on the Relay-chain immediately prior to usage on a block-by-block basis.\r\n\r\nThis talk aims to explain this paradigm change within the Polkadot community to adapt to end-user needs, provide more agility and reduce long-term design flows.",
+        "start": "2023-09-15T12:30:00.000Z",
+        "end": "2023-09-15T13:20:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "gavin_wood",
+                "name": "Gavin Wood",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/gavin_aT6VA0l.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/agile_coretime_a_periodic_salebased_method_for_assigning_polkadot_coretime.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:01:30"
+    },
+    {
+        "id": "beyond_indexers_trustless_application_data_snapshots",
+        "name": "beyond indexers: trustless application data snapshots",
+        "description": "I will present a trustless application data snapshot architecture based on on-chain hashed lists. I will also demonstrate an implementation of that architecture that is used by HOPR mix nodes to sync data much faster and with very few on-chain reads. The proposed mechanism is an orders of magnitude improvement in indexing speed at the cost of one on-chain hash + read + write of a single storage slot. Our open source base contract can be easily integrated into other smart contracts and combined with various frontend libraries.",
+        "start": "2023-09-15T16:00:00.000Z",
+        "end": "2023-09-15T16:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "sebastian_buergel",
+                "name": "Sebastian Buergel",
+                "bio": "Sebastian Bürgel builds technical solutions that empower the individual. As founder of the private data exchange infrastructure HOPR, he contributes to establishing full stack privacy for the web3. He also co-founded two other technology startups: Validity Labs (blockchain education & services) and Sonect (fintech). Sebastian holds a Ph.D degree in Microtechnology from Swiss Federal Institute of Technology, ETH Zurich.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/HOPR_Sebastian_Burgel_LinkedIn__NOC97Bk.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/beyond_indexers_trustless_application_data_snapshots.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "blockchain_node_db_designs_from_geth_to_erigon",
+        "name": "Blockchain node DB designs: from Geth to Erigon",
+        "description": "One of the definite feature of Erigon is how it stores blockchain state and state history in its own database. In this talk I will talk about the details, the database choices and the path the Erigon team took to go from the Geth data model into its own.",
+        "start": "2023-09-15T11:30:00.000Z",
+        "end": "2023-09-15T11:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "igor_mandrigin",
+                "name": "Igor Mandrigin",
+                "bio": "Igor is the CTO of [Gateway.fm](http://gateway.fm/), a builder with experience in all sides of the network stack, from browsers to large-scale cloud services. He has been deeply involved in blockchain, including being a core dev to the Ethereum (Erigon nodes) and serving as a researcher. \r\nAt Gateway.fm, Igor is currently working on building Gnosis Chain and setting up large-scale distributed infrastructure services as well as helping building zk Rollups nodes design for Polygon zkEVM.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/ChadParkwavefilm_ETHSeoul_Day2_181_eq7vmbj.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/blockchain_node_db_designs_from_geth_to_erigon.jpg",
+        "startCut": "00:01:00",
+        "endCut": "00:02:00"
+    },
+    {
+        "id": "closing_ceremony",
+        "name": "Closing Ceremony",
+        "description": "In this session, we invite you to grab a closing drink and wrap up the day with us! Learn more about the motivation behind Protocol Berg: What led us to organize this event and why did we decide to set it up as a donation-backed, sponsorless, non-profit event that is free to attend?\r\n\r\nWe will share our thoughts on event content curation, sponsors, and ecosystem collaboration. We will create transparency over our expenditures and how this event was financed.\r\n\r\nWe will also touch on the hardships and experiences of organizing a donation-only event, purely brought to you by a group of volunteers, always keeping in mind our goal: putting the attendee experience and content quality first.",
+        "start": "2023-09-15T17:30:00.000Z",
+        "end": "2023-09-15T17:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "afri_schoedon",
+                "name": "Afri Schoedon",
+                "bio": "Head of Protocol Engineering at ChainSafe Systems. Core-Organizer ETHBerlin, Protocol Berg, and GoerliCon. Running testnets on the side.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/afri-2023_6nkQtZ4.png"
             },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "funding-the-commons-an-incubation-ecosystem-for-public-goods-funding-infrastructure",
-            "name": "Funding the Commons, an Incubation Ecosystem for Public Goods Funding Infrastructure",
-            "description": "This video is a summary of the Funding the Commons Paris event. The event aims to build a community focused on funding public goods and creating sustainable models for support. It includes workshops, an art gallery, and a parallel conference hosted by the Forsyte Institute. The video introduces David Casey as the new leader of Funding the Commons and mentions future plans for hackathons, residencies, and conferences in Berlin and Taipei. Partnerships with organizations like Gitcoin and the Gollem Foundation are highlighted. The event is taking place at Sorbonne University and there are plans for a quadratic funding round with Artisan Funds.",
-            "start": 1689407100000,
-            "end": 1689408000000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "franziska_heintel",
+                "name": "Franziska Heintel",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/franziska_heintel_acZXRr3.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/closing_ceremony.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "cometbft_the_shooting_star_of_blockchain_consensus_protocols",
+        "name": "CometBFT: The Shooting Star of Blockchain Consensus Protocols",
+        "description": "Ali will introduce CometBFT and discuss the unique features that set it apart from other blockchain protocols. You will find out why CometBFT is quickly becoming the preferred choice for decentralized applications and how it is addressing the scalability challenges in blockchain technology.\r\n\r\nDuring the presentation, Ali will take a deep dive into the technical details of CometBFT. You will learn about its code and architecture, and explore the cryptographic primitives that keep it secure. This part of the presentation will be especially interesting for developers and blockchain enthusiasts who want to understand the inner workings of CometBFT.\r\n\r\nFurthermore, Ali will discuss how CometBFT is contributing to the realization of decentralization in the blockchain industry. You will find out how CometBFT is enabling decentralized applications to thrive and empowering individuals to take control of their data and assets.\r\n\r\nFinally, Ali will also introduce ABCI++, its features, and its potential impact on the blockchain industry. This presentation is a must-attend for anyone interested in the latest advancements in blockchain technology.",
+        "start": "2023-09-15T08:00:00.000Z",
+        "end": "2023-09-15T08:40:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "aliasgar_merchant",
+                "name": "Aliasgar Merchant",
+                "bio": "Aliasgar a Blockchain aficionado, has over five years of experience in the field of web3. He first dipped his toes into the blockchain world in 2017 with Ethereum smart contract development, before moving to the cosmos ecosystem in 2019.\r\n\r\nCurrently, Aliasgar's serving as a Developer Relations Engineer at Informal Systems, where he works on CometBFT, a fork of the Tendermint consensus algorithm that powers Cosmos SDK and other Cosmos Blockchain networks.\r\n\r\nAs a developer who's worked with leading blockchain projects like Sifchain, Tendermint Inc, and Akash, Aliasgar has proven himself to be a true Cosmos cowboy. \r\n\r\nIn his current role, Aliasgar focuses on building relationships with fellow developers, community leaders, and businesses to help drive the adoption of CometBFT and the Cosmos ecosystem. With his passion for emerging technologies and deep understanding of the blockchain landscape, he's constantly pushing the limits of what's possible in this exciting field.\r\n\r\nIn short, if you're looking to explore the blockchain universe and boldly go where no developer has gone before, Aliasgar is your guy. Connect with him today and join forces to create innovative solutions that will shape the future of the blockchain galaxy.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/aliasgar_oRuVBDf.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/cometbft_the_shooting_star_of_blockchain_consensus_protocols.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "creating_a_browserembedded_light_client_a_postmortem",
+        "name": "Creating a browser-embedded light client: a post-mortem",
+        "description": "Smoldot is a JavaScript package containing a light client for the Polkadot network, that can run from within a web page. Its development, which started nearly 4 years ago, was no easy feat. This talk is a post-modern that will go over the challenges that have been encountered and how we solved them.",
+        "start": "2023-09-15T10:30:00.000Z",
+        "end": "2023-09-15T10:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "tomaka",
+                "name": "tomaka",
+                "bio": "Pierre Krieger has been in the Rust ecosystem since 2014. After leading several popular open source repositories such as glutin, glium, vulkano, or redshirt, he joined Parity Technologies in 2017 where he led the networking team of Substrate (the framework Polkadot uses). He left Parity at the end of 2022 in order to focus on its work on a Substrate/Polkadot light client as a freelance.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/gh_avatar_ZgwtPV5.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/creating_a_browserembedded_light_client_a_postmortem.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "crossing_chains_with_confidence_unlocking_smart_contract_users_through_ibc_actor_callbacks",
+        "name": "Crossing Chains with Confidence: Unlocking Smart Contract Users through IBC Actor Callbacks",
+        "description": "In this talk, we will explore the significance of actor callbacks, a critical extension to the Inter-Blockchain Communication (IBC) protocol. Actor callbacks provide a standardized interface that allows smart contracts to confirm the occurrence of a cross-chain actions. We will delve into the practical implications of this extension, showcasing how it enhances the workflows of inter-chain transactions. With actor callbacks, it is possible to transfer tokens and perform an action with the tokens combining the utility of transfer and general message passing across chains.",
+        "start": "2023-09-15T11:00:00.000Z",
+        "end": "2023-09-15T11:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "susannah_evans",
+                "name": "Susannah Evans",
+                "bio": "Susannah is the product lead for the IBC team at Interchain",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/SUSE_THE_BAD_KID_sNQMfmx.jpeg"
             },
-            "speakers": [
-                { "id": "Evan Miyazono", "name": "Evan Miyazono" },
-                { "id": "David Casey", "name": "David Casey" },
-                { "id": "Matt Frehlich", "name": "Matt Frehlich" }
-            ],
-            "video": "https://lp-playback.com/hls/ecbdo0gg6wfc3w3n/index.m3u8",
-            "startCut": "0:12:45",
-            "endCut": "0:23:00"
-        },
-        {
-            "id": "a-case-study-network-goods-in-protocol-labs",
-            "name": "A case study: Network Goods in Protocol Labs",
-            "description": "The video explores the funding and development of network goods in the crypto field. The speakers emphasize the importance of grants and quadratic funding rounds for infrastructure development. They discuss the need for decentralized methods of resource allocation and highlight the value of public goods. Various projects and initiatives aimed at addressing funding, distribution, impact assessment, and project identification within the crypto ecosystem are mentioned. Topics such as mechanism selection, quantitative versus qualitative assessment, user perspectives, and scalability versus efficiency are also discussed. The video encourages building new coordination systems to tackle challenges and promoting regenerative sources of public goods funding.",
-            "start": 1689408000000,
-            "end": 1689408900000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "charleen_fei",
+                "name": "Charleen Fei",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/charly_zYfKdpD.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/crossing_chains_with_confidence_unlocking_smart_contract_users_through_ibc_actor_callbacks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "crossing_the_interoperability_bridge_a_deep_dive_into_building_interoperable_dapps_with_ibc",
+        "name": "Crossing the Interoperability Bridge: A Deep Dive into Building Interoperable dApps with IBC",
+        "description": "This workshop will be led by Federico Kunze Küllmer, who was part of the core team that developed the Inter Blockchain Communication Protocol (IBC). Federico is also the co-founder of Evmos, an EVM compatible blockchain that supports interoperable dApps via IBC. Federico will dive deep into the technical aspects of the IBC protocol, exploring how it enables cross-chain communication and discussing how Evmos simplifies the development of interoperable dApps. Attendees will have the opportunity to learn from the speaker's firsthand experience in implementing the IBC protocol and gain valuable insights into developing successful interoperable dApps using Solidity.",
+        "start": "2023-09-15T15:30:00.000Z",
+        "end": "2023-09-15T16:50:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "federico_kunze_kllmer",
+                "name": "Federico Kunze Küllmer",
+                "bio": "Evmos Co-founder. Cosmos Core Contributor. IBC Core Engineer.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/fede_eEnXITT.jpeg"
             },
-            "speakers": [
-                { "id": "Evan Miyazono", "name": "Evan Miyazono" },
-                { "id": "Matt Frehlich", "name": "Matt Frehlich" }
-            ],
-            "video": "https://lp-playback.com/hls/4b8eoxjks01ih61z/index.m3u8",
-            "startCut": "0:24:00",
-            "endCut": "0:39:00"
-        },
-        {
-            "id": "a-fireside-chat-with-guy-wuollet-and-addie-wagenknecht",
-            "name": "A Fireside Chat with Guy Wuollet and Addie Wagenknecht",
-            "description": "In this video, two individuals discuss their experiences and perspectives on public goods funding and decentralized finance in the crypto field. They touch on topics such as decentralized physical infrastructure projects, redundancies in current infrastructure, sustainable revenue models for projects like Filecoin and MEVs, proactive funding models, coordination issues in decentralized organizations, and the role of venture capital in funding public goods. The conversation explores the challenges and potential solutions for funding mechanisms in the crypto space.\n\nThe video features an interview with Guy Oulay, a partner at A16 Zine Crypto, who has conducted independent research in partnership with Protocol Labs. The conversation focuses on various topics within the crypto field, including public goods funding, decentralized finance, and decentralized physical infrastructure projects. They discuss the challenges and potential solutions in funding mechanisms for developers and projects, as well as the role of VCs in supporting public goods funding. The interview highlights the importance of coordination, pragmatism, and tangible outcomes in driving progress in the crypto space.\n\nThe conversation also delves into the challenges of funding public goods compared to more tangible and high-return projects. They explore the potential of permissionless contribution and the need for better coordination mechanisms.",
-            "start": 1689408900000,
-            "end": 1689410100000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "daniel_burckhardt",
+                "name": "Daniel Burckhardt",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/daniel_8x0ocYg.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/crossing_the_interoperability_bridge_a_deep_dive_into_building_interoperable_dapps_with_ibc.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "decentralized_and_shared_sequencer_architecture",
+        "name": "Decentralized and Shared Sequencer Architecture",
+        "description": "In this presentation, I'll go over the state of decentralized and shared sequencers for rollups, as well as existing and potential architectures for them. Decentralizing sequencers is needed for rollups to have true decentralization and censorship resistance, and sharing sequencers between rollups opens up the possibility of cross-rollup composability.",
+        "start": "2023-09-15T09:30:00.000Z",
+        "end": "2023-09-15T09:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "elizabeth",
+                "name": "elizabeth",
+                "bio": "Elizabeth is a software engineer specializing in protocol-level development. Her interests include privacy, networking, and cryptography.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/elizabeth_j3u2Vqg.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/decentralized_and_shared_sequencer_architecture.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "developer_tooling_education_and_funding",
+        "name": "Developer Tooling, Education, and Funding",
+        "description": "Modern decentralized app stack, ethereum dev eduction, and streaming developer UBI.",
+        "start": "2023-09-15T10:15:00.000Z",
+        "end": "2023-09-15T10:55:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "austingriffith",
+                "name": "austingriffith",
+                "bio": "🔥🫡🔥 builder on Ethereum 🛠",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/bmhym86N_400x400-3_WmEc96n.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/developer_tooling_education_and_funding.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "dynamic_ibc_the_new_wave_of_dapp_composability",
+        "name": "Dynamic IBC: the new wave of dApp composability",
+        "description": "Until now, interoperable applications using IBC could only be built by launching your own chain on Cosmos. The new Dynamic IBC (dIBC) creates new possibilities for smart contracts to create their own data packets and compose with other dApps and appchains to unlock a new battery of use cases in web3.",
+        "start": "2023-09-15T11:30:00.000Z",
+        "end": "2023-09-15T11:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "federico_kunze_kllmer",
+                "name": "Federico Kunze Küllmer",
+                "bio": "Evmos Co-founder. Cosmos Core Contributor. IBC Core Engineer.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/fede_eEnXITT.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/dynamic_ibc_the_new_wave_of_dapp_composability.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "emerging_interfaces_for_building_web3_applications",
+        "name": "Emerging interfaces for building web3 applications",
+        "description": "New programable interfaces are emerging from the block space created by web3 — being either on-chain, off-chain and cross-chain or a combination of the three. \r\n\r\nBy breaking down what these interfaces are, this workshop will look into examples of these interfaces, with a focus on cross-chain programmability and the available technologies to choose from.",
+        "start": "2023-09-15T09:30:00.000Z",
+        "end": "2023-09-15T10:10:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "sacha",
+                "name": "Sacha",
+                "bio": "Sacha is a developer advocate at Parity Technologies, on a mission to bring forward Polkadot’s technologies to builders of web3. When he’s not working on workshops, documentation or contributing to web3 projects, you may find him walking around somewhere on earth or playing guitar.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/sacha-profile-yellow_GeNHFWv.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/emerging_interfaces_for_building_web3_applications.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "ephemery_disposable_public_testnet",
+        "name": "Ephemery: Disposable public testnet",
+        "description": "Introduction to Ephemery, a novel approach to testnets which enables a single testing infrastructure consisting of ephemeral networks with deterministic parameters.",
+        "start": "2023-09-15T13:00:00.000Z",
+        "end": "2023-09-15T13:40:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "mario_havel",
+                "name": "Mario Havel",
+                "bio": "Protocol Supporter, founder of Bordel",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/3FeDe54c_400x400_wcCEQjp.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/ephemery_disposable_public_testnet.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "essential_maths_for_zero_knowledge_proofs",
+        "name": "Essential Maths for Zero Knowledge Proofs",
+        "description": "A workshop explaining the essential maths needed to understand zero knowledge proofs",
+        "start": "2023-09-15T11:30:00.000Z",
+        "end": "2023-09-15T12:10:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "laurence_kirk",
+                "name": "Laurence Kirk",
+                "bio": "I am an educator and developer in the Web3 space, with a particular passion for zero knowledge proofs.\r\nI started following blockchain tech in 2011, started working on Ethereum in 2015 and started running workshops in 2017. \r\nCurrently as CEO of Extropy.IO I teach workshops about zero knowledge proofs and advanced solidity.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/smallPic_I25BuHD.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/essential_maths_for_zero_knowledge_proofs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "evolution_of_optimistic_rollup_proofs",
+        "name": "Evolution of Optimistic Rollup proofs",
+        "description": "L2 Rollups are a core component of the Ethereum scaling strategy, and the security landscape is actively changing. This talk compares the different optimistic rollup proving methods, how EIP-4844 data-availability affects a proof, and how the proof itself can be designed with the latest L2 tech.",
+        "start": "2023-09-15T11:00:00.000Z",
+        "end": "2023-09-15T11:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "protolambda",
+                "name": "protolambda",
+                "bio": "Protocol R&D at OP Labs, previously Eth2 researcher at EF. Working on Ethereum scaling, 4844, rollup security and blockchain architecture.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/pineapple_profile_G0mWdZk.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/evolution_of_optimistic_rollup_proofs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "how_to_unleash_the_power_of_account_abstraction",
+        "name": "How to unleash the power of Account Abstraction",
+        "description": "EIP-4337 gave some guidelines and visibility for Account Abstraction, but this is only the start. To fully unfold the power of smart contract based accounts it requires careful considerations and good standards. In this talk we want to give an overview on the current state of modular smart contract accounts and how to fully take advantage of the flexibility that comes with them.",
+        "start": "2023-09-15T16:00:00.000Z",
+        "end": "2023-09-15T16:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "richard_meissner",
+                "name": "Richard Meissner",
+                "bio": "Richard Meissner is the co-founder of Safe with almost a decade of experience as a software engineer. He joined the Gnosis team in 2017 as the tech lead for Gnosis Safe. Working behind the scenes, Richard is setting security standards for Web3  by building the safest digital asset manager and expanding the possibilities of digital asset ownership. Richard is also a thought leader on account abstraction and what it enables for the future of web3.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/image-removebg-preview_A5KDzRH.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/how_to_unleash_the_power_of_account_abstraction.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "idk_what_x_is_and_at_this_point_im_afraid_to_ask",
+        "name": "idk what x is and at this point i'm afraid to ask",
+        "description": "together we will speed run the definitions of the terms that you've heard but would hate for someone to ask you to define on a podcast.",
+        "start": "2023-09-15T08:00:00.000Z",
+        "end": "2023-09-15T08:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "jenny_pollack",
+                "name": "Jenny Pollack",
+                "bio": "jenny is an engineer turned product leader and a long time believer in decentralized applications and the infrastructure and communities that form them",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/jenny_zNcYCGl.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/idk_what_x_is_and_at_this_point_im_afraid_to_ask.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "indexing_ethereum_mainnet_for_nearzero_cost",
+        "name": "Indexing Ethereum Mainnet for Near-Zero Cost",
+        "description": "A discussion about EVM client software, why it can't deliver accurate transactional histories (hint: it's missing an index), and what it would be like if it could.",
+        "start": "2023-09-15T08:00:00.000Z",
+        "end": "2023-09-15T08:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "thomas_jay_rush",
+                "name": "Thomas Jay Rush",
+                "bio": "Thomas Rush is the founder of TrueBlocks.io, a blockchain-focused consultancy and software company delivering fast, usable data from the blockchain. Rush is a two-time recipient of Ethereum Foundation grants, a Moloch DAO grant recipient, an active community member, and also the founder of the Philadelphia Ethereum Meetup group. In a former life, Rush taught undergraduate writing at the Community College of Philadelphia. Rush holds a Master of Fine Arts in Poetry from Rosemont College and a Master of Science in Computer Science from the University of Pennsylvania.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Head_Shot_CR1JFsY.jpg"
             },
-            "speakers": [
-                { "id": "Addie Wagenknecht", "name": "Addie Wagenknecht" },
-                { "id": "Guy Wuollet", "name": "Guy Wuollet" }
-            ],
-            "video": "https://lp-playback.com/hls/5bd03snfis7b8b7q/index.m3u8",
-            "startCut": "0:39:45",
-            "endCut": "0:55:00"
-        },
-        {
-            "id": "how-refi-will-change-the-world",
-            "name": "How ReFi Will Change the World",
-            "description": "This video features a speaker discussing the urgent need for action on climate change and global poverty. They introduce the concept of regenerative finance, which prioritizes long-term sustainability and social justice. The speaker explores the potential of blockchain technology, specifically on the Celo platform, to democratize ownership and reallocate resources. They highlight several projects on Celo that address environmental, social, and economic issues, such as reforestation, under-collateralized lending, and universal basic income initiatives. The speaker emphasizes Celo's mission to build a regenerative economy and challenges the industry's current measure of success. They propose a new approach based on meeting basic needs, personal and professional growth, community support, and environmental impact. The video concludes by emphasizing the importance of collaboration and collective action to drive change and create awareness.",
-            "start": 1689410100000,
-            "end": 1689411300000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "dawid_szlachta",
+                "name": "Dawid Szlachta",
+                "bio": "Dawid Szlachta is TrueBlocks’ lead developer. Before joining TrueBlocks, Szlachta spent eight years sharpening his skills on various large-scale web applications. However, he is now more interested in developing local-first and privacy friendly software powered by Ethereum and IPFS. He holds a bachelor’s degree in Philology from the University of Warsaw and lives with his wife in Kraków, Poland.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Profilowe_rgCru5p.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/indexing_ethereum_mainnet_for_nearzero_cost.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "indexing_the_planet_for_good",
+        "name": "Indexing the Planet For Good",
+        "description": "Immutable and verifiable content plays a key role in shaping the future of knowledge sharing for the good of all. At the same time, content represented in such a way amplifies the importance of routing; hashes are hard to remember, content keeps increasing, data moves and so do peers. This begs the question: how would we find “stuff” fast, efficiently and reliably without enabling centralised snooping? Find out what the InterPlanetary Network Indexer is addressing this issue for IPFS and FileCoin network.",
+        "start": "2023-09-15T15:00:00.000Z",
+        "end": "2023-09-15T15:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "masih_derkani",
+                "name": "Masih Derkani",
+                "bio": "Masih Derkani is a computer scientist and software engineer with a passion for building decentralized systems. He received his PhD in Computer Science from the University of St. Andrews, where his research focused on the intersection of distributed systems and key-based routing in peer-to-peer networks. Masih is a core contributor to the InterPlanetary File System (IPFS), the InterPlanetary Network Indexer (IPNI), and Filecoin decentralized storage network. Throughout his career, he has worked on numerous other decentralized projects with a focus on large-scale data-intensive systems and high availability. Masih is dedicated to advancing the development of decentralized web and has a proven track record of delivering innovative solutions to complex problems in this space.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/i3_6xFXZDN.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/indexing_the_planet_for_good.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "interplanetary_consensus_scaling_the_open_data_economy",
+        "name": "InterPlanetary Consensus: Scaling the open data economy",
+        "description": "Consensus poses a major scalability bottleneck in blockchain networks - hampering web-scale applications like Twitch, Twitter, Tiktok, or web3 alternatives to scale within web3. Interplanetary Consensus (IPC) is a new framework to enable on-demand horizontal scalability of Filecoin to meet web-scale application demands - unlocking an open data economy of composable subnets for scalable computation, fast data retrievals, application-specific gaming networks, and more on the Filecoin network.",
+        "start": "2023-09-15T13:30:00.000Z",
+        "end": "2023-09-15T14:20:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "molly_mackinlay",
+                "name": "Molly Mackinlay",
+                "bio": "Molly Mackinlay leads Engineering and Research Development at Protocol Labs. This includes OSS stewardship across IPFS, Filecoin, and libp2p; designing and managing new breakthroughs like the Filecoin Virtual Machine (FVM); and helping launch new networks like Saturn (web3 CDN) and IPC (L2 subnets). Her work at PL also involves past roles as IPFS Project Lead and launching the Filecoin mainnet. She started her career as an (A)PM at Google after graduating from Stanford.\r\n\r\nMolly also created PL Launchpad, a four-week web3 onboarding program designed to train, develop, and connect technical talent with collaborators and web3 knowledge across the Protocol Labs Network (PLN). If you’re looking for the knowledge and community to ramp into web3 - get in touch!",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Headshot_aqESJsg.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/interplanetary_consensus_scaling_the_open_data_economy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "libp2p_workshop__building_a_peertopeer_chat_application_in_rust",
+        "name": "libp2p Workshop - Building a Peer-to-Peer Chat Application in Rust",
+        "description": "libp2p is a peer-to-peer networking library. We will build a chat app using the Rust implementation of libp2p. Our application will allow anyone with internet access across the globe to communicate. The workshop will give hands-on experience on how to build peer-to-peer vs. client-to-server.",
+        "start": "2023-09-15T11:45:00.000Z",
+        "end": "2023-09-15T13:05:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "max_inden",
+                "name": "Max Inden",
+                "bio": "Max is a software developer interested in distributed systems, type theory and consensus. At Protocol Labs he is stewarding the peer-to-peer networking project libp2p (https://libp2p.io/). He is maintaining the libp2p Rust implementation. Previously Max has been working on the monitoring system Prometheus as a core maintainer, focusing on its integration within the Kubernetes orchestrator.\r\n\r\nTo find out more visit https://max-inden.de/",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/7047859_E4xKGer.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/libp2p_workshop__building_a_peertopeer_chat_application_in_rust.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "measuring_decentralization_across_l2_networks",
+        "name": "Measuring Decentralization Across L2 Networks",
+        "description": "Many studies and analyses have been performed on Layer-1 protocols that measure decentralization to the point where we have an accepted set of standards. Such standards include, but are not limited to, nakamoto coefficient, validator distribution, and full node counts. This talk explores the challenges in measuring decentralization across layer-2s on Ethereum, Polkadot and Cosmos where the technology varies and creates new avenues of centralization more obscured from the view of users.",
+        "start": "2023-09-15T07:30:00.000Z",
+        "end": "2023-09-15T07:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "asynchronous_phil",
+                "name": "Asynchronous Phil",
+                "bio": "A Berlin professional since 2013, focused on Bitcoin, Ethereum and Polkadot. Communications for Parity Technologies 2017-2022, now an independent contributor to Ethereum and Polkadot communications.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/IMG_7765_zk3s0vl.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/measuring_decentralization_across_l2_networks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "metadataprivate_data_transfer",
+        "name": "Metadata-private data transfer",
+        "description": "Metadata privacy is critical for personal and private data access. Today, mixnet-like systems are still the only privacy option for low latency data transfer that have been proven at scale. Other techniques are not far behind though, and can allow us to get similar or stronger privacy guarantees without sacrificing latency. I've advised a [funding program](https://research.protocol.ai/blog/2022/announcing-rfp-014-the-one-with-private-retrieval/) over the last year aimed at supporting the transition to practice of private retrieval. This talk will survey currently available systems, and our current guesses for what methods can scale to widespread adoption.",
+        "start": "2023-09-15T10:00:00.000Z",
+        "end": "2023-09-15T10:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "will_scott",
+                "name": "Will Scott",
+                "bio": "My work centers on how to make a more resilient web. To that end, I've worked on projects ranging from internet-wide measurement to privacy-protecting messaging systems. My current work at Protocol Labs is building a robust decentralized storage primitive.\r\n\r\nI've been a ski instructor, speak some chinese, and enjoy playing with fire. I taught computer science in pyongyang.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/profile_znqIAz5.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/metadataprivate_data_transfer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "misadventures_in_governance",
+        "name": "(mis)adventures in governance",
+        "description": "Eyewitness Reports from a Decade-Long Unaligned Bystander",
+        "start": "2023-09-15T16:30:00.000Z",
+        "end": "2023-09-15T16:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "wassim_z_alsindi",
+                "name": "Wassim Z. Alsindi",
+                "bio": "Wassim Z. Alsindi PhDWassim is the founder and creative director of the 0x Salon, which conducts experiments in post-disciplinary collective knowledge practices. A veteran of the timechain, Wassim specialises in conceptual design and philosophy of peer-to-peer systems, on which he writes, speaks, teaches, and consults. He has an editorial column at the MIT Computational Law Report, and he co-founded MIT’s Cryptoeconomic Systems journal and conference series. Wassim has curated arts festivals, led a sculptural engineering laboratory and published experimental music, satirical theatre, poetry, and speculative scripture. Wassim holds a Ph.D. in ultrafast supramolecular photophysics from the University of Nottingham.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/eyJidWNrZXQiOiJhc3NldHMucHVicHViLm9yZyIsImtleSI6ImV6N2pxaG43LzUxNjg0NDIyNzUzMjYw_zpDqjlf.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/misadventures_in_governance.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "opening_ceremony",
+        "name": "Opening Ceremony",
+        "description": "The Department of Decentralization welcomes you to Protocol Berg!\r\n\r\nWe briefly run you through the concept of the event and the program highlights of the day. Furthermore, we share logistical and operational tips on how to navigate the venue, information on food and drinks, and more.",
+        "start": "2023-09-15T07:00:00.000Z",
+        "end": "2023-09-15T07:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "afri_schoedon",
+                "name": "Afri Schoedon",
+                "bio": "Head of Protocol Engineering at ChainSafe Systems. Core-Organizer ETHBerlin, Protocol Berg, and GoerliCon. Running testnets on the side.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/afri-2023_6nkQtZ4.png"
             },
-            "speakers": [
-                { "id": "Xochitl Cazador", "name": "Xochitl Cazador" }
-            ],
-            "video": "https://lp-playback.com/hls/ef87wkslmotieapz/index.m3u8",
-            "startCut": "0:56:40",
-            "endCut": "1:07:15"
-        },
-        {
-            "id": "whats-at-stake-eth-and-public-goods-funding",
-            "name": "What's at Stake: ETH & Public Goods Funding",
-            "description": "",
-            "start": 1689411300000,
-            "end": 1689413100000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "franziska_heintel",
+                "name": "Franziska Heintel",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/franziska_heintel_acZXRr3.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/opening_ceremony.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "operationlevel_concurrent_transaction_execution_for_ethereum",
+        "name": "Operation-level Concurrent Transaction Execution for Ethereum",
+        "description": "Despite the success in various scenarios, blockchain systems, especially EVM-compatible ones that serially execute transactions, still face the significant challenge of limited throughput. Concurrent transaction execution is a promising technique to accelerate transaction processing and increase the overall throughput. Existing concurrency control algorithms, however, fail to obtain enough speedups in real-world blockchains due to the high-contention workloads.\r\n\r\nIn this talk, I will propose a novel operation-level concurrency control algorithm designed for blockchains.\r\nThe core idea behind our algorithm is that only operations depending on conflicts should be executed serially, while all other conflict-free operations can be executed concurrently. Therefore, in contrast to the traditional approaches, which block or abort the entire transaction when encountering conflicts, our algorithm introduces a redo phase to resolve conflicts at the operation level by re-executing conflicting operations only. We also develop a set of data dependency tracking mechanisms to achieve precise identification and speedy re-execution for conflicting operations. We implement a prototype named ParallelEVM based on Go Ethereum and evaluate ParallelEVM using real-world Ethereum blocks. The evaluation results show that ParallelEVM achieves an average speedup of 4.28×. If combined with state prefetching techniques, ParallelEVM can further accelerate the transaction execution by 7.11×.",
+        "start": "2023-09-15T15:30:00.000Z",
+        "end": "2023-09-15T15:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "yajin_andy_zhou",
+                "name": "Yajin (Andy) Zhou",
+                "bio": "My name is Yajin Zhou. I am a ZJU 100-Young professor (since 2018), with the College of Computer Science and Technology at Zhejiang University. I earned my Ph.D. (2015) in Computer Science from North Carolina State University. I am the co-founder of BlockSec, a startup dedicated to building blockchain security infrastructure.\r\n\r\nI have published more than 50 papers, with 8500+ citations (Google Scholar). One of my papers has been selected to the list of normalized Top-100 security papers since 1981. I was recognized as the Most Influential Scholar Award for my contributions to the field of Security and Privacy.\r\n\r\nMy current research spans traditional ones (software security, operating systems security and hardware-assisted security) and emerging areas (security of smart contracts, decentralized finance (DeFi) security, and the underground economy.)\r\n\r\nI have served on the program committee for multiple prestigious security conferences and as a reviewer for National Research Foundation Singapore and ANR (Agence Nationale de Recherche).",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Xnip2023-05-29_22-50-08_OsPVvPC.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/operationlevel_concurrent_transaction_execution_for_ethereum.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "p2p_set_reconciliation_as_storageheavy_dapp_infrastructure_20",
+        "name": "p2p set reconciliation as storage-heavy dapp infrastructure 2.0",
+        "description": "With a set reconciliation algorithm built on js-libp2p-gossipsub and using Patricia Merkle Tries Farcaster (and Kiwi News) are pioneering a new type of credible neutral architecture for social+decentralized apps. In this talk, @timdaub will go through the architectural basics of what makes Kiwi News‘s replication algorithm work and how it uses the Ethereum mainnet for name space management and as a public key registry.",
+        "start": "2023-09-15T14:45:00.000Z",
+        "end": "2023-09-15T15:25:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "tim_daubenschtz",
+                "name": "Tim Daubenschütz",
+                "bio": "@timdaub is the founder of Kiwi News, a decentralized Hacker News clone that no single entity controls but everybody co-owns.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/022999a2c6f4fd58a76724c9abf2ae3f_R1lPTbE.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/p2p_set_reconciliation_as_storageheavy_dapp_infrastructure_20.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "parachain_consensus_from_the_ground_up",
+        "name": "Parachain Consensus from the Ground Up",
+        "description": "We will start with a problem statement and build up together how Parachain Consensus works. If time permits, we can also cover current work like asynchronous backing and time disputes.\r\n<tags>Polkadot</tags>",
+        "start": "2023-09-15T10:00:00.000Z",
+        "end": "2023-09-15T10:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "eskimor",
+                "name": "eskimor",
+                "bio": "I am father of twins and a programmer. At the age of 15, I heard that ordinary people can actually program computers, I bought a 1200 page book about C++ and started learning. I sticked with C++ for quite a while, learned Java, went back to C++, learned D, Python, Haskell and eventually Rust. Then I became interested in peer-to-peer systems, experimented with rust-libp2p and found that blockchains could play a major role in mitigating shortcomings of p2p systems. So it happened that I applied at Parity Technologies as a core developer. At Parity Technologies I am driving and implementing major parts of Polkadot's Parachain consensus.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/eskimor_U4xtWaX.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/parachain_consensus_from_the_ground_up.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "peertopeer_code_collaboration_with_radicle",
+        "name": "Peer-to-peer code collaboration with Radicle",
+        "description": "In this hands-on workshop, we’ll learn how to use the Radicle stack to collaborate on a code project. We’ll run our own nodes, connect to peers, and grow a virtual garden together.",
+        "start": "2023-09-15T08:45:00.000Z",
+        "end": "2023-09-15T09:25:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "erik_kundt",
+                "name": "Erik Kundt",
+                "bio": "Erik (he/they) works as a freelance artist and developer with a focus on audio / visual coding and decentralized technologies.\r\n\r\nHe has worked in the area of professional music production for Native Instruments, and later on the Solidity programming language for the Ethereum Foundation. Besides these occupations, he has directed several dance, performance and documentary theater projects in their own technical fields, such as video production and mapping, VR / AR and AI.\r\n\r\nAt the moment he is mainly contributing to the Radicle stack and building tools for generative artists.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/ich_klein_quad_RgICawD.png"
             },
-            "speakers": [
-                { "id": "Julian Zawistowski", "name": "Julian Zawistowski" }
-            ],
-            "video": "https://lp-playback.com/hls/17568rdz5sqfcy48/index.m3u8",
-            "startCut": "1:27:00",
-            "endCut": "1:54:15"
-        },
-        {
-            "id": "coffee-break",
-            "name": "coffee break",
-            "description": "",
-            "start": 1689413100000,
-            "end": 1689413700000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "sebastian_martinez",
+                "name": "Sebastian Martinez",
+                "bio": "Sebastian Martinez, a mechanical engineer turned to the web, is currently contributing to the future of code collaboration at Radicle. Drawing on his unique experience implementing proof-of-existence solutions in the nuclear industry.\r\n\r\nFrom his roots in Switzerland and a personal discovery in Argentina, Sebastian's journey has shaped him into a passionate tech professional and dedicated father of two, poised to make a significant impact in the technology sphere.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/4_Original_bjmGedC.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/peertopeer_code_collaboration_with_radicle.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "permanent_decentralized_storage_the_use_case_of_verifiably_backing_up_external_chain_state",
+        "name": "Permanent Decentralized Storage: The use case of verifiably backing up external chain state",
+        "description": "\"If a file isn't backed up, it isn't your file\" preceded \"Not your keys, not your crypto\", but it's important to look back to the Web1 figure of speech as it applies to Web3. If you have a multi-billion dollar protocol, it's a good idea to back it up.\r\n\r\nI will briefly introduce Arweave as the permanent data storage layer of choice for many networks, and dive into the use case of Kyve.network, and how it is useful and prudent to store any other network's chainstate history in this way - particularly if a subject network discards data (as Ethereum is considering) this becomes important for historical and even accounting purposes.",
+        "start": "2023-09-15T10:30:00.000Z",
+        "end": "2023-09-15T10:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "garrett_macdonald",
+                "name": "Garrett MacDonald",
+                "bio": "Long time contributor to the decentralized revolution. Student of physics.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/orDj-SqG_400x400_39reGze.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/permanent_decentralized_storage_the_use_case_of_verifiably_backing_up_external_chain_state.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "postconference_mixer",
+        "name": "Post-Conference Mixer",
+        "description": "Grab a last lemonade or a beer and talk to fellow attendees before we close down the venue.",
+        "start": "2023-09-15T18:00:00.000Z",
+        "end": "2023-09-15T18:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/postconference_mixer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "postconference_social_mixer",
+        "name": "Post-Conference Social Mixer",
+        "description": "Grab a drink (choice of aperitif, beer, or lemonade on us!) and mingle with fellow attendees and speakers.",
+        "start": "2023-09-15T18:00:00.000Z",
+        "end": "2023-09-15T18:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/postconference_social_mixer.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "powdr__a_modular_stack_for_zkvms",
+        "name": "powdr - a modular stack for zkVMs",
+        "description": "In the recent months, there has been a surge in the popularity of zkVM implementations. Many of these use specialized solutions and code, sometimes even all the way down to the cryptography, which makes these zkVMs very monolithic and non-interoperable.\r\n\r\nPowdr takes a modular approach to designing and constructing zkVMs, employing multiple compilation and optimization stages to arrive at the final prover and verifier. Users can define custom instruction sets for a VM, specify how those compile to constraints, generate sub-machines and declare how to connect them. Moreover, the flexibility of powdr enables users to select from a variety of proving backends when generating the prover and verifier components.\r\n\r\nTo validate this concept, we have successfully developed a fully functional verifier that compiles (no-std) Rust code into eSTARK and Halo2 proofs via the RISC-V architecture. Additionally, we are currently working on adapting this verifier to wasm and Valida, VMs that take very different architectural approaches than RISC-V.",
+        "start": "2023-09-15T09:00:00.000Z",
+        "end": "2023-09-15T09:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "christian_reitwiessner",
+                "name": "Christian Reitwiessner",
+                "bio": "Christian Reitwiessner is widely recognized for his substantial contributions to the Ethereum ecosystem, mainly for developing the smart contract language Solidity and improvements to the Ethereum Virtual Machine. Recently, his focus lies in advancing zero-knowledge technologies, particularly through his work on the powdr project.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/chris_iUL5pKP.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/powdr__a_modular_stack_for_zkvms.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "protocol_guild_funding__incentivising_core_protocol_work",
+        "name": "Protocol Guild: Funding & Incentivising Core Protocol Work",
+        "description": "The Protocol Guild aims to secure the future of Ethereum, by enabling a highly efficient way for its ecosystem and community to sustainably fund core protocol development, while rebalancing incentives for core protocol contributors.",
+        "start": "2023-09-15T09:00:00.000Z",
+        "end": "2023-09-15T09:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "trent_van_epps",
+                "name": "Trent Van Epps",
+                "bio": "Works at the Ethereum Foundation on protocol coordination. Member of the Protocol Guild",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/profile_triangle_p6CZOyc.JPG"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/protocol_guild_funding__incentivising_core_protocol_work.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "rawsciousness",
+        "name": "Rawsciousness",
+        "description": "Exploring the Meaning of Existence in a Futuristic Crypto Epoch",
+        "start": "2023-09-15T16:00:00.000Z",
+        "end": "2023-09-15T16:40:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "grigoris",
+                "name": "Grigoris",
+                "bio": "Autonomously Interdependent\r\nBorn in 1973\r\nGrigoris",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/kkk_C5VKYvw.jpg"
             },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "an-attractor-for-public-goods-funding",
-            "name": "An Attractor For Public Goods Funding",
-            "description": "In this video, Kevin Owocki, co-founder of Gitcoin, discusses the concept of attractors in the context of public goods funding in the crypto field. He explains that an attractor is a set of states through which a system tends to evolve, and in public goods funding, it refers to designing psychological incentive mechanisms to encourage contributions. Wachey describes different types of attractors and emphasizes the importance of building multiple strong and stable attractors. He shares his vision for creating a hyper structure on top of EVM-based blockchains to fund public goods and reward contributors. Wachey also discusses challenges in interfacing with government funding and suggests starting with quadratic funding tools for fiat ecosystems before transitioning to blockchain-based solutions. He encourages builders to explore coordination mechanisms and leverage existing protocols like Gitcoin's Alo Protocol for effective public goods funding.",
-            "start": 1689413700000,
-            "end": 1689414900000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "salim_virani",
+                "name": "Salim Virani",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Salim_acxdmul.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/rawsciousness.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "real_web3_messaging_must_be_encrypted_decentralized_and_interoperable_utilizing_dm3_protocol_as_layer_0_of_messaging",
+        "name": "Real web3 messaging must be encrypted, decentralized, and interoperable! Utilizing dm3 protocol as layer 0 of messaging.",
+        "description": "The dm3 protocol is the web3 messaging protocol focusing on encryption, decentralization, scalability, and in particular interoperability. It utilizes the essential features for a lean messaging base protocol: a registry for public keys and decentralized delivery service nodes.",
+        "start": "2023-09-15T09:00:00.000Z",
+        "end": "2023-09-15T09:40:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "steffen_kux",
+                "name": "Steffen Kux",
+                "bio": "As an applied mathematician, Steffen started his career in 2000 in the automotive industry as a method- and software developer for mathematical and simulation software, with a particular focus on applications using mathematical optimization, numerical simulation, and artificial intelligence. \r\n\r\nSince 2017, he has been working to implement blockchain technology for real-world applications. He has developed applications with industry partners and products in IoT, energy, mobility, sharing economy, asset management, and self-sovereign identity.\r\n\r\n2021 Steffen co-founded with 3 partners corpus as a venture studio for web3 applications. Now Steffen is focused on web3 messaging as one of the venture studio's successful projects. He and his team are developing dm3, the web3 messaging protocol for secure and interoperable communication.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Q6qSm9qU_400x400_MHiTjeu.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/real_web3_messaging_must_be_encrypted_decentralized_and_interoperable_utilizing_dm3_protocol_as_layer_0_of_messaging.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "recursive_snarks_for_efficiency_scalability_and_privacy",
+        "name": "Recursive SNARKs for Efficiency, Scalability, and Privacy",
+        "description": "Blockchains, with their primary focus on decentralization, open participation, and resilience, inherently lack efficiency, scalability, and privacy. Similar to parallel computing algorithms, the scalability of a blockchain-based system depends on the extent to which computational tasks can be moved off-chain. Zero knowledge techniques, such as recursive SNARKs, offer an effective means of shifting computation off-chain, requiring only proof verification as part of the consensus process. Mina demonstrates the use of these techniques in its consensus algorithm Ouroboros Samasika and zkApps. Privacy poses a challenge in blockchain systems due to their open public ledgers. However, zero knowledge proofs enable reduced data exposure on the public ledger and allow fine-tuning of the level of disclosure. Etonec's payment system serves as an exemplary application showcasing enhanced privacy in blockchains.",
+        "start": "2023-09-15T13:30:00.000Z",
+        "end": "2023-09-15T13:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "philipp_kant",
+                "name": "Philipp Kant",
+                "bio": "Philipp Kant is the Engineering Manager at Mina Foundation, the public benefit corporation serving the Mina Protocol. Previously, he worked at IOHK as the Head of Engineering for five years where he studied theoretical physics and software engineering. Philipp brings a passion for building high-quality, decentralized software to his role at Mina Foundation.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/IMG_3165_yxGbxVE.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/recursive_snarks_for_efficiency_scalability_and_privacy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "retroactive_public_goods_funding_2_rounds_in",
+        "name": "Retroactive Public Goods Funding: 2 Rounds in",
+        "description": "In this talk I want to share about Retroactive Public Goods Funding, what we learned in running 2 rounds of RetroPGF at Optimism, and what's next on our journey to summon Ether's Phoenix 🕊️",
+        "start": "2023-09-15T08:30:00.000Z",
+        "end": "2023-09-15T08:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "jonas_seiferth",
+                "name": "Jonas Seiferth",
+                "bio": "RetroPGF lead @ Optimism Foundation\r\nOn a journey to summon Ether's Phoenix with a bunch of Optimists.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/OP_PFP_edited_MMtDaup.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/retroactive_public_goods_funding_2_rounds_in.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "roll_your_own_crypto",
+        "name": "Roll your own crypto",
+        "description": "Elliptic curve cryptography underpins the trillion dollar economy of cryptocurrencies. But it's often seen as some sort of sorcery, meant only for experts. While it's true that cryptography is a minefield, and therefore you should _never roll your own crypto_, it's still a useful method to build an understanding of cryptocurrencies from first principles.\r\n\r\nIn this workshop, we'll cover basic algebra necessary to get a theoretical understanding of elliptic curves, and learn how they are used for signing and verifying transactions. We'll then put this theory to practice by rolling our own toy implementation of the elliptic curve used in Ethereum and Bitcoin.",
+        "start": "2023-09-15T13:15:00.000Z",
+        "end": "2023-09-15T14:35:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "anirudha_bose",
+                "name": "Anirudha Bose",
+                "bio": "Anirudha is a Staff Engineer at Brave, where he works on web3 initiatives, notably the multi-chain Brave Wallet. Previously, he worked at Ledger on custody software for financial institutions, and also briefly on algorithms for quantum computers. He enjoys travelling, attending mixers, and playing the guitar.",
+                "eventId": "protocol_berg",
+                "photo": ""
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/roll_your_own_crypto.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "running_rollups_on_light_nodes",
+        "name": "Running rollups on light nodes",
+        "description": "Learn how to run rollup software on a data availability sampling light node.",
+        "start": "2023-09-15T14:30:00.000Z",
+        "end": "2023-09-15T15:10:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "rene",
+                "name": "rene",
+                "bio": "data availability @ celestia",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/rene_SUpKCIJ.jpg"
             },
-            "speakers": [{ "id": "Kevin Owocki", "name": "Kevin Owocki" }],
-            "video": "https://lp-playback.com/hls/db60kj2cwyyqtjkq/index.m3u8",
-            "startCut": "1:55:00",
-            "endCut": "2:24:05"
-        },
-        {
-            "id": "priorities-for-public-goods-builders-in-2023",
-            "name": "Priorities for Public Goods Builders in 2023",
-            "description": "In this video, the speaker discusses the broad context of the current time period and reflects on the goals set out in the crypto field about a year ago. They emphasize the critical nature of this century and the need for systemic upgrades to navigate the challenges we face. The speaker highlights two major threads of technology development: blockchain and AI. They discuss how blockchain enables global scale coordination and coordination for better goals, while AI presents both capabilities and risks. The speaker also mentions the importance of funding public goods through crypto networks and leveraging AI capabilities to improve mechanisms. They discuss various funding mechanisms and coordination systems in the crypto space, as well as the potential for crypto networks to fund scientific research at a scale comparable to nation states. The speaker reviews the progress made in the community and project goals set in the previous year, highlighting successes and areas for improvement. They then outline community goals for 2023-2024, including growing events, expanding workshops and hackathons, formalizing community groups, and emphasizing performance evaluations. The speaker also presents project goals such as growing HyperCerts, scaling HyperCerts billboards, enabling reverse HyperCerts auctions, making impact evaluators on-chain observable and forkable, establishing network funds on-chain, developing IP NFTs, implementing aqueducts for blockchain networks to route value to public goods funding, creating an open-source funding alignment tool, and studying outcomes more robustly. The video concludes by emphasizing the potential of CryptoEcon to solve planetary problems but highlighting the need to do it well and study outcomes. The speaker acknowledges the challenges posed by CryptoWinter but expresses optimism for future growth in the crypto field.",
-            "start": 1689414900000,
-            "end": 1689416700000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "nashq",
+                "name": "NashQ",
+                "bio": null,
+                "eventId": "protocol_berg",
+                "photo": ""
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/running_rollups_on_light_nodes.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "testing_large_scale_networks_with_testground",
+        "name": "Testing large scale networks with Testground",
+        "description": "We will explore the features and benefits of Testground, and demonstrate how it can be used to test distributed systems in a controlled and reproducible environment at scale\r\n\r\nIn addition, we will cover test planning and strategies that worked for Celestia team that other protocol teams can take home as good point to start fresh",
+        "start": "2023-09-15T12:00:00.000Z",
+        "end": "2023-09-15T12:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "viet",
+                "name": "Viet",
+                "bio": "Big fan of why-how-what theory. \r\nTesting is my passion by day. Degening is by night. \r\nSometimes I get lucky shooting with my ASP-C Canon",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/ava_xlDf6Q3.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/testing_large_scale_networks_with_testground.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "testnet_or_not_here_we_come_a_deep_dive_into_running_test_networks",
+        "name": "Testnet or Not, Here We Come: A deep dive into running test networks",
+        "description": "Post-Merge testnets are a beast to run, this workshop would give you an overview into all the tooling that exists to make this job easier. We would also setup a small testnet during this workshop to help familiarize with the tools.",
+        "start": "2023-09-15T09:45:00.000Z",
+        "end": "2023-09-15T11:05:00.000Z",
+        "stageId": "atelier__workshop_1",
+        "speakers": [
+            {
+                "id": "parithosh",
+                "name": "Parithosh",
+                "bio": "I am an Ethereum enthusiast with a deep love for all things servers. I incorporated Ethereum into my Master’s thesis and loved the experience so much as to make it my full time job. I currently work in the DevOps team of the Ethereum Foundation and I mainly focus on the Ethereum protocol upgrades. I’m also an avid photographer with a specific interest in Landscape and Travel photography.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/x5MkzrAf_400x400_410A3ST.jpg"
             },
-            "speakers": [{ "id": "Juan Benet", "name": "Juan Benet" }],
-            "video": "https://lp-playback.com/hls/58d4v6a74i3opcfj/index.m3u8",
-            "startCut": "2:24:15",
-            "endCut": "2:51:30"
-        },
-        {
-            "id": "the-open-web-is-near-how-the-bos-ndc-and-daos-are-creating-a-decentralized-web",
-            "name": "\"The Open Web is NEAR: How the BOS, NDC, and DAOs are creating a Decentralized Web\"",
-            "description": "In this video, the speaker provides an update on the progress and goals of the crypto project called Near. Near aims to build a better web and believes in the open web concept. The project started with the idea of using AI to create any program or website, but pivoted to focus on blockchain technology. Near prioritizes simplicity for developers and end users, as well as security, scalability, and sustainability. The project is now transitioning into a blockchain operating system that brings together different ecosystems to contribute to the open web vision. The speaker discusses the importance of decentralization and highlights three pillars for further decentralizing the Near ecosystem: research and development, entrepreneurship and contribution, and community and governance. They also mention initiatives like Dev Hub, Near Horizon, and decentralized governance on the blockchain operating system. The video emphasizes the need for simplicity, inclusiveness, and accessibility in order to bring millions of users into the open web.\n\nThis text is a summary of a video about the crypto platform NIR. The speaker discusses the platform's history, its focus on simplicity and usability, and its mission to create an open web. They explain how NIR has evolved into a blockchain operating system that allows different ecosystems to contribute and collaborate. The video also highlights the importance of decentralization, research and development, entrepreneurship, and community governance in further decentralizing the NIR ecosystem. The speaker encourages developers to visit the NIR website and participate in building the open web. They also mention the platform's emphasis on diversity and inclusion in order to make participation accessible to all users.\n\nIn this video, the speaker provides an update on the progress of the Near blockchain ecosystem. They discuss the origins of Near, which started as a project focused on AI and freelancers using blockchain for payments. However, they realized that blockchain technology needed to be faster, cheaper, and more usable. As a result, they pivoted to become a layer one proof of stake blockchain with a focus on simplicity and mass adoption. The speaker also highlights the recent evolution of Near into a blockchain operating system, aiming to create an open web through multi-chain functionality, middleware, and an easy onboarding process called FastOS. They emphasize the importance of decentralization in achieving openness, inclusiveness, participation, and censorship resistance. The speaker then outlines three core pillars for further decentralization: research and development, entrepreneurship and contribution, and community and governance. They discuss specific initiatives within each pillar, such as the Dev Hub for developer contributions, NIR Horizon for gathering founders and backers, and decentralized governance through community-led initiatives. The video concludes with a focus on",
-            "start": 1689416700000,
-            "end": 1689417900000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "barnabas_busa",
+                "name": "Barnabas Busa",
+                "bio": "Devops at Ethereum Foundation",
+                "eventId": "protocol_berg",
+                "photo": ""
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/testnet_or_not_here_we_come_a_deep_dive_into_running_test_networks.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_anoma_protocol_and_its_design_process",
+        "name": "The Anoma Protocol and its Design Process",
+        "description": "This talk will give an introduction to the Anoma protocol architecture and its design process, to share what we learned and elicit feedback on how we could improve both.\r\n\r\nAnoma is a distributed operating system for intent-centric counterparty discovery and privacy-preserving computation on linear and non-linear resources with heterogenous trust assumptions.\r\n\r\nThe protocol architecture has the following (non-exhaustive) goals and design process behind it:\r\n\r\nGoal: Identify good component boundaries, to unbundle features and improve modularity.\r\n\r\nProcess: \r\n- Analyze the outcomes of protocols that came before us, learn from their successes and problems.\r\n- Example components: Consensus Algorithms, Network Transport, Programming Environment, State Machines\r\n\r\nGoal: Maximize composability of components.\r\n\r\nProcess: \r\n- Try to bridge the gap between real world systems and models from Programming Language Theory, Automata Theory and Category Theory.\r\n- Come up with implementation agnostic interfaces using above theory.\r\n\r\nGoal: Maximize flexibility of the protocol stack, since changes in a deployed system are costly, proportional to the significance of the change.\r\n\r\nProcess: \r\n- Decouple dimensions of choice as much as possible, to enable choices to be made independently of each other. \r\n- Minimize the amount of design decisions and make them at the least-significant place. \r\n- Wherever possible, try to push decisions from \"design-time\" to \"runtime\", so users can make them as circumstances change. \r\n\r\nWe will give a high level overview of the architecture and explain, using examples from it, how they are motivated by the process and how they move us closer to the above goals.",
+        "start": "2023-09-15T13:00:00.000Z",
+        "end": "2023-09-15T13:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "d",
+                "name": "D.",
+                "bio": "D. is a research engineer interested in distributed systems,  trust aware and privacy preserving computing, as well as applied mechanism design.\r\n\r\nThey are currently working on the anoma protocol specification and its prototypes.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/network_sketch_qBtEL3l.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_anoma_protocol_and_its_design_process.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_best_of_both_worlds_exploring_the_role_of_centralization_in_ipfs",
+        "name": "The Best of Both Worlds: Exploring the Role of Centralization in IPFS",
+        "description": "Web centralization and consolidation have created potential single points of failure, e.g., in areas such as content hosting, name resolution, and certification. The \"Decentralized Web,\" led by open-source software implementations, attempts to build decentralized alternatives. The InterPlanetary File System (IPFS) is part of this effort and provides a fully decentralized object storage and retrieval layer. This comes with challenges, though: Decentralization can increase complexity and overhead, as well as compromise performance, scalability, and system stability. As the lead developers of IPFS, we have therefore begun to explore more hybrid approaches. In this talk, we will discuss the trade-offs, and our implemented and proposed solutions, as well as give an outlook.",
+        "start": "2023-09-15T14:30:00.000Z",
+        "end": "2023-09-15T14:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "dennis_trautwein",
+                "name": "Dennis Trautwein",
+                "bio": "Dennis is Research Engineer @ProbeLab within Protocol Labs. He works on measuring the performance of Web3 network protocols, benchmarking protocols against their target performance milestones, and proposing improvements to their core design principles.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/dennis-trautwein-bw-square_0xqD31p.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_best_of_both_worlds_exploring_the_role_of_centralization_in_ipfs.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_blockspace_expo",
+        "name": "The Blockspace Expo",
+        "description": "Protocol researchers and developers from distant ecosystems gather to talk about their blockspace.",
+        "start": "2023-09-15T14:30:00.000Z",
+        "end": "2023-09-15T15:50:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "barnab_monnot",
+                "name": "Barnabé Monnot",
+                "bio": "Barnabé Monnot is a research scientist for the Robust Incentives Group, a research team of the Ethereum Foundation dedicated to the study of cryptoeconomics and mechanism design.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/BarnabeMonnot_EthereumFoundation_JjIqnnp.jpg"
             },
-            "speakers": [
-                { "id": "Marieke Flament", "name": "Marieke Flament" }
-            ],
-            "video": "https://lp-playback.com/hls/542b8o1292y53xkc/index.m3u8",
-            "startCut": "2:54:25",
-            "endCut": "3:08:00"
-        },
-        {
-            "id": "copylefting-the-patent-system-with-desci",
-            "name": "\"Copylefting the patent system with DeSci\"",
-            "description": "This video introduces a new project called D.A. that aims to revolutionize the patent system and promote more collaborative and cooperative innovation. The current patent system is criticized for being inefficient, costly, and exclusionary, leading to redundant innovation and negative outcomes for society. D.A. proposes a solution by creating a decentralized collaboration system where ideas can be submitted, reviewed, and developed into patent applications. Approved patents are then placed in a defensive patent pool with copyleft restrictions, allowing non-commercial use without permission and encouraging derivative works to be added to the pool. The video explains how the system would work, from idea submission to inclusion in the patent pool, and discusses potential concerns about monopolistic practices. The project also highlights the application of this system in other industries such as AI and pharmaceuticals. Overall, D.A. aims to foster open innovation, incentivize collaboration, and provide economic rewards for scientific progress in a more inclusive and cooperative manner.",
-            "start": 1689417900000,
-            "end": 1689419100000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "sam_hart",
+                "name": "Sam Hart",
+                "bio": "Sam is the Head of Product and Strategy at Skip, a team building MEV solutions that improve protocol sustainability and cross-chain UX. He is also Co-founder of Timewave, an organization that creates tools for intelligent on-chain resource allocation and trustless cooperation.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/headshot_square_jSlIGp9.jpeg"
             },
-            "speakers": [
-                { "id": "Primavera De Filippi", "name": "Primavera De Filippi" }
-            ],
-            "video": "https://lp-playback.com/hls/75fc9vlx25ym4jts/index.m3u8",
-            "startCut": "3:10:00",
-            "endCut": "3:36:00"
-        },
-        {
-            "id": "lunch-break",
-            "name": "Lunch Break",
-            "description": "",
-            "start": 1689419100000,
-            "end": 1689422400000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "jannik",
+                "name": "Jannik",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/jannik_YBejTbD.png"
             },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "the-case-for-the-network-state-for-the-african-diaspora",
-            "name": "\"The case for the network state for the African diaspora\"",
-            "description": "In this video, the speaker discusses the challenges faced by decentralized communities and the need for transparent and sustainable funding. They explain that while decentralized autonomous organizations (DAOs) offer a solution to funding decentralized communities, there are still several problems to overcome. The first challenge is finding the balance between coordination and decentralization within DAOs. The speaker also highlights the difficulties of maintaining participation and building a community within DAOs. Additionally, they emphasize the lack of legacy infrastructure in DAOs, which makes it challenging for individuals to connect with the traditional financial system. The speaker argues that in order to create a viable future, technology needs to be built in collaboration with those who are currently excluded from the legacy system. They introduce Open Collective as a platform that provides transparent management of funds for decentralized fiat communities, offering tax deductibility for donors and employment opportunities for community members. The speaker concludes by emphasizing the importance of co-creating and co-designing collective technology with grassroots culture and ensuring shared and participatory governance.",
-            "start": 1689422400000,
-            "end": 1689423600000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "robert_habermeier",
+                "name": "Robert Habermeier",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/rob_Br00o3e.jpeg"
             },
-            "speakers": [{ "id": "Chika Uwazie", "name": "Chika Uwazie" }],
-            "video": "https://lp-playback.com/hls/2b30al6350yblqb9/index.m3u8",
-            "startCut": "4:43:00",
-            "endCut": "5:02:00"
-        },
-        {
-            "id": "soulbound-reputation-tokens-to-the-rescue",
-            "name": "\"Soulbound Reputation Tokens to the Rescue\"",
-            "description": "In this video, Omodju Miller discusses the importance of funding open source projects in the crypto field. He shares his experiences working at Google.org and GitHub, highlighting the challenges faced by corporations in funding social problems and coordinating decentralized industries. Miller proposes a solution involving a token-based system that assigns value to developers' contributions and encourages corporations to commit a percentage of their profits or equity to fund this system. He encourages others to take on this project and offers his expertise as an advisor.",
-            "start": 1689423600000,
-            "end": 1689424800000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "christopher_goes",
+                "name": "Christopher Goes",
+                "bio": "Christopher Goes currently works on Anoma and Namada. Previously, he worked on IBC and the Wyvern DEX protocol. He lives in Berlin.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/christopher_tdRvbuQ.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_blockspace_expo.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_forest_that_protects_the_public_good_nym_mixnet_for_libp2p_privacy",
+        "name": "The Forest That Protects the Public Good: Nym mixnet for Libp2p privacy",
+        "description": "The public and private are not opposites, they are complementary: privacy is needed to sustain the security and integrity of people as well as infrastructure that serve the public good. This workshop will demo working code for running Libp2p traffic through the Nym mixnet, built with the Nym Rust SDK.",
+        "start": "2023-09-15T15:15:00.000Z",
+        "end": "2023-09-15T15:55:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "jaya_klara_brekke",
+                "name": "Jaya Klara Brekke",
+                "bio": "Jaya Klara Brekke is a cryptographic geographer and CSO at Nym, a global decentralised, incentivised privacy network. She works with the Nym SDK team and broader company on researching, developing and articulating the broader societal implications and importance of privacy technologies in the current major re-architecting of digital worlds.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/Jayapapaya_1_R1yFPym.png"
             },
-            "speakers": [{ "id": "Omoju Miller", "name": "Omoju Miller" }],
-            "video": "https://lp-playback.com/hls/c2efy2sop40jw4vn/index.m3u8",
-            "startCut": "5:03:00",
-            "endCut": "5:22:00"
-        },
-        {
-            "id": "the-future-is-collective",
-            "name": "\"The Future is Collective\"",
-            "description": "In this video, the speaker discusses the challenges and complexities of working in international development, including structural inequalities, historical injustices, capitalism, globalization, and racism. They introduce UNICEF and their Office of Innovation, which focuses on using technology to support program goals. They mention UNICEF's venture fund and acceptance of cryptocurrency. The speaker explains the concept of digital public goods (DPGs) and emphasizes UNICEF's commitment to funding them. They highlight the importance of funding young people and promoting a more equitable digital future. The video concludes with a call to include young people in projects and a discussion on the challenges of funding DPGs.",
-            "start": 1689424800000,
-            "end": 1689426000000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "max_hampshire",
+                "name": "Max Hampshire",
+                "bio": "Senior Developer Relations for Nym, previously a researcher and artist with background in Philosophy.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/QKRSIcsy_400x400_8WPL0fC.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_forest_that_protects_the_public_good_nym_mixnet_for_libp2p_privacy.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_holeky_testnet_launch_hangout",
+        "name": "The Holešky Testnet Launch Hangout",
+        "description": "Coincidentally, the Holešky testnet is scheduled to launch during the Protocol Berg conference. Let's put it on screen and chat about testnet infrastructure.",
+        "start": "2023-09-15T13:45:00.000Z",
+        "end": "2023-09-15T14:25:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "afri_schoedon",
+                "name": "Afri Schoedon",
+                "bio": "Head of Protocol Engineering at ChainSafe Systems. Core-Organizer ETHBerlin, Protocol Berg, and GoerliCon. Running testnets on the side.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/afri-2023_6nkQtZ4.png"
             },
-            "speakers": [{ "id": "Pia Mancini", "name": "Pia Mancini" }],
-            "video": "https://lp-playback.com/hls/11a4gx2ijefz9enl/index.m3u8",
-            "startCut": "5:23:00",
-            "endCut": "5:39:20"
-        },
-        {
-            "id": "funding-the-commons-or-funding-the-youth",
-            "name": "\"Funding the Commons or Funding the Youth?\"",
-            "description": "",
-            "start": 1689426000000,
-            "end": 1689427200000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "parithosh",
+                "name": "Parithosh",
+                "bio": "I am an Ethereum enthusiast with a deep love for all things servers. I incorporated Ethereum into my Master’s thesis and loved the experience so much as to make it my full time job. I currently work in the DevOps team of the Ethereum Foundation and I mainly focus on the Ethereum protocol upgrades. I’m also an avid photographer with a specific interest in Landscape and Travel photography.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/x5MkzrAf_400x400_410A3ST.jpg"
             },
-            "speakers": [
-                { "id": "Christopher Szymczak", "name": "Christopher Szymczak" }
-            ],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "coffee-break",
-            "name": "coffee break",
-            "description": "",
-            "start": 1689427200000,
-            "end": 1689427800000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "barnabas_busa",
+                "name": "Barnabas Busa",
+                "bio": "Devops at Ethereum Foundation",
+                "eventId": "protocol_berg",
+                "photo": ""
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_holeky_testnet_launch_hangout.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_nature_of_the_protocol",
+        "name": "The Nature of the Protocol",
+        "description": "Since 2019, we’ve been studying the novel dynamics unlocked by crypto protocols,  articulating new mentals model for understanding them, such as \"headless brands\" and \"squad wealth.\" Since our work on public goods and with our experience as researchers and builders, our thinking has taken a more deeply political turn as we consider the long-term impact of crypto protocols as institutional bodies.\r\n\r\nInstitutional legitimacy and accountability of actors are problems which recur time and again as critical themes in protocol development and operations. Attempts to solve these problems are very wide-ranging, drawing from notions of the state (DAO constitutionalism) to corporations (coin-voting shareholder governance). As a result, protocol work has become a byzantine maze of narratives and mismatched mental models which are often a poor fit for the technical affordances of blockchains.\r\n\r\nIn this keynote talk, we will share insights from 5 years of techno-cultural analysis in the crypto space. We'll then present several frameworks that reveal how accountability and legitimacy arise—or don't—in crypto protocols. Drawing from legal and political theory (featuring pirates), we'll share a political philosophy of crypto institutions that will help protocol stewards and core developers understand power, behavioral regulation, and even violence in the nature of the protocol.",
+        "start": "2023-09-15T17:00:00.000Z",
+        "end": "2023-09-15T17:25:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "toby_shorin",
+                "name": "Toby Shorin",
+                "bio": "Toby Shorin\r\nToby Shorin is a writer and technologist based in New York and the cofounder of Other Internet Research Institute. His research examines the moral genealogy of technological and cultural evolution.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/headhshot_ROxYJPz.jpg"
             },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "contribution-theory-of-value-on-the-evolution-of-markets-and-commons",
-            "name": "\"Contribution theory of value: on the evolution of markets and commons\"",
-            "description": "In this video, Jason Potts discusses the concept of building new economies for the future. He emphasizes the need for better markets and better commons to solve big social problems. Potts suggests combining the properties of both markets and commons to create a new type of mechanism, which he refers to as an \"object-oriented economy.\" He explains that markets are efficient mechanisms for computing local information into prices, while commons provide better governance. Potts argues that by combining these two mechanisms, we can build next-generation economies that are more computationally complex and better equipped to address social and environmental challenges. He acknowledges that this idea is still experimental but believes that recent advancements in technology have made it possible to explore and implement these new types of mechanisms.\n\nIn this video, Jason Potts discusses the need for building new economies and the role of markets and commons in this process. He highlights the limitations of traditional economic systems and the importance of incorporating externalities and better governance. Potts proposes a new approach that combines the properties of both markets and commons, creating a new mechanism for economic coordination. He emphasizes the need for more compute in both markets and commons, suggesting that richer information sources are essential for solving big social problems. Potts also mentions the potential of Web 3 technologies in enabling this new type of mechanism. Overall, he argues that next-generation economies should be next-generation computers, combining decentralized mechanisms to create a more effective and inclusive economic system.\n\nIn this video, Jason Potts discusses the concept of building new economies for the future. He starts by explaining the current economic system, which is based on market economies and government intervention. However, he points out that this system has limitations, particularly in dealing with externalities. He then introduces the concept of commons, which refers to local governance systems for resources. Potts suggests that the future of economies lies in combining markets and commons into a new mechanism that can compute and coordinate economic activities more effectively. He emphasizes the need for better markets and better commons, both of which require more compute power. Potts proposes building an object-oriented economy that allows for the creation of multiple economies at different scales. He believes that combining market mechanisms with contributions from commons can lead to a new theory of value that incorporates richer information into prices. Potts concludes by stating that this approach to building next-generation economies is only possible now due to advancements in technology, particularly in terms of scalable compute components.",
-            "start": 1689427800000,
-            "end": 1689429000000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "laura_lotti",
+                "name": "Laura Lotti",
+                "bio": "Researcher at Other Internet investigating the institutional affordances of blockchain protocols",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/LL-pic_aK1B8rK.jpg"
             },
-            "speakers": [{ "id": "Jason Potts", "name": "Jason Potts" }],
-            "video": "https://lp-playback.com/hls/03019i3fmbm75zdr/index.m3u8",
-            "startCut": "5:57:00",
-            "endCut": "6:13:00"
-        },
-        {
-            "id": "dependency-funding-with-drips-v2",
-            "name": "Dependency Funding with Drips v2",
-            "description": "In this video, Eleftherios, the co-founder of the Radical Project, introduces DRIPS, a decentralized toolkit for funding public goods and open-source software. He discusses existing methods of funding and their limitations, highlighting the importance of interdependency. He explores the crypto Web3 space and mentions inspiring projects like Gitcoin and retroactive public goods funding. \n\nDRIPS takes a retroactive approach to funding and focuses on the interconnected nature of software and public goods. It offers continuous or recurring funding options and streamlines the funding experience for software projects. The core feature is a list that includes Ethereum addresses, ENS names, and Git repositories to allocate funds accordingly.\n\nAdditional tools within DRIPS simplify funding, including an identity solution using oracles and Chainlink. Continuous payments are emphasized for trust minimization assumptions and flexibility. The next iteration of the DRIPS toolkit is live, with a proposal to allocate $1 million from the RadWorks DAO.\n\nDRIPS enables possibilities like programmatically linking profits to dependencies, distributing native tokens to dependencies, issuing hyper-search for public goods contributions, and creating multi-party games within DAOs. Funding dependencies and creating cultural norms within the Web3 space are emphasized.\n\nThe video concludes with a Q&A session addressing questions about allocation percentages and decision-making processes within DRIPS. Eleftherios suggests looking at the work of the Optimism Collective for programmatically funding based on profitability.",
-            "start": 1689429000000,
-            "end": 1689430800000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "sam_hart",
+                "name": "Sam Hart",
+                "bio": "Sam is the Head of Product and Strategy at Skip, a team building MEV solutions that improve protocol sustainability and cross-chain UX. He is also Co-founder of Timewave, an organization that creates tools for intelligent on-chain resource allocation and trustless cooperation.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/headshot_square_jSlIGp9.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_nature_of_the_protocol.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "the_problem_of_historical_data_availability_in_evm_chains",
+        "name": "The problem of historical data availability in EVM chains",
+        "description": "This presentation will try to explain what the problem of historical data availability is in EVM chains, why it exists and how we can try to tackle it.",
+        "start": "2023-09-15T12:15:00.000Z",
+        "end": "2023-09-15T12:55:00.000Z",
+        "stageId": "loft__workshop_0",
+        "speakers": [
+            {
+                "id": "lefteris_karapetsas",
+                "name": "Lefteris Karapetsas",
+                "bio": "Ethereum developer since 2014! Contributed to the solidity compiler and C++ ethereum. Built the DAO, saw it get destroyed, then hacked it back to save whatever we could both in ETH and ETC. Development lead for the Raiden network. Founder of rotki. I like birding :D",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/profile2_JQxOaAj.png"
             },
-            "speakers": [
-                {
-                    "id": "Eleftherios Diakomichalis ",
-                    "name": "Eleftherios Diakomichalis "
-                }
-            ],
-            "video": "https://lp-playback.com/hls/91bb2q7f7ysg6061/index.m3u8",
-            "startCut": "6:13:10",
-            "endCut": "6:33:00"
-        },
-        {
-            "id": "zuzalu-a-first-of-its-kind-irl-pop-up-community-experiment",
-            "name": "Zuzalu: A First-of-its-kind IRL Pop-up Community Experiment",
-            "description": "",
-            "start": 1689430800000,
-            "end": 1689432000000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "yabir_garcia",
+                "name": "Yabir Garcia",
+                "bio": "Backend developer for rotki. Background on mathematics and CS",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/xOhHvas9_400x400_CGHD8DR.jpg"
             },
-            "speakers": [{ "id": "Janine Leger", "name": "Janine Leger" }],
-            "video": "https://lp-playback.com/hls/687586kfc8xgy2t7/index.m3u8",
-            "startCut": "6:33:40",
-            "endCut": "7:03:00"
-        },
-        {
-            "id": "orchestrating-new-attractor-points-of-scientific-utility",
-            "name": "Orchestrating new attractor points of scientific utility ",
-            "description": "",
-            "start": 1689432000000,
-            "end": 1689433200000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
+            {
+                "id": "konstantinos_paparas",
+                "name": "Konstantinos Paparas",
+                "bio": "Open-source engineer\r\nFrontend lead/Infra @ rotki",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/c3efa1bb30bd70bdd48002c1b6a2d587_jIWqpGY.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/the_problem_of_historical_data_availability_in_evm_chains.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "verkle_sync__bring_a_node_up_in_minutes",
+        "name": "Verkle sync : bring a node up in minutes",
+        "description": "A high-level introduction to verkle sync, a synchronization algorithm made possible by the use of verkle trees and stateless Ethereum.",
+        "start": "2023-09-15T08:30:00.000Z",
+        "end": "2023-09-15T08:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "guillaume_ballet",
+                "name": "Guillaume Ballet",
+                "bio": "Core developer, member of the geth team. I focus on evolutions to the protocol, and bringing research ideas to fruition.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/profil_R7V5Nb2.jpeg"
             },
-            "speakers": [
-                { "id": "Eirini Malliaraki", "name": "Eirini Malliaraki" }
-            ],
-            "video": "https://lp-playback.com/hls/bb899khgk60q3xrf/index.m3u8",
-            "startCut": "7:05:10",
-            "endCut": "7:24:15"
-        },
-        {
-            "id": "eight-myths-about-technology-research",
-            "name": "Eight Myths About Technology Research",
-            "description": "In this video, the speaker discusses eight myths about technology research in the crypto field. They challenge the perception that only basic science produces public goods and argue that technology research also contributes to public goods. They debunk the myth that public goods research is solely the responsibility of the government, highlighting tensions between government research and accountability to taxpayers. The speaker addresses the belief that startups are good for research, explaining how startups often prioritize commercialization over pre-commercial research. They argue that researchers should focus on paying it forward instead of expecting immediate rewards. The importance of research management and acknowledging that technology resides in people's heads is emphasized. The speaker also highlights the difficulty of measuring technology impact due to uncertainty. Lastly, they challenge the notion that planning is worthless and advocate for better planning processes. Overall, the video provides insights into misconceptions surrounding technology research in the crypto field and offers alternative perspectives on these topics.",
-            "start": 1689433200000,
-            "end": 1689434400000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-            },
-            "speakers": [{ "id": "Ben Reinhardt", "name": "Ben Reinhardt" }],
-            "video": "https://lp-playback.com/hls/592agyeyfihisas8/index.m3u8",
-            "startCut": "7:24:30",
-            "endCut": "7:44:39"
-        },
-        {
-            "id": "roadmapping-for-impact-funding",
-            "name": "Roadmapping for Impact Funding",
-            "description": "In this video, a panel of experts in the crypto field discuss the significance of road mapping. They highlight how road maps facilitate collaboration, coordination, and knowledge sharing among stakeholders. The panelists debate the visual representation of road maps, with some advocating for detailed graphs while others emphasize concise and actionable information. The video emphasizes the value of road mapping in aligning stakeholders and driving impactful science and technology advancements in the crypto industry.",
-            "start": 1689434400000,
-            "end": 1689436800000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-            },
-            "speakers": [
-                { "id": "Silvia Bessa", "name": "Silvia Bessa" },
-                { "id": "Ben Reinhardt", "name": "Ben Reinhardt" },
-                { "id": "Joël Thorstensson", "name": "Joël Thorstensson" },
-                { "id": "Eirini", "name": "Eirini" }
-            ],
-            "video": "https://lp-playback.com/hls/5dbejnht7ojlpuzq/index.m3u8",
-            "startCut": "7:45:00",
-            "endCut": "8:22:20"
-        },
-        {
-            "id": "close-stage",
-            "name": "Close stage",
-            "description": "",
-            "start": 1689437100000,
-            "end": 1689437100000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-            },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        },
-        {
-            "id": "speaker-sponsor-dinner-procope",
-            "name": "Speaker-Sponsor Dinner @ Procope",
-            "description": "",
-            "start": 1689445800000,
-            "end": 1689448200000,
-            "stage": {
-                "id": "main-stage",
-                "name": "Main stage",
-                "stream": [{ "id": "0e577125-8b01-45bd-b058-c6f2731f73f9" }]
-            },
-            "speakers": [],
-            "video": "",
-            "startCut": "0:00:00",
-            "endCut": "0:00:00"
-        }
-    ]
-}
+            {
+                "id": "tanishq_jasoria",
+                "name": "Tanishq Jasoria",
+                "bio": "-",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/tanishq_stBCsRC.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/verkle_sync__bring_a_node_up_in_minutes.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "whisk_returning_privacy_to_ethereum_proposers",
+        "name": "Whisk: returning privacy to Ethereum proposers",
+        "description": "Proposal for Whisk: a privacy-preserving protocol for electing block proposers on the Ethereum beacon chain designed by George Kadianakis",
+        "start": "2023-09-15T14:00:00.000Z",
+        "end": "2023-09-15T14:25:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "dapplion",
+                "name": "dapplion",
+                "bio": "Eth2.0 core dev at Lodestar @chainsafeth | merge coordinator @gnosischain | og dev at @dappnode",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/hq-my-edit-light-small-MAIN-SMALLER_PxQk1aI.jpg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/whisk_returning_privacy_to_ethereum_proposers.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "will_your_crypto_project_be_censored_philosophy_and_practice_of_censorship",
+        "name": "Will your crypto project be censored? Philosophy and practice of censorship",
+        "description": "Will your crypto project be censored? Censorship is spreading, from Infura blocking IP addresses, to Github taking the Tornado Cash repo down. This talk will provide a legal anthropological analysis of the elements that might put a project at risk, so that you can take the necessary steps to protect your efforts",
+        "start": "2023-09-15T09:30:00.000Z",
+        "end": "2023-09-15T09:55:00.000Z",
+        "stageId": "magazin__main_stage",
+        "speakers": [
+            {
+                "id": "constanza_gallo",
+                "name": "Constanza Gallo",
+                "bio": "I work for the Swarm Foundation where I recently led the project Wikipedia on Swarm, to make a web3 censorship resistant copy of Wikipedia. Prior to that, I was community manager with the Golem Network. I have a MSc in Law, Anthropology and Society from the London School of Economics, where I focused on the interplay between State Secrecy and Democratic Governance. But my passion for freedom of speech goes way back: my father was a satirical cartoonist and a political journalist, he was often the target of censorship attempts so it’s a family affair.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/costanza_I2pVX5J.png"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/will_your_crypto_project_be_censored_philosophy_and_practice_of_censorship.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    },
+    {
+        "id": "worldcoin_maximally_private_digital_identity",
+        "name": "Worldcoin: Maximally private digital identity.",
+        "description": "With over 2M members Worldcoin has the largest anonymity set for its zero knowledge proof of personhood protocol.",
+        "start": "2023-09-15T16:30:00.000Z",
+        "end": "2023-09-15T16:55:00.000Z",
+        "stageId": "atelier__side_stage",
+        "speakers": [
+            {
+                "id": "remco_bloemen",
+                "name": "Remco Bloemen",
+                "bio": "Decentralization and cryptography nerd since forever. Currently leading design of self-sovereign private digital identity at Worldcoin.",
+                "eventId": "protocol_berg",
+                "photo": "https://speak.protocol.berlin/media/avatars/remco_h0ItXM4.jpeg"
+            }
+        ],
+        "playbackId": "",
+        "eventId": "protocol_berg",
+        "coverImage": "/sessions/protocol_berg/worldcoin_maximally_private_digital_identity.jpg",
+        "startCut": "00:00:00",
+        "endCut": "00:00:00"
+    }
+]
