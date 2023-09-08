@@ -30,6 +30,8 @@ const sessions: SessionType[] = SESSIONS.map((session) => {
     };
 });
 
+const DURATION_ANIMATION = 170;
+
 interface Props {
     readonly session: SessionType;
 }
@@ -88,15 +90,7 @@ function IntroWithVideo(props: Props) {
 
     return (
         <>
-            <Sequence name="Video" from={125}>
-                <Video
-                    src={staticFile(G_VIDEO_PATH)}
-                    startFrom={startCutInSeconds * fps}
-                    endAt={endCutInSeconds * fps}
-                    volume={() => videoVolume}
-                />
-            </Sequence>
-            <Sequence durationInFrames={170}>
+            <Sequence durationInFrames={DURATION_ANIMATION}>
                 <Video
                     muted
                     style={{ opacity: videoOpacity }}
@@ -104,7 +98,7 @@ function IntroWithVideo(props: Props) {
                 />
             </Sequence>
             {session.speakers!.map((speaker, index) => (
-                <Sequence name="Name(s)" durationInFrames={170}>
+                <Sequence name="Name(s)" durationInFrames={DURATION_ANIMATION}>
                     <div style={{ opacity: videoOpacity }}>
                         <Text
                             text={speaker.name}
@@ -117,7 +111,7 @@ function IntroWithVideo(props: Props) {
                     </div>
                 </Sequence>
             ))}
-            <Sequence name="Title" durationInFrames={170}>
+            <Sequence name="Title" durationInFrames={DURATION_ANIMATION}>
                 <div
                     className="leading-tight"
                     style={{ opacity: videoOpacity }}>
@@ -130,7 +124,7 @@ function IntroWithVideo(props: Props) {
                     />
                 </div>
             </Sequence>
-            <Sequence durationInFrames={170}>
+            <Sequence durationInFrames={DURATION_ANIMATION}>
                 <div style={{ opacity: videoOpacity }}>
                     <Rect
                         width={770}
@@ -167,14 +161,7 @@ export function Compositions() {
     const processedSessions = sessions
         .filter(
             (session: SessionType) =>
-                session.speakers &&
-                session.speakers.length > 0 &&
-                session.startCut &&
-                session.endCut &&
-                convertToSeconds(session.endCut) >= 3 &&
-                convertToSeconds(session.endCut) -
-                    convertToSeconds(session.startCut) >
-                    0,
+                session.speakers && session.speakers.length > 0,
         )
         .map((session: SessionType) => {
             if (session.speakers) {
@@ -199,10 +186,7 @@ export function Compositions() {
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
-                    durationInFrames={
-                        convertToSeconds(session.endCut) * G_FPS -
-                        convertToSeconds(session.startCut) * G_FPS
-                    }
+                    durationInFrames={DURATION_ANIMATION}
                     fps={G_FPS}
                     defaultProps={{ session }}
                 />

@@ -2,14 +2,31 @@ import { join } from 'path';
 import { bundle } from '@remotion/bundler';
 import { getCompositions, renderMedia } from '@remotion/renderer';
 import { RenderMediaOnProgress } from '@remotion/renderer';
+import { webpackOverride } from '../webpack-override';
 
-let lastProgressPrinted = -1;
+let lastProgressPrinted = 0;
+
+if (!process.env.EVENT) {
+    console.error('process.env.EVENT is not defined');
+    process.exit(1);
+}
 
 const onProgress: RenderMediaOnProgress = ({ progress }) => {
     const progressPercent = Math.floor(progress * 100);
 
     if (progressPercent > lastProgressPrinted) {
-        console.log(`Rendering is ${progressPercent}% complete`);
+        const progressBarLength = 50;
+        const numberOfEqualSigns = Math.floor(progress * progressBarLength);
+        const numberOfDashes = progressBarLength - numberOfEqualSigns;
+
+        const progressBar = `[${'='.repeat(numberOfEqualSigns)}>${'-'.repeat(
+            numberOfDashes,
+        )}] ${progressPercent}%`;
+
+        process.stdout.clearLine(0);
+        process.stdout.cursorTo(0);
+        process.stdout.write(progressBar);
+
         lastProgressPrinted = progressPercent;
     }
 };
@@ -18,6 +35,7 @@ const start = async () => {
     console.log('Find compositions...');
     const bundled = await bundle({
         entryPoint: join(process.cwd(), 'src', 'index.ts'),
+        webpackOverride,
     });
 
     console.log('Fetching compositions...');
@@ -32,18 +50,16 @@ const start = async () => {
                 composition,
                 serveUrl: bundled,
                 outputLocation: `out/sessions/${composition.id}.mp4`,
-                videoBitrate: '500M',
+                videoBitrate: '50M',
                 onProgress,
             });
-            lastProgressPrinted = -1;
+
+            lastProgressPrinted = 0;
         }
     }
 };
-start()
-    .then(() => {
-        process.exit(0);
-    })
-    .catch((err) => {
-        console.log(err);
-        process.exit(1);
-    });
+
+start().catch((err) => {
+    console.log(err);
+    process.exit(1);
+});

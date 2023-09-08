@@ -8,7 +8,7 @@ export const G_LOGO_PICTURE = '/images/FtC.svg';
 export const G_FPS = 25;
 export const G_VIDEO_PATH = '/videos/stream.mp4';
 export const G_ANIMATION_PATH = '/animations/FtC_animation.mp4';
-export const G_AUDIO_PATH = '/audio/522_short1_cream-soda-day_0018_preview.mp3';
+export const G_AUDIO_PATH = '/audio/522_short1_cream-soda-day_0018.wav';
 export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 /// / Please check Google Font what weights you can use
