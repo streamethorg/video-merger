@@ -22,6 +22,7 @@
     "@livepeer/react": "^2.6.0",
     "@remotion/cli": "4.0.27",
     "@remotion/google-fonts": "4.0.27",
+    "@remotion/lambda": "4.0.27",
     "@remotion/lottie": "4.0.27",
     "@remotion/motion-blur": "4.0.27",
     "@remotion/shapes": "4.0.27",
