@@ -90,6 +90,14 @@ function IntroWithVideo(props: Props) {
 
     return (
         <>
+            <Sequence name="Video" from={DURATION_ANIMATION - 30}>
+                <Video
+                    src={staticFile(G_VIDEO_PATH)}
+                    startFrom={startCutInSeconds * fps}
+                    endAt={endCutInSeconds * fps}
+                    volume={() => videoVolume}
+                />
+            </Sequence>
             <Sequence durationInFrames={DURATION_ANIMATION}>
                 <Video
                     muted
@@ -161,7 +169,14 @@ export function Compositions() {
     const processedSessions = sessions
         .filter(
             (session: SessionType) =>
-                session.speakers && session.speakers.length > 0,
+                session.speakers &&
+                session.speakers.length > 0 &&
+                session.startCut &&
+                session.endCut &&
+                convertToSeconds(session.endCut) >= 3 &&
+                convertToSeconds(session.endCut) -
+                    convertToSeconds(session.startCut) >
+                    0,
         )
         .map((session: SessionType) => {
             if (session.speakers) {
@@ -186,7 +201,10 @@ export function Compositions() {
                     component={IntroWithVideo as any}
                     width={1920}
                     height={1080}
-                    durationInFrames={DURATION_ANIMATION}
+                    durationInFrames={
+                        convertToSeconds(session.endCut) * G_FPS -
+                        convertToSeconds(session.startCut) * G_FPS
+                    }
                     fps={G_FPS}
                     defaultProps={{ session }}
                 />
