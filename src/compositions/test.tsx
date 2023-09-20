@@ -20,7 +20,6 @@ import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
 
-
 const DURATION_ANIMATION = 170;
 
 interface Props {
@@ -78,14 +77,13 @@ function IntroWithVideo(props: Props) {
     const videoOpacity = computeOpacity(frame);
     const startCutInSeconds = convertToSeconds(session.startCut);
     const endCutInSeconds = convertToSeconds(session.endCut);
-
+    console.log('startCutInSeconds', startCutInSeconds, fps);
+    console.log('endCutInSeconds', endCutInSeconds, fps);
     return (
         <>
             <Sequence name="Video" from={DURATION_ANIMATION - 30}>
                 <Video
                     src={staticFile(G_VIDEO_PATH)}
-                    startFrom={startCutInSeconds * fps}
-                    endAt={endCutInSeconds * fps}
                     volume={() => videoVolume}
                 />
             </Sequence>
@@ -192,7 +190,10 @@ export function Compositions() {
             component={IntroWithVideo as any}
             width={1920}
             height={1080}
-            durationInFrames={1477 * G_FPS - 1075 * G_FPS}
+            durationInFrames={
+                convertToSeconds(session.endCut) * G_FPS -
+                convertToSeconds(session.startCut) * G_FPS
+            }
             fps={G_FPS}
             defaultProps={{ session }}
         />

@@ -6,10 +6,7 @@ import { webpackOverride } from '../webpack-override';
 
 let lastProgressPrinted = 0;
 
-if (!process.env.EVENT) {
-    console.error('process.env.EVENT is not defined');
-    process.exit(1);
-}
+
 
 const onProgress: RenderMediaOnProgress = ({ progress }) => {
     const progressPercent = Math.floor(progress * 100);

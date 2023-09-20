@@ -85,16 +85,12 @@ function IntroWithVideo(props: Props) {
     };
 
     const videoOpacity = computeOpacity(frame);
-    const startCutInSeconds = convertToSeconds(session.startCut);
-    const endCutInSeconds = convertToSeconds(session.endCut);
 
     return (
         <>
             <Sequence name="Video" from={DURATION_ANIMATION - 30}>
                 <Video
-                    src={staticFile(G_VIDEO_PATH)}
-                    startFrom={startCutInSeconds * fps}
-                    endAt={endCutInSeconds * fps}
+                    src={staticFile(G_VIDEO_PATH + session.id + ".mp4")}
                     volume={() => videoVolume}
                 />
             </Sequence>

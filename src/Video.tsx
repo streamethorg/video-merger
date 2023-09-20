@@ -1,4 +1,4 @@
-import { Compositions } from './compositions/test';
+import { Compositions } from './compositions';
 import './assets/globals.css';
 
 export function Video() {
