@@ -63,6 +63,12 @@ export interface IStage {
     order?: number;
 }
 
+export interface ISource {
+    streamUrl: string;
+    start: number;
+    end: number;
+}
+
 export interface ISession {
     id: string;
     name: string;
@@ -76,6 +82,7 @@ export interface ISession {
     eventId: IEvent['id'];
     track?: string[];
     coverImage?: string;
+    source?: ISource;
     startCut?: string;
     endCut?: string;
 }

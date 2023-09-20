@@ -36,15 +36,6 @@ interface Props {
     readonly session: SessionType;
 }
 
-function convertToSeconds(time: string | undefined): number {
-    return time
-        ? time
-              .split(':')
-              .map(Number)
-              .reduce((acc, val, index) => acc + val * 60 ** (2 - index), 0)
-        : 0;
-}
-
 function clampInterpolation(f: number, start: number[], end: number[]): number {
     return interpolate(f, start, end, {
         extrapolateLeft: 'clamp',
@@ -54,9 +45,9 @@ function clampInterpolation(f: number, start: number[], end: number[]): number {
 
 function IntroWithVideo(props: Props) {
     const { session } = props;
-    const { durationInFrames, fps } = useVideoConfig();
+    const { durationInFrames } = useVideoConfig();
     const frame = useCurrentFrame();
-    const startFadeFrame = durationInFrames - 50;
+    const startFadeFrame = durationInFrames - 30;
 
     const opacity = clampInterpolation(
         frame,
@@ -71,7 +62,7 @@ function IntroWithVideo(props: Props) {
     );
 
     const computeOpacity = (f: any) => {
-        return interpolate(f, [135, 175], [1, 0], {
+        return interpolate(f, [145, 175], [1, 0], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
         });
@@ -90,7 +81,7 @@ function IntroWithVideo(props: Props) {
         <>
             <Sequence name="Video" from={DURATION_ANIMATION - 30}>
                 <Video
-                    src={staticFile(G_VIDEO_PATH + session.id + ".mp4")}
+                    src={staticFile(G_VIDEO_PATH + session.id + '.mp4')}
                     volume={() => videoVolume}
                 />
             </Sequence>
@@ -167,12 +158,8 @@ export function Compositions() {
             (session: SessionType) =>
                 session.speakers &&
                 session.speakers.length > 0 &&
-                session.startCut &&
-                session.endCut &&
-                convertToSeconds(session.endCut) >= 3 &&
-                convertToSeconds(session.endCut) -
-                    convertToSeconds(session.startCut) >
-                    0,
+                session.source?.start &&
+                session.source?.end,
         )
         .map((session: SessionType) => {
             if (session.speakers) {
@@ -198,8 +185,8 @@ export function Compositions() {
                     width={1920}
                     height={1080}
                     durationInFrames={
-                        convertToSeconds(session.endCut) * G_FPS -
-                        convertToSeconds(session.startCut) * G_FPS
+                        session.source!.end * G_FPS -
+                        session.source!.start * G_FPS
                     }
                     fps={G_FPS}
                     defaultProps={{ session }}
