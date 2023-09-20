@@ -2,11 +2,18 @@
 ORGANIZATION="funding_the_commons"
 EVENT="funding_the_commons_berlin_2023"
 
+if [ -z "$1" ]; then
+  echo "Error: Need a URL of Livepeer."
+  exit 1
+fi
+
 # Check if ORGANIZATION and EVENT exist
 if [ -z "$ORGANIZATION" ] || [ -z "$EVENT" ]; then
   echo "Error: ORGANIZATION and/or EVENT variables are not set."
   exit 1
 fi
+
+curl -L -o ./public/stream.mp4 "$1"
 
 curl -L -H "Accept: application/json" "http://app.streameth.org/api/organizations/${ORGANIZATION}/events/${EVENT}/sessions" >./public/json/sessions.json
 echo "http://app.streameth.org/api/organizations/${ORGANIZATION}/events/${EVENT}/sessions"
@@ -44,7 +51,7 @@ jq -c '.[]' "$JSON_FILE" | while read -r session; do
   fi
 
   # Run the ffmpeg comm
-  ffmpeg -live_start_index 0 -ss "$START" -i "https://lp-playback.com/hls/a2ae5cylmxs38npg/index.m3u8" -ss "00:00:10" -t "$END" -c copy -y "$OUTPUT_FILE" >/dev/null 2>&1
+  ffmpeg -ss "$START" -i "./public/stream.mp4" -t "$END" -c copy -y "$OUTPUT_FILE" > /dev/null 2>&1
 done
 
 # LOAD WEBPAGE

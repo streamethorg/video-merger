@@ -62,7 +62,7 @@ function IntroWithVideo(props: Props) {
     );
 
     const computeOpacity = (f: any) => {
-        return interpolate(f, [145, 175], [1, 0], {
+        return interpolate(f, [160, 170], [1, 0], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
         });
@@ -79,7 +79,7 @@ function IntroWithVideo(props: Props) {
 
     return (
         <>
-            <Sequence name="Video" from={DURATION_ANIMATION - 30}>
+            <Sequence name="Video" from={DURATION_ANIMATION - 40}>
                 <Video
                     src={staticFile(G_VIDEO_PATH + session.id + '.mp4')}
                     volume={() => videoVolume}
@@ -134,14 +134,14 @@ function IntroWithVideo(props: Props) {
             </Sequence>
             <Audio
                 src={staticFile(G_AUDIO_PATH)}
-                endAt={150}
+                endAt={DURATION_ANIMATION}
                 volume={(f) =>
-                    f < 115
+                    f < 130
                         ? interpolate(f, [0, 10], [0, 1], {
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
-                        : interpolate(f, [115, 150], [1, 0], {
+                        : interpolate(f, [130, 170], [1, 0], {
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
