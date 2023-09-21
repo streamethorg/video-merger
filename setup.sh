@@ -62,5 +62,5 @@ for f in ./public/videos/*.mp4; do
   # REMOVE MP4 from video name
   FILENAME=$(basename "$f" .mp4)
   ID=$(echo "$FILENAME" | sed 's/_/-/g')
-  npx remotion lambda render "https://remotionlambda-useast1-piu9hy1rzf.s3.us-east-1.amazonaws.com/sites/funding_the_commons_berlin_2023/index.html" --function-name "remotion-render-4-0-27-mem2048mb-disk2048mb-900sec" $FILENAME
+  npx remotion lambda render "https://remotionlambda-useast1-piu9hy1rzf.s3.us-east-1.amazonaws.com/sites/funding_the_commons_berlin_2023/index.html" --function-name "remotion-render-4-0-27-mem2048mb-disk2048mb-900sec" $ID
 done
