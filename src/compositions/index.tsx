@@ -21,6 +21,7 @@ import {
 import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
+import Session_Ethchicago from './session_ethchicago';
 
 const sessions: SessionType[] = SESSIONS.map((session) => {
     return {
@@ -141,12 +142,26 @@ function IntroWithVideo(props: Props) {
                 src={staticFile(G_AUDIO_PATH)}
                 endAt={150}
                 volume={(f) =>
+<<<<<<< Updated upstream
                     f < 115
                         ? interpolate(f, [0, 10], [0, 1], {
+||||||| Stash base
+                    f < 130
+                        ? interpolate(f, [0, 10], [0, 1], {
+=======
+                    f < 130
+                        ? interpolate(f, [0, 10], [0, 0.8], {
+>>>>>>> Stashed changes
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
+<<<<<<< Updated upstream
                         : interpolate(f, [115, 150], [1, 0], {
+||||||| Stash base
+                        : interpolate(f, [130, 170], [1, 0], {
+=======
+                        : interpolate(f, [130, 170], [0.8, 0], {
+>>>>>>> Stashed changes
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
@@ -183,7 +198,7 @@ export function Compositions() {
                 <Composition
                     key={index}
                     id={session.id.replace(/_/g, '-')}
-                    component={IntroWithVideo as any}
+                    component={Session_Ethchicago}
                     width={1920}
                     height={1080}
                     durationInFrames={DURATION_ANIMATION}

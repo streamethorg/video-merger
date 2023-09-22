@@ -9,14 +9,14 @@ function Text({
     fontSize = 60,
     opacity = 1,
 }: {
-    text: string;
-    x: number;
-    y: number;
-    color?: string;
-    fontWeight?: number;
-    fontSize?: number;
-    fontFamily?: string;
-    opacity?: number;
+    readonly text: string;
+    readonly x: number;
+    readonly y: number;
+    readonly color?: string;
+    readonly fontWeight?: number;
+    readonly fontSize?: number;
+    readonly fontFamily?: string;
+    readonly opacity?: number;
 }) {
     const lines = text.split('\n').map((line, i) => <div key={i}>{line}</div>);
     return (
@@ -28,6 +28,7 @@ function Text({
                 fontFamily,
                 fontWeight,
                 opacity,
+                textAlign: 'center',
             }}>
             {lines}
         </div>
