@@ -2,11 +2,6 @@
 ORGANIZATION="ethchicago"
 EVENT="ethchicago"
 
-if [ -z "$1" ]; then
-  echo "Error: Need a URL of Livepeer."
-  exit 1
-fi
-
 # Check if ORGANIZATION and EVENT exist
 if [ -z "$ORGANIZATION" ] || [ -z "$EVENT" ]; then
   echo "Error: ORGANIZATION and/or EVENT variables are not set."
@@ -30,28 +25,48 @@ seconds_to_hms() {
 JSON_FILE="./public/json/sessions.json" # Replace this with your directory path if different
 # SPLITTING THE VIDEO INTO CLIPS
 jq -c '.[]' "$JSON_FILE" | while read -r session; do
-  echo "$session" | jq .source
+  STREAM_URL=$(echo "$session" | jq -r .source.streamUrl)
+
+  if [ "$STREAM_URL" != "null" ]; then
+    ID=$(echo "$STREAM_URL" | awk -F '/' '{print $(NF-1)}')  # Extract ID from the URL
+    MP4_URL=$(echo "$STREAM_URL" | sed 's/index.m3u8/1080p0.mp4/')  # Convert streamUrl to target .mp4 instead of .m3u8
+    OUTPUT_VIDEO_FILE="./public/$ID.mp4"  # Output .mp4 file path
+
+    # Check if the MP4 video already exists
+    if [ ! -f "$OUTPUT_VIDEO_FILE" ]; then
+      echo "Video file for $ID does not exist. Downloading..."
+      curl -L -o "$OUTPUT_VIDEO_FILE" "$MP4_URL"
+    else
+      echo "Video file for $ID already exists. Skipping download."
+    fi
+  else
+    echo "streamUrl is null. Skipping..."
+  fi
+
   # Extract necessary fields from the JSON using the `jq` utility
+  VIDEO_NAME=$(echo "$session" | jq -r .id)
   STARTX=$(echo "$session" | jq -r .source.start)
   ENDX=$(echo "$session" | jq -r .source.end)
-  ID=$(echo "$session" | jq -r .id)
   START=$(seconds_to_hms "$STARTX"-10)
   END=$(seconds_to_hms "$ENDX"-"$STARTX")
-  echo "$ID, $START, $END"
-  OUTPUT_FILE="./public/videos/$ID.mp4" # naming the output file same as JSON file with .mp4 extension
+
+  OUTPUT_FILE="./public/videos/$VIDEO_NAME.mp4" # Naming the output file with the extracted ID and .mp4 extension
+
   # CHECK IF THE video EXISTS, if it does skip this
   if [ -f "$OUTPUT_FILE" ]; then
     echo "Warning: $OUTPUT_FILE already exists. Skipping..."
     continue
   fi
+
   # Check if start and end times are valid
   if [[ "$START" == "null" || "$END" == "null" ]]; then
     echo "Warning: Invalid start or end time in $json_file. Skipping..."
     continue
   fi
 
-  # Run the ffmpeg comm
-  ffmpeg -ss "$START" -i "./public/stream.mp4" -t "$END" -c copy -y "$OUTPUT_FILE" > /dev/null 2>&1
+  # Run the ffmpeg command
+  echo "$session" | jq .source
+  ffmpeg -ss "$START" -i "./public/$ID.mp4" -t "$END" -c copy -y "$OUTPUT_FILE" > /dev/null 2>&1
 done
 
 # LOAD WEBPAGE
