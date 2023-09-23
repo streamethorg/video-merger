@@ -139,6 +139,13 @@ function IntroWithVideo(props: Props) {
                 volume={(f) =>
                     f < 130
                         ? interpolate(f, [0, 10], [0, 1], {
+||||||| Stash base
+                    f < 130
+                        ? interpolate(f, [0, 10], [0, 1], {
+=======
+                    f < 130
+                        ? interpolate(f, [0, 10], [0, 0.8], {
+>>>>>>> Stashed changes
                               extrapolateLeft: 'clamp',
                               extrapolateRight: 'clamp',
                           })
