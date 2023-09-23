@@ -47,7 +47,6 @@ const start = async () => {
                 composition,
                 serveUrl: bundled,
                 outputLocation: `out/sessions/${composition.id}.mp4`,
-                videoBitrate: '50M',
                 onProgress,
             });
 

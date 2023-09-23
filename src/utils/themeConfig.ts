@@ -1,4 +1,4 @@
-import { loadFont } from '@remotion/google-fonts/Vollkorn';
+import { loadFont } from '@remotion/google-fonts/BigShouldersText';
 import { staticFile } from 'remotion';
 
 // Global
@@ -7,8 +7,8 @@ export const G_TEMPLATE = 'BaseOneIntro';
 export const G_LOGO_PICTURE = '/images/FtC.svg';
 export const G_FPS = 25;
 export const G_VIDEO_PATH = '/videos/';
-export const G_ANIMATION_PATH = '/animations/FtC_animation.mp4';
-export const G_AUDIO_PATH = '/audio/522_short1_cream-soda-day_0018.wav';
+export const G_ANIMATION_PATH = '/animations/ETHChicago_animation.mp4';
+export const G_AUDIO_PATH = '/audio/190_short1_all-charged-up_0016.mp3';
 export const G_DEFAULT_AVATAR_URL = staticFile('/images/ETHLogo.jpg');
 
 /// / Please check Google Font what weights you can use

@@ -21,6 +21,7 @@ import {
 import Text from '../components/Text';
 import { splitTextIntoString } from '../utils/textUtils';
 import { Rect } from '@remotion/shapes';
+import Session_Ethchicago from './session_ethchicago';
 
 const sessions: SessionType[] = SESSIONS.map((session) => {
     return {
@@ -181,7 +182,7 @@ export function Compositions() {
                 <Composition
                     key={index}
                     id={session.id.replace(/_/g, '-')}
-                    component={IntroWithVideo as any}
+                    component={Session_Ethchicago}
                     width={1920}
                     height={1080}
                     durationInFrames={
