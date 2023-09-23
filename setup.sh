@@ -1,6 +1,6 @@
 #!/bin/bash
-ORGANIZATION="funding_the_commons"
-EVENT="funding_the_commons_berlin_2023"
+ORGANIZATION="ethchicago"
+EVENT="ethchicago"
 
 if [ -z "$1" ]; then
   echo "Error: Need a URL of Livepeer."
@@ -13,7 +13,7 @@ if [ -z "$ORGANIZATION" ] || [ -z "$EVENT" ]; then
   exit 1
 fi
 
-curl -L -o ./stream.mp4 "$1"
+curl -L -o ./public/stream.mp4 "$1"
 
 curl -L -H "Accept: application/json" "http://app.streameth.org/api/organizations/${ORGANIZATION}/events/${EVENT}/sessions" >./public/json/sessions.json
 echo "http://app.streameth.org/api/organizations/${ORGANIZATION}/events/${EVENT}/sessions"
@@ -51,7 +51,7 @@ jq -c '.[]' "$JSON_FILE" | while read -r session; do
   fi
 
   # Run the ffmpeg comm
-  ffmpeg -ss "$START" -i "./stream.mp4" -t "$END" -c copy -y "$OUTPUT_FILE" > /dev/null 2>&1
+  ffmpeg -ss "$START" -i "./public/stream.mp4" -t "$END" -c copy -y "$OUTPUT_FILE" > /dev/null 2>&1
 done
 
 # LOAD WEBPAGE
