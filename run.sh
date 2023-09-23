@@ -50,9 +50,10 @@ for session in "${sessions[@]}"; do
     ENDX=$(echo "$session" | jq -r .source.end)
     START=$(seconds_to_hms "$STARTX"-10)
     END=$(seconds_to_hms "$ENDX"-"$STARTX")
+    VIDEO_NAME=$(echo "$session" | jq -r .id)
 
-    echo "$ID, $START, $END"
-    OUTPUT_FILE="./public/videos/$ID.mp4"
+    echo "$VIDEO_NAME, $START, $END"
+    OUTPUT_FILE="./public/videos/$VIDEO_NAME.mp4"
     if [ -f "$OUTPUT_FILE" ]; then
         echo "Warning: $OUTPUT_FILE already exists. Skipping..."
         continue
