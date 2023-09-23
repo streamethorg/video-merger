@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 ORGANIZATION="ethchicago"
 EVENT="ethchicago"
 
